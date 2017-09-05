@@ -1,5 +1,5 @@
 class StoriesController < ApplicationController
   def show
-    @story = Story.find(params[:id])
+    @story = Story.pages
   end
 end

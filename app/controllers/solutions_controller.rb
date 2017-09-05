@@ -6,8 +6,6 @@ class SolutionsController < ApplicationController
 
   def new
     @solution = Solution.new
-    # @user = User.find(params[:id])
-    # @story = Story.find(params[:id])
   end
 
   def create

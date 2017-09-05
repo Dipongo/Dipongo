@@ -7,4 +7,5 @@ class UniversesController < ApplicationController
   def show
    @universe = Universe.stories
   end
+
 end

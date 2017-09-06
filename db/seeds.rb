@@ -11,3 +11,13 @@
 end
 
 puts "Universe Done"
+
+universes = Universe.all
+
+universes.each do |universe|
+  3.times do |i|
+    universe.stories.new(name: Faker::StarWars.specie, position: i + 1).save
+  end
+end
+
+puts "stories Done"

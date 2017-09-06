@@ -21,3 +21,13 @@ universes.each do |universe|
 end
 
 puts "stories Done"
+
+stories = Story.all
+
+stories.each do |story|
+  3.times do |i|
+    story.pages.new(content: Faker::StarWars.quote, position: i).save
+  end
+end
+
+puts "pages Done"

@@ -1,0 +1,9 @@
+<h1>Pages</h1>
+
+<ul>
+  <% @story.pages.each do |page| %>
+  <li>
+    <%= page.content %>
+  </li>
+  <% end %>
+</ul>

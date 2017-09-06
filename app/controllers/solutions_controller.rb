@@ -13,8 +13,8 @@ class SolutionsController < ApplicationController
   end
 
   def create
-    @solution = current_user.solutions.new(params[:solution])
-
+    @solution = current_user.solutions.build(solution_params)
+    @solution.story = set_story
     @solution.save
   end
 
@@ -22,6 +22,10 @@ class SolutionsController < ApplicationController
 
     def set_story
       @stories = Story.find(params[:story_id])
+    end
+
+    def solution_params
+      params.require(:solution).permit(:pictures)
     end
 
 end

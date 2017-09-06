@@ -1,4 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<%= link_to "Universes", universes_path, class: "btn btn-primary" %>
+<div class="container wide-container">
+  <div class="slogan-text">
+    <h1>Stimuler la créativité et l'imagination de vos enfants</h1>
+  </div>
+  <div class="text-discover-home">
+    Une pointe de technologie et de belles aventures
+    Dipongo s'adresse à des parents :
+    <ul><li>lassés de voir leurs enfants passifs et irritables devant des écrans</li>
+    <li>désireux de partager avec eux des moments de convivialité autour d'activités traditionnelles</li></ul>
+    <br>
+    Dipongo, c'est aussi et surtout pour des enfants :
+    <ul><li>prêts à devenir acteurs de leur développement en relevant de nombreux défis</li>
+    <li>curieux et motivés par le challenge</li></ul>
+  </div>
+  <div class="button-univers-container">
+    <%= link_to "Accéder aux univers", universes_path, class: "btn btn-primary" %>
+  </div>
+  <div class="renard-home-avatar">
+    <%= image_tag("renard.png") %>
+  </div>
+</div>

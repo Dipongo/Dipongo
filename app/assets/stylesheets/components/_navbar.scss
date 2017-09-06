@@ -1,18 +1,22 @@
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background-color: white;
   transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
+  height: 60px;
+  padding: 10px 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 auto;
 }
 
 /* Logo */
 .navbar-wagon-brand img {
-  height: 50px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  // transform: translate(0%, 50%);
 }
 
 /* User Avatar */
@@ -74,4 +78,18 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+@media only screen and (max-width: 727px) and (min-width: 490px) {
+.container .sixteen.columns {
+    width: 440px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+ @media only screen and (max-width: 1299px) and (min-width: 1000px) {
+.container .sixteen.columns {
+    width: 918px;
+  }
 }

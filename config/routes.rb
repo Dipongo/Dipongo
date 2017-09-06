@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   resources :solutions, only: [:index, :new, :create]
 
+  mount Attachinary::Engine => "/attachinary"
+
 end

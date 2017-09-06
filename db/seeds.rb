@@ -5,3 +5,29 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+4.times do
+  Universe.new(name: Faker::StarWars.planet).save
+end
+
+puts "Universe Done"
+
+universes = Universe.all
+
+universes.each do |universe|
+  3.times do |i|
+    universe.stories.new(name: Faker::StarWars.specie, position: i + 1).save
+  end
+end
+
+puts "stories Done"
+
+stories = Story.all
+
+stories.each do |story|
+  3.times do |i|
+    story.pages.new(content: Faker::StarWars.quote, position: i).save
+  end
+end
+
+puts "pages Done"

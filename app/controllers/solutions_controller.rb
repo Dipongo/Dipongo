@@ -5,7 +5,7 @@ class SolutionsController < ApplicationController
   before_action :set_story, only: [:index, :create]
 
   def index
-    @story = Solution.all
+    @story = Solution.set_story
   end
 
   def new
@@ -14,14 +14,14 @@ class SolutionsController < ApplicationController
 
   def create
     @solution = current_user.solutions.build(solution_params)
-    @solution.story = set_story
+    @solution.set_story
     @solution.save
   end
 
   private
 
     def set_story
-      @stories = Story.find(params[:story_id])
+      Story.find(params[:story_id])
     end
 
     def solution_params

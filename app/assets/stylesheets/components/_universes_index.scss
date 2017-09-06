@@ -1,0 +1,74 @@
+.button-choose-universes{
+  width: 200px;
+  background-color: #F58F29;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.button-choose-universes-container{
+  text-align: center;
+  margin-top: 50px;
+  background-color: transparent;
+  height: 150px;
+  width:200px;
+}
+
+.card-universe {
+  height: 700px;
+  color: gray;
+  padding-left: 75px;
+}
+.card-content{
+  color:#333333;
+  height: 200px;
+  width: 235px;
+  padding: 20px;
+  background-color: transparent;
+}
+.card-universe-image{
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // padding-right: -15px;
+  background-color: #1b83d5;
+}
+.padding-0 {
+  padding: 0px !important;
+}
+.universe_description{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.universe_name{
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.price{
+  font-size: 32px;
+  color: white;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+.btn-universe {
+  margin-top:30px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: medium;
+  background: white;
+  transition: background 0.3s ease;
+  min-width: 200px;
+}
+.btn-universe:hover {
+  opacity: 1;
+  background: #FF0080;
+  text-decoration: none;
+  color: white;
+}
+
+
+.col-xs-12 .col-sm-6{
+  // padding-left: 50px;
+}

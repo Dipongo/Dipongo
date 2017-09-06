@@ -1,8 +1,29 @@
-<h1>Universes</h1>
-<ul>
-  <% @universes.each do |universe| %>
-  <li>
-    <%= link_to universe.name, universe_path(universe) %>
-  </li>
-  <% end %>
-</ul>
+<div class="container wide-container">
+  <div class="slogan-text">
+    <h1>Liste des Univers</h1>
+  </div>
+  <div class="col-xs-12 col-sm-6" >
+    <div class="card-universe">
+      <% @universes.each do |universe| %>
+
+        <div class="button-choose-universes-container">
+        <%= link_to universe.name, universe_path(universe), class: "btn btn-warning button-choose-universes" %>
+        <div class="card-universe-image">
+        </div>
+        </div>
+      <% end %>
+
+
+  </div>
+  </div>
+</div>
+  <div class="renard-home-avatar">
+    <%= image_tag("renard.png") %>
+  </div>
+
+
+
+
+
+
+

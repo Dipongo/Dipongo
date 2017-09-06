@@ -1,1 +1,8 @@
 <h1>Hello</h1>
+<ul>
+  <% @universes.each do |universe| %>
+  <li>
+    <%= universe.name %>
+  </li>
+  <% end %>
+</ul>

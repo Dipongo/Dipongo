@@ -10,6 +10,7 @@ gem 'rails', '5.1.3'
 gem 'redis'
 
 gem 'autoprefixer-rails'
+gem 'acts_as_list'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'jquery-rails'

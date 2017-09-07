@@ -1,6 +1,4 @@
 <%= simple_form_for [@story, @solution] do |s| %>
-<%= s.input :photo, as: :attachinary %>
+<%= s.input :photo, as: :attachinary, input_html: {capture: true, accept: "image/*"} %>
 <%= s.button :submit %>
 <% end %>
-
-<input type="file" accept="image/*" capture>

@@ -5,7 +5,6 @@ class SolutionsController < ApplicationController
   before_action :set_story, only: [:index, :create]
 
   def index
-
   end
 
   def new

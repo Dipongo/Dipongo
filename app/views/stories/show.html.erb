@@ -1,11 +1,14 @@
-<h1>Pages</h1>
+<%= link_to "Back to #{@story.universe.name}", @story.universe %>
 
-<ul>
-  <% @story.pages.each do |page| %>
-  <li>
-    <%= page.content %>
-  </li>
-  <% end %>
-</ul>
 
-<%= link_to 'Solution', new_story_solution_path(@story) %>
+<%= @page.inspect%>
+
+<% if @prev_page %>
+  <%= link_to "< Previous page", story_path(@story, { page: @prev_page.position }) %>
+<% end %>
+
+<% if @next_page %>
+  <%= link_to "Next page >", story_path(@story, { page: @next_page.position }) %>
+<% else %>
+  <%= link_to 'Solution', new_story_solution_path(@story) %>
+<% end %>

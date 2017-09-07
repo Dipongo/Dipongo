@@ -8,6 +8,7 @@ class SolutionsController < ApplicationController
   end
 
   def new
+    @story = set_story
     @solution = Solution.new
   end
 
@@ -24,7 +25,7 @@ class SolutionsController < ApplicationController
     end
 
     def solution_params
-      params.require(:solution).permit(:pictures)
+      params.require(:solution).permit(:photo)
     end
 
 end

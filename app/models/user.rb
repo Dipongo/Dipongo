@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :solutions
+
+  def move_to(user)
+    todos.update_all(user_id: user.id)
+  end
+
 end

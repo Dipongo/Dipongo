@@ -14,7 +14,7 @@ class SolutionsController < ApplicationController
   end
 
   def create
-    @solution = current_user.solutions.build(solution_params)
+    @solution = current_or_guest_user.solutions.new(solution_params)
     @solution.set_story
     @solution.save
   end

@@ -1,9 +1,10 @@
-<div class="container wide-container">
-  <div class="slogan-text">
+<div class="wide-container-universes">
+  <div class="title-univers-index">
     <h1>Liste des Univers</h1>
   </div>
-  <div class="col-xs-12 col-sm-6" >
-    <div class="card-universe">
+
+
+    <div id="main">
       <% @universes.each do |universe| %>
 
         <div class="button-choose-universes-container">
@@ -12,14 +13,12 @@
         </div>
         </div>
       <% end %>
-
-
   </div>
-  </div>
-</div>
-  <div class="renard-home-avatar">
+<div class="renard-home-avatar">
     <%= image_tag("renard.png") %>
   </div>
+</div>
+
 
 
 

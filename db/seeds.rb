@@ -6,27 +6,28 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Page.destroy_all
+Story.destroy_all
+Universe.destroy_all
+
 4.times do
-  Universe.new(name: Faker::StarWars.planet).save
+  Universe.create!(name: Faker::StarWars.planet)
 end
 
 puts "Universe Done"
 
-universes = Universe.all
 
-universes.each do |universe|
-  3.times do |i|
-    universe.stories.new(name: Faker::StarWars.specie, position: i + 1).save
+Universe.all.each do |universe|
+  3.times do
+    universe.stories.create!(name: Faker::StarWars.specie)
   end
 end
 
 puts "stories Done"
 
-stories = Story.all
-
-stories.each do |story|
+Story.all.each do |story|
   3.times do |i|
-    story.pages.new(content: Faker::StarWars.quote, position: i).save
+    story.pages.create!(content: Faker::StarWars.quote)
   end
 end
 

@@ -6,14 +6,14 @@
 
     <%= simple_form_for [@story, @solution] do |s| %>
 
-    <label class="text-center label-upload">
-      <span id="upload" class="fa fa-camera span-upload"></span>
-        <%= s.input :photo, as: :attachinary, label: false, input_html: {capture: true, accept: "image/*", id: "upload"} %>
-    </label>
+      <label class="text-center label-upload">
+        <span id="upload" class="fa fa-camera span-upload"></span>
+          <%= s.input :photo, as: :attachinary, label: false, input_html: {capture: true, accept: "image/*", id: "upload"} %>
+      </label>
 
-    <br>
+      <br>
 
-    <%= s.button :submit, class: "btn btn-primary" %>
+      <%= s.button :submit, class: "btn btn-primary" %>
     <% end %>
   </div>
 

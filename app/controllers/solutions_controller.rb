@@ -5,27 +5,28 @@ class SolutionsController < ApplicationController
   before_action :set_story, only: [:index, :create]
 
   def index
+    @solution = current_user.solutions.where(story: @story).order(created_at: :desc).first
   end
 
   def new
-    @story = set_story
     @solution = Solution.new
   end
 
   def create
-    @solution = current_or_guest_user.solutions.new(solution_params)
-    @solution.story = set_story
+    @solution = current_user.solutions.new(solution_params)
+    @solution.story = @story
     @solution.save
+    redirect_to story_solutions_path(@story)
   end
 
-  private
+private
 
-    def set_story
-      Story.find(params[:story_id])
-    end
+  def set_story
+    @story = Story.find(params[:story_id])
+  end
 
-    def solution_params
-      params.require(:solution).permit(:photo)
-    end
+  def solution_params
+    params.require(:solution).permit(:photo)
+  end
 
 end

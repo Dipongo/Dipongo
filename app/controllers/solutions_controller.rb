@@ -1,6 +1,6 @@
 class SolutionsController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: [:index, :new]
+  skip_before_action :authenticate_user!, only: [:index, :new, :create]
 
   before_action :set_story, only: [:index, :create]
 

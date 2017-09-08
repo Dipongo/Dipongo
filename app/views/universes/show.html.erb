@@ -4,25 +4,15 @@
   </div>
 
 
-    <div id="main">
-      <% @universe.stories.each do |story| %>
-
-        <div class="button-choose-stories-container">
-        <%= link_to story.name, story_path(story) , class: "btn btn-warning button-choose-stories" %>
-        <div class="card-stories-image">
-        </div>
-        </div>
-      <% end %>
+  <div id="main">
+    <% @universe.stories.each do |story| %>
+      <div class="button-choose-stories-container">
+          <%= link_to story.name, story_path(story) , class: "btn btn-warning button-choose-stories" %>
+        <div class="card-stories-image"></div>
+      </div>
+    <% end %>
   </div>
-<div class="renard-home-avatar">
+  <div class="renard-home-avatar">
     <%= image_tag("renard.png") %>
   </div>
 </div>
-
-
-
-
-
-
-
-

@@ -6,10 +6,18 @@
   visibility: hidden;
 }
 
+
 .label-upload {
   width: 50%;
 }
 
 .span-upload {
   margin-top: 80px;
+}
+
+.attachinary_container ul {
+  list-style-type: none;
+}
+.attachinary_container a {
+  visibility: hidden;
 }

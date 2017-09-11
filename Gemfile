@@ -25,6 +25,8 @@ gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
 
 group :development, :test do
   gem 'pry-byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'

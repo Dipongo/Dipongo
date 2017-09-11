@@ -2,7 +2,7 @@ class SolutionsController < ApplicationController
 
   skip_before_action :authenticate_user!, only: [:index, :new, :create]
 
-  before_action :set_story, only: [:index, :create]
+  before_action :set_story, only: [:index, :new, :create]
 
   def index
     @solution = current_user.solutions.where(story: @story).order(created_at: :desc).first

@@ -1,7 +1,7 @@
 <%= link_to "Back to #{@story.universe.name}", @story.universe %>
 
+<%= @page.content %>
 
-<%= @page.inspect%>
 
 <% if @prev_page %>
   <%= link_to "< Previous page", story_path(@story, { page: @prev_page.position }) %>

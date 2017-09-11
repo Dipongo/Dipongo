@@ -1,14 +1,14 @@
-<%= link_to "Back to #{@story.universe.name}", @story.universe %>
+<%= link_to "Back to #{@story.universe.name}", @story.universe, class: "btn btn-success" %>
 
 <%= @page.content %>
 
 
 <% if @prev_page %>
-  <%= link_to "< Previous page", story_path(@story, { page: @prev_page.position }) %>
+  <%= link_to "< Previous page", story_path(@story, { page: @prev_page.position })%>
 <% end %>
 
 <% if @next_page %>
   <%= link_to "Next page >", story_path(@story, { page: @next_page.position }) %>
 <% else %>
-  <%= link_to 'Solution', new_story_solution_path(@story) %>
+  <%= link_to '', new_story_solution_path(@story), class:'fa fa-camera' %>
 <% end %>

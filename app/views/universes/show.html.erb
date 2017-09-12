@@ -3,18 +3,22 @@
     <h1>Liste des Histoires</h1>
   </div>
 
-
-  <div id="main">
-    <% @universe.stories.each do |story| %>
-      <div class="button-choose-stories-container">
-          <%= link_to story.name, story_path(story) , class: "btn btn-warning button-choose-stories" %>
-        <div class="card-stories-image"></div>
+  <div class="row">
+        <% @stories.each do |story| %>
+        <div class="col-xs-6 col-md-4 text-center">
+              <%= link_to story_path(story), id: "page_view" do%>
+              <%= cl_image_tag story.pages.first.photo.path, :width => 150, :height => 150, :crop => :thumb, :gravity => :face, :radius => :max%>
+              <br>
+              <p class="text-center"> <%= story.name %> </p>
+              <% end %>
       </div>
-    <% end %>
+      <% end %>
   </div>
+
   <div class="renard-home-avatar">
     <%= image_tag("renard.png") %>
   </div>
+
   <div>
     <%= link_to '< Back', universes_path, class: "btn btn-success" %>
   </div>

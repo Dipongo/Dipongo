@@ -96,10 +96,12 @@ background-size: cover;
   color: white;
 }
 
-.col-xs-6 {
-    width: 100%;
-}
-
-.col-sm-6{
-  width: 100%;
+#page_view {
+  color: #32abdf;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 25px;
+  &:hover {
+    text-decoration: none;
+    color: #2f9ece;
+  }
 }

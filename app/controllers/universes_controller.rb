@@ -7,6 +7,6 @@ class UniversesController < ApplicationController
 
   def show
     @universe = Universe.find(params[:id])
+    @stories = @universe.stories
   end
-
 end

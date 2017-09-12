@@ -1,3 +1,10 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 .title-stories-index {
   text-align: center;
   margin-top: 20px;
@@ -96,10 +103,16 @@ background-size: cover;
   color: white;
 }
 
-.col-xs-6 {
-    width: 100%;
+#page_view {
+  color: #32abdf;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 25px;
+  &:hover {
+    text-decoration: none;
+    color: #2f9ece;
+  }
 }
 
-.col-sm-6{
-  width: 100%;
+.btn-back {
+  margin-top: 50%;
 }

@@ -1,21 +1,24 @@
-<div class="container wide-container">
-  <div class="slogan-text">
-    <h1>Stimuler la créativité et l'imagination de vos enfants</h1>
-  </div>
-  <div class="text-discover-home">
-    Une pointe de technologie et de belles aventures
-    Dipongo s'adresse à des parents :
-    <ul><li>lassés de voir leurs enfants passifs et irritables devant des écrans</li>
-    <li>désireux de partager avec eux des moments de convivialité autour d'activités traditionnelles</li></ul>
-    <br>
-    Dipongo, c'est aussi et surtout pour des enfants :
-    <ul><li>prêts à devenir acteurs de leur développement en relevant de nombreux défis</li>
-    <li>curieux et motivés par le challenge</li></ul>
-  </div>
-  <div class="button-univers-container">
-    <%= link_to "Accéder aux univers", universes_path, class: "btn btn-primary" %>
-  </div>
-  <div class="renard-home-avatar">
-    <%= image_tag("renard.png") %>
+<div class="white-intro">
+  <div class="wide-container-home">
+    <div class="slogan-text">
+      <h1>Stimuler la créativité et l'imagination de vos enfants</h1>
+    </div>
+    <div class="text-discover-home">
+     <div class="renard-home-avatar">
+      <%= image_tag("renard.png") %>
+    </div>
+      <p>« Bonjour les amis. Je me présente, je suis Edgar, un explorateur d’univers.</p>
+      <p>
+      A bord de mon vaisseau que j’ai fabriqué moi-même, je vagabonde dans les cieux à
+      la découverte de nouveaux univers.</p>
+      <p>
+      Je ne pars jamais vraiment seul. J’ai toujours avec moi deux compagnons : mon
+      ombrelle et mes lunettes d’aviateur. Ils sont très fidèles et peu bavards !</p>
+      <p>
+      Veux-tu te joindre à nous et découvrir le monde ? »</p>
+      <div class="button-univers">
+      <%= link_to "Accéder aux univers", universes_path, class: "btn-primary button-univers-container" %>
+      </div>
+    </div>
   </div>
 </div>

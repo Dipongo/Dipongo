@@ -1,26 +1,26 @@
-<div class="container wide-container">
+<div class="wide-container">
   <div class="contain">
     <div class="row">
-      <div class="col-xs-12">
-        <h1>Votre Photo</h1>
+      <h1 class="text-center">Votre Photo</h1>
+      <div class="col-xs-12 col-sm-6 text-center">
+
         <% if @solution&.photo? %>
           <%= cl_image_tag @solution.photo.path, width: 200, height: 200, crop: :fill %>
         <% end %>
-
-        <%= link_to "Next Story", universe_path(@story.universe), class: "btn btn-primery"%>
-
-        <h2>Autres Photo</h2>
-
+      </div>
+      <div class="col-xs-12 col-sm-6 btn-next-story text-center">
+        <%= link_to "Next Story", universe_path(@story.universe), class: "btn btn-primary"%>
+      </div>
+        <h2 class="text-center">Autres Photo</h2>
         <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>
           <% if solution.photo %>
-          <div class="col-xs-4">
-            <div class="card-solution">
-              <%= cl_image_tag solution.photo.path, width: 100, height: 100, crop: :fill %>
+            <div class="col-xs-4 col-sm-4">
+              <div class="card-solution">
+                <%= cl_image_tag solution.photo.path, width: 150, height: 150, crop: :fill %>
+              </div>
             </div>
-          </div>
           <% end %>
         <% end %>
-      </div>
     </div>
   </div>
 </div>

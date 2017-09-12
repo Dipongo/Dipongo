@@ -9,18 +9,27 @@
 
 .label-upload {
   width: 50%;
+  color: $white;
 }
 
 .span-upload {
   margin-top: 80px;
 }
+.attachinary_container{
+  ul {
+    list-style-type: none;
+    padding-left: 11px;
+  }
+  a {
+    visibility: hidden;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+  }
 
-.attachinary_container ul {
-  list-style-type: none;
 }
-.attachinary_container a {
-  visibility: hidden;
-}
+
 // .wide-container{
 //   background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
 //   height: 100vh;

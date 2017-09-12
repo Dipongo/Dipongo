@@ -1,8 +1,32 @@
 .story-div {
   padding: 20px 10px;
+  color: white;
 }
 
 .pagination {
   display: flex;
   justify-content: space-around;
+}
+
+.camera:after{
+  content:'\f030';
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  // padding-left: 5px;
+  // margin: 5px;
+}
+.camera{
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: $green;
+  }
+  50% {
+    background-color: #33FFCC;
+  }
+  100% {
+    background-color: $green;
+  }
 }

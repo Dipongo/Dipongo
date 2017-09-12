@@ -1,5 +1,42 @@
-
+.solution-font{
+  font-family: Sue Ellen Francisco;
+}
 .btn-next-story{
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.card-solution{
+  padding: 0px;
+  margin: 5px;
+}
+.solution-title h2{
+  margin: 0px;
+  padding: 10px;
+}
+.solution-btn{
+  padding: 10px;
+}
+.solution-content{
+  position: sticky;
+}
+
+.flex-container {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item {
+
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+.scroll-box {
+    height: 250px; /* maximum height of the box, feel free to change this! */
+    overflow-y: scroll;
 }

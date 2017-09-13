@@ -8,6 +8,17 @@
   justify-content: space-around;
 }
 
+.btn-switch {
+  padding: 7px 0;
+  text-align: center;
+  background-color: $orange;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
 .camera:after{
   content:'\f030';
   font-family: 'FontAwesome';

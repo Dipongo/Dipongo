@@ -17,7 +17,7 @@
     <% if @next_page %>
     <p class="space-p"></p>
     <% else %>
-    <%= link_to "", @story.universe, class: "camera btn-camera" %>
+    <%= link_to "", new_story_solution_path(@story), class: "camera btn-camera" %>
     <% end %>
 
     <% if @next_page %>

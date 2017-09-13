@@ -8,6 +8,41 @@
   justify-content: space-around;
 }
 
+.space-p {
+  height: 40px;
+  width: 40px;
+}
+
+.btn-camera {
+  padding: 6px 0;
+  text-align: center;
+  background-color: lightgrey;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 10%;
+}
+
+.arrow-right:after {
+  content: '\f061';
+  font-family: 'FontAwesome';
+  font-size: 20px;
+}
+
+.arrow-left:after {
+  content: '\f060';
+  font-family: 'FontAwesome';
+  font-size: 20px;
+}
+
+// #inactive-link {
+//    pointer-events: none;
+//    cursor: default;
+//    animation: none;
+//    background-color: grey;
+// }
+
 .btn-switch {
   padding: 7px 0;
   text-align: center;
@@ -17,6 +52,11 @@
   width: 40px;
   border: none;
   border-radius: 50%;
+  &:focus {
+    text-decoration: none;
+    color: white;
+    background-color: #d3721d;
+  }
 }
 
 .camera:after{

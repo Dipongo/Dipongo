@@ -9,15 +9,21 @@
   </div>
   <div class="pagination">
     <% if @prev_page %>
-      <%= link_to "<", story_path(@story, { page: @prev_page.position }),class: "btn-switch"%>
+      <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
+    <% else %>
+      <p class="space-p"> </p>
     <% end %>
 
-    <%= link_to "Back to #{@story.universe.name}", @story.universe, class: "btn btn-success" %>
+    <% if @next_page %>
+    <p class="space-p"></p>
+    <% else %>
+    <%= link_to "", @story.universe, class: "camera btn-camera" %>
+    <% end %>
 
     <% if @next_page %>
-      <%= link_to ">", story_path(@story, { page: @next_page.position }), class: "btn-switch" %>
+      <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
     <% else %>
-      <%= link_to '', new_story_solution_path(@story), class: "btn btn-success camera" %>
+      <p class="space-p"> </p>
     <% end %>
   </div>
 </div>

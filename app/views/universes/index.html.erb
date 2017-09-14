@@ -2,19 +2,40 @@
   <div class="title-univers-index">
     <h1>Liste des Univers</h1>
   </div>
+<section class="awSlider">
+  <div  class="carousel slide">
+    <!-- Indicators -->
 
 
-    <div id="main">
-      <% @universes.each do |universe| %>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active img-carousel">
+        <img src="http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png">
+        <div class="univers-carousel-name"><p>Océan</p></div>
+      </div>
+      <div class="item">
+        <img src="http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png">
+        <div class="univers-carousel-name"><p>Jungle</p></div>
+      </div>
+      <div class="item">
+        <img src="http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png">
+        <div class="univers-carousel-name"><p>Gourmandise</p></div>
+      </div>
 
-        <div class="button-choose-universes-container">
-        <%= link_to universe.name, universe_path(universe), class: "btn btn-warning button-choose-universes" %>
-        <div class="card-universe-image">
-        </div>
-        </div>
-      <% end %>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Geri</span>
+    </a>
+    <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">İleri</span>
+    </a>
   </div>
-<div class="renard-home-avatar">
+</section>
+<div class="renard-avatar">
     <%= image_tag("renard.png") %>
   </div>
 </div>

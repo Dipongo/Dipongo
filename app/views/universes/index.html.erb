@@ -9,19 +9,14 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active img-carousel">
-        <img src="http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png">
-        <div class="univers-carousel-name"><p>Océan</p></div>
+      <% @universes.each_with_index do |universe, i| %>
+      <div class="item <%= 'active' if i == 0 %> ">
+        <%= link_to universe_path(universe) do %>
+          <%= cl_image_tag universe.photo.path %>
+          <div class="univers-carousel-name"><p> <%= universe.name %> </p></div>
+        <% end %>
       </div>
-      <div class="item">
-        <img src="http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png">
-        <div class="univers-carousel-name"><p>Jungle</p></div>
-      </div>
-      <div class="item">
-        <img src="http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png">
-        <div class="univers-carousel-name"><p>Gourmandise</p></div>
-      </div>
-
+      <% end %>
     </div>
 
     <!-- Controls -->

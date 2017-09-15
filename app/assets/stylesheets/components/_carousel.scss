@@ -5,7 +5,6 @@ and (max-device-width : 1024px)
 and (orientation : landscape){
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 400px;
     width: 700px;
     margin: 0px auto;
@@ -68,7 +67,6 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 400px;
     width: 500px;
     margin: 0px auto;
@@ -130,7 +128,6 @@ and (max-device-width : 1366px)
 and (orientation : portrait) {
 section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 550px;
     width: 700px;
     margin: 0px auto;
@@ -192,7 +189,6 @@ and (max-device-width : 1366px)
 and (orientation : landscape) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 550px;
     width: 700px;
     margin: 0px auto;
@@ -270,7 +266,6 @@ and (max-device-width : 568px)
 and (orientation : landscape) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 200px;
     width: 300px;
     margin: 0px auto;
@@ -332,7 +327,6 @@ and (max-device-width : 568px)
 and (orientation : portrait) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 300px;
     width: 300px;
     margin: 0px auto;
@@ -393,7 +387,6 @@ and (max-device-width : 667px)
 and (orientation : portrait) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 300px;
     width: 300px;
     margin: 0px auto;
@@ -427,7 +420,9 @@ and (orientation : portrait) {
     z-index:1;
     margin: 0px auto;
   }
-
+  .carousel-transparency{
+    opacity: 0;
+  }
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
       height: 200px;
       margin: 20px auto;
@@ -455,7 +450,6 @@ and (max-device-width : 667px)
 and (orientation : landscape) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 200px;
     width: 300px;
     margin: 0px auto;
@@ -517,7 +511,6 @@ and (max-device-width : 736px)
 and (orientation : portrait) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 350px;
     width: 350px;
     margin: 0px auto;
@@ -579,7 +572,6 @@ and (max-device-width : 736px)
 and (orientation : landscape) {
   section.awSlider .carousel{
     z-index:2;
-    box-shadow: 0 0 250px white;
     height: 300px;
     width: 400px;
     margin: 0px auto;

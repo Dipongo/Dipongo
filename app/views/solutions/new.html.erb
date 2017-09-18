@@ -10,7 +10,6 @@
         <span id="upload" class="fa fa-camera span-upload"></span>
           <%= s.input :photo, as: :attachinary, label: false, input_html: {capture: true, accept: "image/*", id: "upload", class: "hidden"} %>
       </label>
-
       <br>
 
           <%= s.simple_fields_for :users, @user do |user| %>

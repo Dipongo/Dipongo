@@ -7,6 +7,7 @@
       <% if @solution&.photo? %>
         <%= cl_image_tag @solution.photo.path, width: 200, height: 200, :border => { :width => 4, :color => '#196375' } ,crop: :fill %>
       <% end %>
+
     </div>
     <div class="solution-btn text-center">
       <%= link_to "Next Story", universe_path(@story.universe), class: "btn btn-info"%>

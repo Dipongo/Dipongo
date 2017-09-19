@@ -11,12 +11,16 @@
           <%= s.input :photo, as: :attachinary, label: false, input_html: {capture: true, accept: "image/*", id: "upload", class: "hidden"} %>
       </label>
       <br>
-
+        <div class="content-user-form">
           <%= s.simple_fields_for :users, @user do |user| %>
-          <%= user.input :name %>
-          <%= user.input :age, as: :integer %>
+            <div class="user-form text-left">
+              <%= user.input :name, placeholder: 'Emma' %>
+            </div>
+            <div class="user-form text-left">
+              <%= user.input :age, as: :integer, placeholder: '5' %>
+            </div>
           <% end %>
-
+        </div>
       <%= s.button :submit, class: "btn btn-primary" %>
     <% end %>
   </div>

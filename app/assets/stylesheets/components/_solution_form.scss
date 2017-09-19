@@ -6,6 +6,18 @@
   visibility: hidden;
 }
 
+.user-form{
+  width: 45%;
+  color: $white;
+  margin: 0 auto;
+    label{
+      font-weight:normal;
+    }
+}
+.content-user-form{
+  display: flex;
+
+}
 
 .label-upload {
   width: 50%;

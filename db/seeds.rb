@@ -31,6 +31,10 @@ gourmandise_story_2 = gourmandise.stories.create(name: "Gourmandise 2")
 
 puts "Story DONE"
 
+# creer 5 users (dans des variables)
+
+# pour chaque user, creer une solution sur chaque story
+
 jungle_story_1.pages.create(content: "Edgar arrive dans la forêt tropicale. Etouffé par la chaleur, il est déjà bien fatigué. Ce
 n’est pas si facile la vie d’explorateur. Edgar a bien mérité un peu de repos. Installé
 dans son hamac, il contemple la belle nature qui s’offre à lui. Il y a plein de feuilles de

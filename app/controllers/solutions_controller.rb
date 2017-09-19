@@ -17,7 +17,7 @@ class SolutionsController < ApplicationController
     # update user infos from solution_params[:users]
     solution = params[:solution]
     users = solution[:users]
-    @user = current_user.update(name: users[:name], age: users[:age].to_i)
+    @user = current_user.update(name: users[:name], age: users[:age])
     @solution = current_user.solutions.new(solution_params)
     @solution.story = @story
     @solution.save

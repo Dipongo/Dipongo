@@ -13,76 +13,78 @@
 Page.destroy_all
 Story.destroy_all
 Universe.destroy_all
+User.destroy_all
+Solution.destroy_all
 
-jungle = Universe.create(name: "Jungle", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
-ocean = Universe.create(name: "Fond Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
-gourmandise = Universe.create(name: "Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
+jungle = Universe.create!(name: "Jungle", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
+ocean = Universe.create!(name: "Fond Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
+gourmandise = Universe.create!(name: "Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
 
 puts "Universes DONE"
 
-jungle_story_1 = jungle.stories.create(name: "Forêt Tropical 1")
-jungle_story_2 = jungle.stories.create(name: "Forêt Tropical 2")
+jungle_story_1 = jungle.stories.create!(name: "Forêt Tropical 1")
+jungle_story_2 = jungle.stories.create!(name: "Forêt Tropical 2")
 
-ocean_story_1 = ocean.stories.create(name: "Fonds marins 1")
-ocean_story_2 = ocean.stories.create(name: "Fonds marins 2")
+ocean_story_1 = ocean.stories.create!(name: "Fonds marins 1")
+ocean_story_2 = ocean.stories.create!(name: "Fonds marins 2")
 
-gourmandise_story_1 = gourmandise.stories.create(name: "Gourmandise 1")
-gourmandise_story_2 = gourmandise.stories.create(name: "Gourmandise 2")
+gourmandise_story_1 = gourmandise.stories.create!(name: "Gourmandise 1")
+gourmandise_story_2 = gourmandise.stories.create!(name: "Gourmandise 2")
 
 puts "Stories DONE"
 
-user_1 = User.create(name: Faker::Name.first_name, age: rand(5..8))
-user_2 = User.create(name: Faker::Name.first_name, age: rand(5..8))
-user_3 = User.create(name: Faker::Name.first_name, age: rand(5..8))
-user_4 = User.create(name: Faker::Name.first_name, age: rand(5..8))
-user_5 = User.create(name: Faker::Name.first_name, age: rand(5..8))
+user_1 = User.create!(name: Faker::Name.first_name, age: rand(5..8), email: Faker::Internet.email, password: 123456)
+user_2 = User.create!(name: Faker::Name.first_name, age: rand(5..8), email: Faker::Internet.email, password: 123456)
+user_3 = User.create!(name: Faker::Name.first_name, age: rand(5..8), email: Faker::Internet.email, password: 123456)
+user_4 = User.create!(name: Faker::Name.first_name, age: rand(5..8), email: Faker::Internet.email, password: 123456)
+user_5 = User.create!(name: Faker::Name.first_name, age: rand(5..8), email: Faker::Internet.email, password: 123456)
 
 puts "Users DONE"
 
 # pour chaque user, creer une solution sur chaque story
 
-user_1.solutions.create(photo_url: "", story_id: jungle_story_1)
-user_1.solutions.create(photo_url: "", story_id: jungle_story_2)
-user_1.solutions.create(photo_url: "", story_id: ocean_story_1)
-user_1.solutions.create(photo_url: "", story_id: ocean_story_2)
-user_1.solutions.create(photo_url: "", story_id: gourmandise_story_1)
-user_1.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+user_1.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817870/Universes/jungle/Jungle01/Solution/2017-07-27_15-16-38_Isaac.jpg", story_id: jungle_story_1)
+user_1.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817908/Universes/jungle/jungle02/solution/2017-08-10_13-39-09_Mae%CC%88l.jpg", story_id: jungle_story_2)
+user_1.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817973/Universes/ocean/ocean01/solution/2017-07-27_13_43_27_Chamama.jpg", story_id: ocean_story_1)
+user_1.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817994/Universes/ocean/ocean02/solution/2017-08-03_13_44_16_Le%CC%81o.jpg", story_id: ocean_story_2)
+user_1.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818050/Universes/gourmandise/gourmandise01/solution/2017-08-03_14_59_37_Alexandre.jpg", story_id: gourmandise_story_1)
+user_1.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818085/Universes/gourmandise/gourmandise02/solution/2017-08-03_15_13_19_Nell.jpg", story_id: gourmandise_story_2)
 
 puts "User_1 Solutions DONE"
 
-user_2.solutions.create(photo_url: "", story_id: jungle_story_1)
-user_2.solutions.create(photo_url: "", story_id: jungle_story_2)
-user_2.solutions.create(photo_url: "", story_id: ocean_story_1)
-user_2.solutions.create(photo_url: "", story_id: ocean_story_2)
-user_2.solutions.create(photo_url: "", story_id: gourmandise_story_1)
-user_2.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+user_2.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817870/Universes/jungle/Jungle01/Solution/2017-07-27_15-21-34_Hector.jpg", story_id: jungle_story_1)
+user_2.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817908/Universes/jungle/jungle02/solution/2017-08-10_14-48-17_Aliette.jpg", story_id: jungle_story_2)
+user_2.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817973/Universes/ocean/ocean01/solution/2017-07-27_14_38_56_Eliott.jpg", story_id: ocean_story_1)
+user_2.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817994/Universes/ocean/ocean02/solution/2017-08-03_13_45_40_Gustave.jpg", story_id: ocean_story_2)
+user_2.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818050/Universes/gourmandise/gourmandise01/solution/2017-08-03_15_00_49_Julie.jpg", story_id: gourmandise_story_1)
+user_2.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818086/Universes/gourmandise/gourmandise02/solution/2017-08-10_15_32_23_Ulysse.jpg", story_id: gourmandise_story_2)
 
 puts "User_2 Solutions DONE"
 
-user_3.solutions.create(photo_url: "", story_id: jungle_story_1)
-user_3.solutions.create(photo_url: "", story_id: jungle_story_2)
-user_3.solutions.create(photo_url: "", story_id: ocean_story_1)
-user_3.solutions.create(photo_url: "", story_id: ocean_story_2)
-user_3.solutions.create(photo_url: "", story_id: gourmandise_story_1)
-user_3.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+user_3.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817870/Universes/jungle/Jungle01/Solution/2017-08-03_15-45-03_Stella.jpg", story_id: jungle_story_1)
+user_3.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817908/Universes/jungle/jungle02/solution/2017-08-10_15-12-51_axel_Raphae%CC%88l_et_Juliette.jpg", story_id: jungle_story_2)
+user_3.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817973/Universes/ocean/ocean01/solution/2017-08-03_13_44_16_Le%CC%81o.jpg", story_id: ocean_story_1)
+user_3.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817994/Universes/ocean/ocean02/solution/2017-08-03_15_38_47_Charli.jpg", story_id: ocean_story_2)
+user_3.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818050/Universes/gourmandise/gourmandise01/solution/2017-08-10_13_50_32_Mae%CC%88l.jpg", story_id: gourmandise_story_1)
+user_3.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818086/Universes/gourmandise/gourmandise02/solution/2017-08-17_15_11_05_Aure%CC%80le.jpg", story_id: gourmandise_story_2)
 
 puts "User_3 Solutions DONE"
 
-user_4.solutions.create(photo_url: "", story_id: jungle_story_1)
-user_4.solutions.create(photo_url: "", story_id: jungle_story_2)
-user_4.solutions.create(photo_url: "", story_id: ocean_story_1)
-user_4.solutions.create(photo_url: "", story_id: ocean_story_2)
-user_4.solutions.create(photo_url: "", story_id: gourmandise_story_1)
-user_4.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+user_4.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817870/Universes/jungle/Jungle01/Solution/2017-08-10_14-35-10_Aliette.jpg", story_id: jungle_story_1)
+user_4.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817908/Universes/jungle/jungle02/solution/2017-08-17_10-43-26_Basile.jpg", story_id: jungle_story_2)
+user_4.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817973/Universes/ocean/ocean01/solution/2017-08-17_15_04_05_Alex.jpg", story_id: ocean_story_1)
+user_4.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817995/Universes/ocean/ocean02/solution/2017-08-10_14_43_38_Ulysse.jpg", story_id: ocean_story_2)
+user_4.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818050/Universes/gourmandise/gourmandise01/solution/2017-08-10_15_25_52_Ulysse.jpg", story_id: gourmandise_story_1)
+user_4.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818085/Universes/gourmandise/gourmandise02/solution/2017-08-17_15_36_36_Anae%CC%81.jpg", story_id: gourmandise_story_2)
 
 puts "User_4 Solutions DONE"
 
-user_5.solutions.create(photo_url: "", story_id: jungle_story_1)
-user_5.solutions.create(photo_url: "", story_id: jungle_story_2)
-user_5.solutions.create(photo_url: "", story_id: ocean_story_1)
-user_5.solutions.create(photo_url: "", story_id: ocean_story_2)
-user_5.solutions.create(photo_url: "", story_id: gourmandise_story_1)
-user_5.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+user_5.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817871/Universes/jungle/Jungle01/Solution/2017-08-17_14-58-41_Anae%CC%81.jpg", story_id: jungle_story_1)
+user_5.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817908/Universes/jungle/jungle02/solution/2017-08-24_15-13-40_ELisa.jpg", story_id: jungle_story_2)
+user_5.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817973/Universes/ocean/ocean01/solution/2017-08-24_13_38_13_Keziah.jpg", story_id: ocean_story_1)
+user_5.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505817994/Universes/ocean/ocean02/solution/2017-08-17_13_48_23_Simon.jpg", story_id: ocean_story_2)
+user_5.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505818050/Universes/gourmandise/gourmandise01/solution/2017-08-24_14_20_53_Agathe.jpg", story_id: gourmandise_story_1)
+user_5.solutions.create(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505822852/Universes/gourmandise/gourmandise02/solution/child-drawing-house.jpg", story_id: gourmandise_story_2)
 
 puts "User_5 Solutions DONE"
 

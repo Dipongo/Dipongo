@@ -14,7 +14,7 @@
 
           <%= s.simple_fields_for :users, @user do |user| %>
           <%= user.input :name %>
-          <%= user.input :age %>
+          <%= user.input :age, as: :integer %>
           <% end %>
 
       <%= s.button :submit, class: "btn btn-primary" %>

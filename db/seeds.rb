@@ -18,7 +18,7 @@ jungle = Universe.create(name: "Jungle", photo_url: "http://res.cloudinary.com/d
 ocean = Universe.create(name: "Fond Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
 gourmandise = Universe.create(name: "Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
 
-puts "Universe DONE"
+puts "Universes DONE"
 
 jungle_story_1 = jungle.stories.create(name: "Forêt Tropical 1")
 jungle_story_2 = jungle.stories.create(name: "Forêt Tropical 2")
@@ -29,11 +29,62 @@ ocean_story_2 = ocean.stories.create(name: "Fonds marins 2")
 gourmandise_story_1 = gourmandise.stories.create(name: "Gourmandise 1")
 gourmandise_story_2 = gourmandise.stories.create(name: "Gourmandise 2")
 
-puts "Story DONE"
+puts "Stories DONE"
 
-# creer 5 users (dans des variables)
+user_1 = User.create(name: Faker::Name.first_name, age: rand(5..8))
+user_2 = User.create(name: Faker::Name.first_name, age: rand(5..8))
+user_3 = User.create(name: Faker::Name.first_name, age: rand(5..8))
+user_4 = User.create(name: Faker::Name.first_name, age: rand(5..8))
+user_5 = User.create(name: Faker::Name.first_name, age: rand(5..8))
+
+puts "Users DONE"
 
 # pour chaque user, creer une solution sur chaque story
+
+user_1.solutions.create(photo_url: "", story_id: jungle_story_1)
+user_1.solutions.create(photo_url: "", story_id: jungle_story_2)
+user_1.solutions.create(photo_url: "", story_id: ocean_story_1)
+user_1.solutions.create(photo_url: "", story_id: ocean_story_2)
+user_1.solutions.create(photo_url: "", story_id: gourmandise_story_1)
+user_1.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+
+puts "User_1 Solutions DONE"
+
+user_2.solutions.create(photo_url: "", story_id: jungle_story_1)
+user_2.solutions.create(photo_url: "", story_id: jungle_story_2)
+user_2.solutions.create(photo_url: "", story_id: ocean_story_1)
+user_2.solutions.create(photo_url: "", story_id: ocean_story_2)
+user_2.solutions.create(photo_url: "", story_id: gourmandise_story_1)
+user_2.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+
+puts "User_2 Solutions DONE"
+
+user_3.solutions.create(photo_url: "", story_id: jungle_story_1)
+user_3.solutions.create(photo_url: "", story_id: jungle_story_2)
+user_3.solutions.create(photo_url: "", story_id: ocean_story_1)
+user_3.solutions.create(photo_url: "", story_id: ocean_story_2)
+user_3.solutions.create(photo_url: "", story_id: gourmandise_story_1)
+user_3.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+
+puts "User_3 Solutions DONE"
+
+user_4.solutions.create(photo_url: "", story_id: jungle_story_1)
+user_4.solutions.create(photo_url: "", story_id: jungle_story_2)
+user_4.solutions.create(photo_url: "", story_id: ocean_story_1)
+user_4.solutions.create(photo_url: "", story_id: ocean_story_2)
+user_4.solutions.create(photo_url: "", story_id: gourmandise_story_1)
+user_4.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+
+puts "User_4 Solutions DONE"
+
+user_5.solutions.create(photo_url: "", story_id: jungle_story_1)
+user_5.solutions.create(photo_url: "", story_id: jungle_story_2)
+user_5.solutions.create(photo_url: "", story_id: ocean_story_1)
+user_5.solutions.create(photo_url: "", story_id: ocean_story_2)
+user_5.solutions.create(photo_url: "", story_id: gourmandise_story_1)
+user_5.solutions.create(photo_url: "", story_id: gourmandise_story_2)
+
+puts "User_5 Solutions DONE"
 
 jungle_story_1.pages.create(content: "Edgar arrive dans la forêt tropicale. Etouffé par la chaleur, il est déjà bien fatigué. Ce
 n’est pas si facile la vie d’explorateur. Edgar a bien mérité un peu de repos. Installé

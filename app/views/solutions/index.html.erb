@@ -23,12 +23,24 @@
       </li>
     <% end %>
   </ul>
-  <!-- The Modal -->
+  <!-- The Modal Image -->
   <div id="modalImage" class="modal">
     <span class="close">×</span>
     <img class="modal-content" id="img01">
     <div class="desc"><%= @user.name.capitalize %> <%= @user.age %> ans</div>
   </div>
-
+  <!-- Modal Felic-->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-size: 290px 290px;">>
+        <div class="modal-header">
+          <h4 class="modal-title">Félicitation! <%= @user.name.capitalize %></h4>
+        </div>
+        <div class="modal-body">
+          <p>Tu as trouver la bonne solution!!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>

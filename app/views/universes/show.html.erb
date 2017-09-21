@@ -1,25 +1,19 @@
-<div class="wide-container">
+<div class="wide-container-story">
   <div class="title-stories-index">
     <h1>Liste des Histoires</h1>
   </div>
+  <div class="story-holder">
+          <% @stories.each_with_index do |story, i| %>
+          <div class="top">
+                <%= link_to story_path(story), id:   "page_view#{i}" do%>
+                <%= cl_image_tag story.pages.first.photo.path, :width => 150, :height => 150, :crop => :thumb, :gravity => :face, :radius => :max%>
+                <%= story.name %>
+                <% end %>
+            </div>
 
-  <div class="row">
-        <% @stories.each do |story| %>
-        <div class="col-xs-6 col-md-4 text-center">
-              <%= link_to story_path(story), id: "page_view" do%>
-              <%= cl_image_tag story.pages.first.photo.path, :width => 150, :height => 150, :crop => :thumb, :gravity => :face, :radius => :max%>
-              <br>
-              <p class="text-center"> <%= story.name %> </p>
-              <% end %>
-      </div>
-      <% end %>
+        <% end %>
   </div>
-
-  <div class="renard-home-avatar">
-    <%= image_tag("renard.png") %>
-  </div>
-
   <div class="btn-back">
-    <%= link_to '< Back', universes_path, class: "btn btn-success" %>
+    <%= link_to 'Retour aux univers', universes_path, class: "btn btn-universe" %>
   </div>
 </div>

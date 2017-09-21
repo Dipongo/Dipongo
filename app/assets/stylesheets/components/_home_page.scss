@@ -7,57 +7,23 @@
             animation: fadein 2s;
 }
 .renard-home-avatar{
-  height: 100px;
+  height: 250px;
   margin-top: 20px;
-  margin-bottom: 160px;
+  margin-bottom: 16px;
   text-align: center;
   img{
     height: 250px;
   }
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
-
 
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (max-device-width : 2048px)
 and (orientation : landscape) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 810px;
-background-size: cover;
-color: white;}
+
+
 .button-univers-container{
   text-align: center;
   border-radius: 4px;
@@ -70,81 +36,57 @@ color: white;}
 
 .button-univers{
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 3em;
+  margin-bottom: 0em;
   font-family: 'Sue Ellen Francisco', cursive;
 }
 
 .text-discover-home{
   font-family: 'Handlee', cursive;
-  font-size: 150%;
+  font-size: 100%;
   text-align: justify;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 20px;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 1em;
   text-shadow: 0px 0px 10px white;
-  height: 700px;
+  height: 70%;
+  color: white;
   -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 7s; /* Firefox < 16 */
         -ms-animation: fadein 7s; /* Internet Explorer */
          -o-animation: fadein 7s; /* Opera < 12.1 */
             animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
 }
+
 .slogan-text {
 
   text-align: center;
-  margin-top: -25px;
   color: #32abdf;
 
   width: 100%;
   letter-spacing: 2.5px;
   border: none;
 
-  h1{
+  p{
   font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 45px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 3em;
+  margin-right: 3em;
   font-size: 200%;
   }
 }
+
 .renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 160px;
+  margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
   img{
-    height: 250px;
+    height: 100%;
   }
 }
-.renard-avatar{
-  height: 150px;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  text-align: center;
-  img{
-    height: 150px;
-  }
+
 }
-.title-univers-index {
-  text-align: center;
-  margin-top: 20px;
-  color: #32abdf;
-  width: 100%;
-  border: none;
-  padding: 0;
-  h1{
-    padding-top: 20px;
-    margin-top: -20px;
-    font-family: 'Sue Ellen Francisco', cursive;
-    letter-spacing: 2.5px;
-    font-size: 260%;
-  }
-}
-}
+/* iPads (landscape) ----------- */
+
 
 
 
@@ -153,13 +95,10 @@ color: white;}
 /* iPads (portrait) ----------- */
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (max-device-width : 2048px)
 and (orientation : portrait) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 990px;
-background-size: cover;
-color: white;}
+
+
 .button-univers-container{
   text-align: center;
   border-radius: 4px;
@@ -172,402 +111,52 @@ color: white;}
 
 .button-univers{
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 3em;
+  margin-bottom: 2em;
   font-family: 'Sue Ellen Francisco', cursive;
 }
 
 .text-discover-home{
   font-family: 'Handlee', cursive;
-  font-size: 150%;
   text-align: justify;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 20px;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 1em;
   text-shadow: 0px 0px 10px white;
-  height: 900px;
+  height: 100%;
+  color: white;
   -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 7s; /* Firefox < 16 */
         -ms-animation: fadein 7s; /* Internet Explorer */
          -o-animation: fadein 7s; /* Opera < 12.1 */
             animation: fadein 7s;
-  h1{
+  p{
     margin-top: 10px;
   }
   }
+
   .slogan-text {
-
   text-align: center;
-  margin-top: -25px;
   color: #32abdf;
-
   width: 100%;
   letter-spacing: 2.5px;
   border: none;
-
-  h1{
+    p{
   font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 45px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 160%;
-  }
-}
-.renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  text-align: center;
-  img{
-    height: 250px;
-  }
-}
-.renard-avatar{
-  height: 150px;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  text-align: center;
-  img{
-    height: 150px;
-  }
-}
-.title-univers-index {
-  text-align: center;
-  margin-top: 20px;
-  color: #32abdf;
-  width: 100%;
-  border: none;
-  padding: 0;
-  h1{
-    padding-top: 20px;
-    margin-top: -20px;
-    font-family: 'Sue Ellen Francisco', cursive;
-    letter-spacing: 2.5px;
-    font-size: 360%;
-  }
-}
-}
-
-
-
-
-/* iPads Pro (portrait) ----------- */
-@media only screen
-and (min-device-width : 1024px)
-and (max-device-width : 1366px)
-and (orientation : portrait) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 1300px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
   font-size: 200%;
-  text-align: justify;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 1100px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
+    }
   }
-  }
-  .slogan-text {
 
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 45px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 300%;
-  }
-}
 .renard-home-avatar{
-  height: 100px;
+  height: 10%;
   margin-top: 20px;
-  margin-bottom: 160px;
+  margin-bottom: 16px;
   text-align: center;
   img{
-    height: 250px;
+    height: 50%;
   }
 }
 
-}
-
-
-
-
-/* iPads Pro (landscape) ----------- */
-@media only screen
-and (min-device-width : 1025px)
-and (max-device-width : 1366px)
-and (orientation : landscape) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 1024px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 200%;
-  text-align: justify;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 900px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-  }
-  .slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 45px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 360%;
-  }
-}
-.renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  text-align: center;
-  img{
-    height: 250px;
-  }
-}
-}
-
-
-
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-   .wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 700px;
-background-size: cover;
-color: white;}
-}
-
-
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 341px)
-and (max-width : 381px)
-and (orientation : landscape){
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 427px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 70%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 337px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-    font-size: 100%;
-  }
-  }
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 120%;
-  }
-}
-.renard-home-avatar{
-  height: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  img{
-    height: 70px;
-  }
-}
-}
-
-
-
-
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 380px)
-and (orientation : portrait) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 427px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 70%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 337px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-    font-size: 100%;
-  }
-  }
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 120%;
-  }
-}
-.renard-home-avatar{
-  height: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  img{
-    height: 70px;
-  }
-}
 }
 
 
@@ -575,17 +164,13 @@ color: white;}
 /* iPhone 5 (landscape)----------- */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 568px)
+and (max-device-width : 736px)
 and (orientation : landscape){
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 507px;
-background-size: cover;
-color: white;}
+
 .button-univers-container{
   text-align: center;
   border-radius: 4px;
-  font-size: 100%;
+  font-size: 80%;
   background-color: #32abdf;
   padding-right: 10px;
   padding-left: 10px;
@@ -594,27 +179,28 @@ color: white;}
 
 .button-univers{
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-top: 1em;
+  margin-bottom: 0em;
   font-family: 'Sue Ellen Francisco', cursive;
 }
 
 .text-discover-home{
   font-family: 'Handlee', cursive;
   text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 1em;
   text-shadow: 0px 0px 10px white;
-  height: 507px;
+  height: 100%;
+  color: white;
   -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 7s; /* Firefox < 16 */
         -ms-animation: fadein 7s; /* Internet Explorer */
          -o-animation: fadein 7s; /* Opera < 12.1 */
             animation: fadein 7s;
-  h1{
+  p{
     margin-top: 10px;
-    font-size: 100%;
+    font-size: 70%;
   }
   }
 .slogan-text {
@@ -626,7 +212,7 @@ color: white;}
   letter-spacing: 2.5px;
   border: none;
 
-  h1{
+  p{
   font-family: 'Sue Ellen Francisco', cursive;
   padding-top: 25px;
   margin-right: 20px;
@@ -649,14 +235,10 @@ color: white;}
 /* iPhone 5 (portrait)----------- */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 568px)
+and (max-device-width : 736px)
 and (orientation : portrait)
 {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 657px;
-background-size: cover;
-color: white;}
+
 .button-univers-container{
   text-align: center;
   border-radius: 4px;
@@ -676,19 +258,20 @@ color: white;}
 
 .text-discover-home{
   font-family: 'Handlee', cursive;
-  font-size: 100%;
+  font-size: 82%;
   text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 1em;
   text-shadow: 0px 0px 10px white;
-  height: 517px;
+  height: 100%;
+  color: white;
   -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 7s; /* Firefox < 16 */
         -ms-animation: fadein 7s; /* Internet Explorer */
          -o-animation: fadein 7s; /* Opera < 12.1 */
             animation: fadein 7s;
-  h1{
+  p{
     margin-top: 10px;
   }
   }
@@ -701,7 +284,7 @@ color: white;}
   letter-spacing: 2.5px;
   border: none;
 
-  h1{
+  p{
   font-family: 'Sue Ellen Francisco', cursive;
   padding-top: 25px;
   margin-right: 20px;
@@ -720,425 +303,12 @@ color: white;}
 }
 }
 
-/* iPhone 6 (portrait)----------- */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait)
-{
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 667px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 100%;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 567px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-  }
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 140%;
-  }
-}
-.renard-home-avatar{
-  height: 80px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  img{
-    height: 80px;
-  }
-}
-}
-
-
-/* iPhone 6 (landscape)----------- */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : landscape) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 637px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 120%;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 534px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-  }
-}
-
-/* iPhone 6 plus (portrait)----------- */
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : portrait)
-{
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 706px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 100%;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 606px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-  }
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 140%;
-  }
-}
-.renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  img{
-    height: 100px;
-  }
-}
-}
-
-/* iPhone 6 plus (landscape)----------- */
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : landscape)
-{
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 526px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 100%;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 446px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-  }
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 140%;
-  }
-}
-.renard-home-avatar{
-  height: 80px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  img{
-    height: 80px;
-  }
-}
-}
-
-
-
-
-
-/* Desktops and laptops ----------- */
-@media screen
-  and (min-device-width: 1368px) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 1000px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 150%;
-  text-align: justify;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 910px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-}
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 45px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 200%;
-  }
-}
-.renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  text-align: center;
-  img{
-    height: 250px;
-  }
-}
-}
 
 
 
 
 
 
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-.wide-container-home{
-background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-height: 1000px;
-background-size: cover;
-color: white;}
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
 
-.button-univers{
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
 
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 150%;
-  text-align: justify;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 20px;
-  text-shadow: 0px 0px 10px white;
-  height: 910px;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  h1{
-    margin-top: 10px;
-  }
-}
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  h1{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 45px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 200%;
-  }
-}
-.renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  text-align: center;
-  img{
-    height: 250px;
-  }
-}
-}

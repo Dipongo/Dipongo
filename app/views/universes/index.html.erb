@@ -1,3 +1,4 @@
+
 <div class="wide-container">
   <div class="title-univers-index">
     <h1>Liste des Univers</h1>
@@ -8,6 +9,7 @@
 
 
     <!-- Wrapper for slides -->
+
     <div class="carousel-inner" role="listbox">
       <% @universes.each_with_index do |universe, i| %>
       <div class="item <%= 'active' if i == 0 %> ">
@@ -30,7 +32,11 @@
     </a>
   </div>
 </section>
+
 <div class="renard-avatar">
     <%= image_tag("renard.png") %>
   </div>
 </div>
+
+
+

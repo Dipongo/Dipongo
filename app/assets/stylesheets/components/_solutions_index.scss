@@ -1,3 +1,13 @@
+.wide-container-solution{
+  background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
+  height: 800px;
+  background-size: cover;
+  position:relative;
+}
+
+.desc{
+  color: white;
+}
 .solution-font{
   font-family: Sue Ellen Francisco;
 }
@@ -17,28 +27,31 @@
   padding: 10px;
 }
 .solution-content{
-  position: sticky;
   color: $white;
+  margin:auto;
 }
 
 .flex-container {
+  position:absolute;
+  top: 400px;
   padding: 10px;
   margin: 0;
   list-style: none;
-  flex-wrap: wrap;
+
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-item {
-
   width: 75px;
   height: 75px;
-  margin: 10px;
+  margin: 5px;
 }
 
-.scroll-box {
-    height: 250px; /* maximum height of the box, feel free to change this! */
-    overflow-y: scroll;
-}
+// .scroll-box {
+//     height: 250px; /* maximum height of the box, feel free to change this! */
+//     overflow-y: scroll;
+// }
 

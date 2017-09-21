@@ -1,4 +1,4 @@
-<div class="wide-container">
+<div class="wide-container-solution">
   <div class="solution-content">
     <div class="solution-title">
       <h2 class="text-center solution-font">Votre Photo</h2>
@@ -7,19 +7,40 @@
       <% if @solution&.photo? %>
         <%= cl_image_tag @solution.photo.path, width: 200, height: 200, :border => { :width => 4, :color => '#196375' } ,crop: :fill %>
       <% end %>
+
     </div>
     <div class="solution-btn text-center">
       <%= link_to "Next Story", universe_path(@story.universe), class: "btn btn-info"%>
     </div>
     <h3 class="text-center solution-font">Autres Photos</h3>
   </div>
-  <ul class="flex-container scroll-box ">
+  <ul class="flex-container  ">
     <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>
-      <li class="flex-item ">
+      <li class="flex-item">
         <% if solution.photo %>
-              <%= cl_image_tag solution.photo.path, width: 75, height: 75, crop: :fill%>
+              <%= cl_image_tag solution.photo.path, width: 75, height: 75 %>
         <% end %>
       </li>
     <% end %>
   </ul>
+  <!-- The Modal Image -->
+  <div id="modalImage" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div class="desc"><%= @user.name.capitalize %> <%= @user.age %> ans</div>
+  </div>
+  <!-- Modal Felic-->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-size: 290px 290px;">>
+        <div class="modal-header">
+          <h4 class="modal-title">Félicitation! <%= @user.name.capitalize %></h4>
+        </div>
+        <div class="modal-body">
+          <p>Tu as trouvé la bonne solution!!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

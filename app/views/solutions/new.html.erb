@@ -2,6 +2,7 @@
   <div class="text-center">
     <div class="slogan-text">
       <h1>Comment peux-tu aider Dipongo</h1>
+      <p>Prend une photo en appuyant sur l'icon ci-dessous</p>
     </div>
 
     <%= simple_form_for [@story, @solution] do |s| %>
@@ -10,9 +11,17 @@
         <span id="upload" class="fa fa-camera span-upload"></span>
           <%= s.input :photo, as: :attachinary, label: false, input_html: {capture: true, accept: "image/*", id: "upload", class: "hidden"} %>
       </label>
-
       <br>
-
+        <div class="content-user-form">
+          <%= s.simple_fields_for :users, @user do |user| %>
+            <div class="user-form text-left">
+              <%= user.input :name, placeholder: 'Emma' %>
+            </div>
+            <div class="user-form text-left">
+              <%= user.input :age, as: :integer, placeholder: '5' %>
+            </div>
+          <% end %>
+        </div>
       <%= s.button :submit, class: "btn btn-primary" %>
     <% end %>
   </div>
@@ -20,4 +29,6 @@
   <div class="renard-home-avatar">
     <%= image_tag("renard.png") %>
   </div>
+
+
 </div>

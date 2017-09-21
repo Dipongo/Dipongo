@@ -22,6 +22,7 @@ gem 'attachinary', github: 'assembler/attachinary'
 gem 'jquery-fileupload-rails'
 gem 'coffee-rails'
 gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
+gem 'photoswipe-rails'
 
 group :development, :test do
   gem 'pry-byebug'

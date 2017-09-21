@@ -6,6 +6,7 @@ class SolutionsController < ApplicationController
 
   def index
     @solution = current_user.solutions.where(story: @story).order(created_at: :desc).first
+    @user = current_user
   end
 
   def new
@@ -13,10 +14,15 @@ class SolutionsController < ApplicationController
   end
 
   def create
+    # update user infos from solution_params[:users]
+    solution = params[:solution]
+    users = solution[:users]
+    @user = current_user.update(name: users[:name], age: users[:age])
     @solution = current_user.solutions.new(solution_params)
     @solution.story = @story
     @solution.save
     redirect_to story_solutions_path(@story)
+
   end
 
 private
@@ -26,7 +32,7 @@ private
   end
 
   def solution_params
-    params.require(:solution).permit(:photo)
+    params.require(:solution).permit(:photo, :users)
   end
 
 end

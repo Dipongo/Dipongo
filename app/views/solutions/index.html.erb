@@ -14,26 +14,32 @@
     </div>
     <h3 class="text-center solution-font">Autres Photos</h3>
   </div>
-  <ul class="flex-container  ">
-    <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>
-      <li class="flex-item">
-        <% if solution.photo %>
-              <%= cl_image_tag solution.photo.path, width: 75, height: 75 %>
-        <% end %>
-      </li>
-    <% end %>
-  </ul>
-  <!-- The Modal Image -->
-  <div id="modalImage" class="modal">
-    <span class="close">×</span>
-    <img class="modal-content" id="img01">
-    <div class="desc"><%= @user.name.capitalize %> <%= @user.age %> ans</div>
-  </div>
+    <div class="row">
+      <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>
+        <div class="col-xs-4 text-center solution-pics">
+          <% if solution.photo %>
+            <%= cl_image_tag solution.photo.path, width: 75, height: 75, data: { toggle: "modal", target: "#modalImage-#{solution.id}" } %>
+          <% end %>
+          <!-- The Modal Image -->
+          <div id="modalImage-<%= solution.id %>" class="modal fade">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <%= cl_image_tag solution.photo&.path, width: 300  %>
+            <div class="desc"><%= solution.user.name.capitalize %> <%= solution.user.age %> ans</div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
   <!-- Modal Felic-->
   <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content" style="background-size: 290px 290px;">>
         <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h4 class="modal-title">Félicitation! <%= @user.name.capitalize %></h4>
         </div>
         <div class="modal-body">

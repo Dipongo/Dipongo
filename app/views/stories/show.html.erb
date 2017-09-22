@@ -1,29 +1,43 @@
 <div class="wide-container">
   <div class="story-div">
     <div class="text-center">
-      <%= cl_image_tag @page.photo.path, width: 300, height: 300, crop: :fill %>
+      <%= cl_image_tag @page.photo.path, width: 375, height: 375, crop: :fill %>
     </div>
     <div class="text-card text-center scroll">
       <%= @page.content %>
     </div>
   </div>
   <div class="pagination">
-    <% if @prev_page %>
+    <% if @next_page && @prev_page %>
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
-    <% else %>
-      <p class="space-p"> </p>
-    <% end %>
-
-    <% if @next_page %>
-    <p class="space-p"></p>
-    <% else %>
-    <%= link_to "", new_story_solution_path(@story), class: "camera btn-camera" %>
-    <% end %>
-
-    <% if @next_page %>
+      <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505395538/home/renard.png", width: 50, height: 50, data: { toggle: "modal", target: "#tip-Modal" } %>
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
+
+    <% elsif @next_page %>
+      <p class="space-p"> </p>
+      <p class="space-p"> </p>
+      <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
+
     <% else %>
+      <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
+      <%= link_to "", new_story_solution_path(@story), class: "camera btn-camera" %>
       <p class="space-p"> </p>
     <% end %>
+  </div>
+
+<!-- modal -->
+
+  <div class="modal" id="tip-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
   </div>
 </div>

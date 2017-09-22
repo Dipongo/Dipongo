@@ -44,7 +44,7 @@ and (orientation : landscape){
       margin: 20px auto;
 
   }
-  
+
 
   .univers-carousel-name {
     margin: 0px auto;
@@ -57,7 +57,11 @@ and (orientation : landscape){
     }
   }
 }
+.carousel-control{
+  opacity: 1;
+  width: 0;
 
+}
 
 
 

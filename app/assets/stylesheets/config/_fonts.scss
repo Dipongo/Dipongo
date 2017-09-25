@@ -5,6 +5,29 @@
 $body-font: "Open Sans", "Helvetica", "sans-serif";
 $headers-font: "Raleway", "Helvetica", "sans-serif";
 
+@font-face {
+  font-family: "Estirada_Molestar";
+  src: font-url('estirada.ttf');
+  src: font-url('estirada.ttf') format('truetype');
+
+}
+  $estirada: "Estirada_Molestar";
+
+@font-face {
+  font-family: "Geosans_Light";
+  src: font-url('GeosansLight.ttf');
+  src: font-url('GeosansLight.ttf') format('truetype');
+}
+  $geosans: "Geosans_Light";
+
+@font-face {
+  font-family: "Gunny_Rewitten";
+  src: font-url('gnyrwn971.ttf');
+  src: font-url('gnyrwn971.ttf') format('truetype');
+}
+  $gunny: "Gunny_Rewitten";
+
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

@@ -39,26 +39,37 @@ and (orientation : landscape){
     margin: 0px auto;
   }
 
+
+
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-      height: 290px;
+      height: 450px;
       margin: 20px auto;
 
   }
-  
 
   .univers-carousel-name {
     margin: 0px auto;
     text-align: center;
     p{
-      font-family: 'Sue Ellen Francisco', cursive;
-      font-size: 240%;
-      color: white;
+      font-family: $estirada;
+      font-size: 50px;
+      color: $orange;
       margin-top: -10px;
     }
   }
 }
+.carousel-control{
+  opacity: 1;
+  width: 0;
+}
 
 
+.title-univers-index{
+  font-family: $gunny;
+  font-size: 52px;
+  margin-top: 40px;
+  color: white;
+}
 
 
 
@@ -69,15 +80,17 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 section.awSlider .carousel{
     z-index:2;
-    height: 400px;
-    width: 500px;
+    height: 585px;
+    width: 562px;
     margin: 0px auto;
     border-radius: 8px;
   }
 
   section.awSlider{
-    margin:30px auto;
-    padding:30px;
+    height: 550px;
+    width: 600px;
+    margin:0 auto;
+    padding:10px;
     position:relative;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -104,7 +117,7 @@ section.awSlider .carousel{
   }
 
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-      height: 300px;
+      height: 550px;
       margin: 40px auto;
   }
 
@@ -112,13 +125,21 @@ section.awSlider .carousel{
     margin: 0px auto;
     text-align: center;
     p{
-      font-family: 'Sue Ellen Francisco', cursive;
-      font-size: 240%;
-      color: white;
+      font-family: $estirada;
+      font-size: 50px;
+      color: $dipongo-orange;
       margin-top: -40px;
     }
   }
 }
+
+.title-univers-index h1{
+  font-family: $gunny;
+  font-size: 80px;
+  margin-top: 40px;
+  color: white;
+}
+
 
 
 
@@ -174,7 +195,7 @@ section.awSlider .carousel{
     text-align: center;
     p{
       font-family: 'Sue Ellen Francisco', cursive;
-      font-size: 340%;
+      font-size: 70px;
       color: white;
       margin-top: -20px;
     }

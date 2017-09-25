@@ -1,8 +1,5 @@
-<div class="wide-container-story">
-  <div class="title-stories-index">
-    <h1>Liste des Histoires</h1>
-  </div>
-  <div class="story-holder">
+<div class="wide-container-story-jungle">
+  <!-- <div class="story-holder">
           <% @stories.each_with_index do |story, i| %>
           <div class="top">
                 <%= link_to story_path(story), id:   "page_view#{i}" do%>
@@ -12,6 +9,15 @@
             </div>
 
         <% end %>
+  </div> -->
+  <div class="first-story">
+      <%= cl_image_tag("Universes/jungle/histoire1-jungle.png", :width=>300, :crop=>"scale") %>
+  </div>
+  <div class="second-story">
+    <%= cl_image_tag("Universes/jungle/histoire2-jungle.png", :width=>300, :crop=>"scale") %>
+  </div>
+  <div class="third-story">
+    <%= cl_image_tag("Universes/jungle/histoire3-jungle.png", :width=>300, :crop=>"scale") %>
   </div>
   <div class="btn-back">
     <%= link_to 'Retour aux univers', universes_path, class: "btn btn-universe" %>

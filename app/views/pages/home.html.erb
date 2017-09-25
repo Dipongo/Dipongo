@@ -1,25 +1,17 @@
-
   <div class="wide-container">
-    <div class="slogan-text">
-      <p>Stimuler la créativité et l'imagination de vos enfants</p>
-    </div>
-    <div class="text-discover-home">
      <div class="renard-home-avatar">
-      <%= image_tag("renard.png") %>
-    </div>
-
-      <p>« Bonjour les amis. Je me présente, je suis Edgar, un explorateur d’univers.</p>
-      <p>
-      A bord de mon vaisseau que j’ai fabriqué moi-même, je vagabonde dans les cieux à
-      la découverte de nouveaux univers.</p>
-      <p>
-      Je ne pars jamais vraiment seul. J’ai toujours avec moi deux compagnons : mon
-      ombrelle et mes lunettes d’aviateur. Ils sont très fidèles et peu bavards !</p>
-      <p>
-      Veux-tu te joindre à nous et découvrir le monde ? »</p>
+      <%= image_tag "http://res.cloudinary.com/dipongo/image/upload/v1506344071/Composants/renard-ballons-m.png"%>
+      </div>
+      <div class="speaker"></div>
+        <audio id="player">
+        <source src="http://res.cloudinary.com/dipongo/video/upload/q_100/v1506349712/Composants/Dipongo.m4a" type="audio/mp3"/>
+        </audio>
+      <div class="images-home">
+      <div class="pongo-home">
+        <%= image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505997861/Composants/pongo.png", :id => "pongo-home"%>
+      </div>
       <div class="button-univers">
-      <%= link_to "Accéder aux univers", universes_path, class: "btn-primary button-univers-container" %>
-
+        <%= link_to image_tag('http://res.cloudinary.com/dipongo/image/upload/v1506335420/Composants/cparti-bouton-orange.png') , universes_path, :id => " button-univers-container" %>
       </div>
     </div>
   </div>

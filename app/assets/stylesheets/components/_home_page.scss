@@ -28,7 +28,6 @@ and (orientation : landscape) {
   text-align: center;
   border-radius: 4px;
   font-size: 140%;
-  background-color: #32abdf;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -83,7 +82,9 @@ and (orientation : landscape) {
     height: 100%;
   }
 }
-
+.pongo-home img{
+  height: 10%;
+}
 }
 /* iPads (landscape) ----------- */
 
@@ -99,13 +100,14 @@ and (max-device-width : 2048px)
 and (orientation : portrait) {
 
 
-.button-univers-container{
+#button-univers-container{
   text-align: center;
   border-radius: 4px;
-  font-size: 140%;
   background-color: #32abdf;
   padding-right: 10px;
   padding-left: 10px;
+  z-index: -10;
+  position: relative;
 }
 
 
@@ -113,26 +115,18 @@ and (orientation : portrait) {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 2em;
+  height: 60%;
+  width: 100%;
+  display: block;
   font-family: 'Sue Ellen Francisco', cursive;
+  z-index: -1;
 }
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  text-align: justify;
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-top: 1em;
-  text-shadow: 0px 0px 10px white;
-  height: 100%;
-  color: white;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  p{
-    margin-top: 10px;
+  .images-home{
+    margin-top: 25rem;
   }
+
+  #home-sound{
+    background-color: transparent;
   }
 
   .slogan-text {
@@ -148,16 +142,41 @@ and (orientation : portrait) {
   }
 
 .renard-home-avatar{
-  height: 10%;
-  margin-top: 20px;
-  margin-bottom: 16px;
+  margin-left: 0rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
+  z-index: -1;
   img{
-    height: 50%;
+    z-index: -1;
+    height: 84rem;
   }
 }
 
+.pongo_home {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  height: 30%;
+ }
+
+#pongo-home {
+  position: relative;
+  height: 43rem;
+  margin-bottom: -36em;
+  padding-left: 4.5em;
+  z-index: 1;
 }
+
+
+}
+/* iPads (portrait) -FIN FIN FIN- */
+
+
+
+
 
 
 

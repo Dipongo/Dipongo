@@ -1,22 +1,3 @@
-.white-intro {
-  background-color: white;
-   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
-.renard-home-avatar{
-  height: 250px;
-  margin-top: 20px;
-  margin-bottom: 16px;
-  text-align: center;
-  img{
-    height: 250px;
-  }
-}
-
-
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
@@ -24,69 +5,85 @@ and (max-device-width : 2048px)
 and (orientation : landscape) {
 
 
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 140%;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
 .button-univers{
   text-align: center;
-  margin-top: 3em;
-  margin-bottom: 0em;
-  font-family: 'Sue Ellen Francisco', cursive;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
 }
 
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 100%;
-  text-align: justify;
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-top: 1em;
-  text-shadow: 0px 0px 10px white;
-  height: 70%;
-  color: white;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-}
 
-.slogan-text {
-
+ .renard-home-avatar{
+  margin-left: 0rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
-  color: #32abdf;
-
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  p{
-  font-family: 'Sue Ellen Francisco', cursive;
-  margin-left: 3em;
-  margin-right: 3em;
-  font-size: 200%;
-  }
-}
-
-.renard-home-avatar{
-  margin-top: 2em;
-  margin-bottom: 2em;
-  text-align: center;
+  z-index: -1;
+  height: 25rem;
   img{
-    height: 100%;
+    z-index: -1;
+    height: 62rem;
   }
 }
-.pongo-home img{
-  height: 10%;
+
+.images-home{
+    margin-top: 5rem;
+  }
+
+.pongo_home {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  height: 100%;
+ }
+
+#pongo-home {
+  position: relative;
+  height: 43rem;
+  margin-bottom: -60rem;
+  padding-left: 21rem;
+  z-index: 1;
 }
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+    background-size: cover;
 }
-/* iPads (landscape) ----------- */
+
+#home-sound{
+    background-color: transparent;
+}
+
+.wide-container{
+  height: 100%
+}
+
+.speaker {
+  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  height: 12rem;
+  width: 12rem;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: -23rem;
+  left: 10rem;
+  display: block;
+}
+
+.speakerplay {
+  background-position: 0 0;
+}
+
+}
+
+/* iPads (landscape) FIN FIN FIN */
 
 
 
@@ -100,56 +97,33 @@ and (max-device-width : 2048px)
 and (orientation : portrait) {
 
 
-#button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-  z-index: -10;
-  position: relative;
-}
-
-
 .button-univers{
   text-align: center;
-  margin-top: 3em;
+  margin-top: 5em;
   margin-bottom: 2em;
   height: 60%;
   width: 100%;
   display: block;
-  font-family: 'Sue Ellen Francisco', cursive;
   z-index: -1;
 }
   .images-home{
-    margin-top: 25rem;
+    margin-top: 9rem;
   }
 
   #home-sound{
     background-color: transparent;
   }
 
-  .slogan-text {
-  text-align: center;
-  color: #32abdf;
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-    p{
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 200%;
-    }
-  }
-
-.renard-home-avatar{
+ .renard-home-avatar{
   margin-left: 0rem;
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
   z-index: -1;
+  height: 35rem;
   img{
     z-index: -1;
-    height: 84rem;
+    height: 80rem;
   }
 }
 
@@ -159,7 +133,7 @@ and (orientation : portrait) {
   margin: 0 auto;
   display: block;
   z-index: 1;
-  height: 30%;
+  height: 90%;
  }
 
 #pongo-home {
@@ -169,6 +143,37 @@ and (orientation : portrait) {
   padding-left: 4.5em;
   z-index: 1;
 }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+    background-size: cover;
+}
+
+.wide-container{
+  height: 50%
+}
+
+.speaker {
+  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  height: 12rem;
+  width: 12rem;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: -35rem;
+  left: 20px;
+  display: block;
+}
+
+.speakerplay {
+  background-position: 0 0;
+}
+
 
 
 }
@@ -180,147 +185,147 @@ and (orientation : portrait) {
 
 
 
-/* iPhone 5 (landscape)----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 736px)
-and (orientation : landscape){
+// /* iPhone 5 (landscape)----------- */
+// @media only screen
+// and (min-device-width : 320px)
+// and (max-device-width : 736px)
+// and (orientation : landscape){
 
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 80%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-
-.button-univers{
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0em;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
-
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  text-align: justify;
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-top: 1em;
-  text-shadow: 0px 0px 10px white;
-  height: 100%;
-  color: white;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  p{
-    margin-top: 10px;
-    font-size: 70%;
-  }
-  }
-.slogan-text {
-
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
-
-  p{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 120%;
-  }
-}
-.renard-home-avatar{
-  height: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  img{
-    height: 70px;
-  }
-}
-}
+// .button-univers-container{
+//   text-align: center;
+//   border-radius: 4px;
+//   font-size: 80%;
+//   background-color: #32abdf;
+//   padding-right: 10px;
+//   padding-left: 10px;
+// }
 
 
-/* iPhone 5 (portrait)----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 736px)
-and (orientation : portrait)
-{
+// .button-univers{
+//   text-align: center;
+//   margin-top: 1em;
+//   margin-bottom: 0em;
+//   font-family: 'Sue Ellen Francisco', cursive;
+// }
 
-.button-univers-container{
-  text-align: center;
-  border-radius: 4px;
-  font-size: 110%;
-  background-color: #32abdf;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+// .text-discover-home{
+//   font-family: 'Handlee', cursive;
+//   text-align: justify;
+//   margin-left: 3em;
+//   margin-right: 3em;
+//   margin-top: 1em;
+//   text-shadow: 0px 0px 10px white;
+//   height: 100%;
+//   color: white;
+//   -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+//        -moz-animation: fadein 7s; /* Firefox < 16 */
+//         -ms-animation: fadein 7s; /* Internet Explorer */
+//          -o-animation: fadein 7s; /* Opera < 12.1 */
+//             animation: fadein 7s;
+//   p{
+//     margin-top: 10px;
+//     font-size: 70%;
+//   }
+//   }
+// .slogan-text {
+
+//   text-align: center;
+//   margin-top: -25px;
+//   color: #32abdf;
+//   width: 100%;
+//   letter-spacing: 2.5px;
+//   border: none;
+
+//   p{
+//   font-family: 'Sue Ellen Francisco', cursive;
+//   padding-top: 25px;
+//   margin-right: 20px;
+//   margin-left: 20px;
+//   font-size: 120%;
+//   }
+// }
+// .renard-home-avatar{
+//   height: 70px;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   text-align: center;
+//   img{
+//     height: 70px;
+//   }
+// }
+// }
 
 
-.button-univers{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'Sue Ellen Francisco', cursive;
-}
+// /* iPhone 5 (portrait)----------- */
+// @media only screen
+// and (min-device-width : 320px)
+// and (max-device-width : 736px)
+// and (orientation : portrait)
+// {
 
-.text-discover-home{
-  font-family: 'Handlee', cursive;
-  font-size: 82%;
-  text-align: justify;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  margin-top: 1em;
-  text-shadow: 0px 0px 10px white;
-  height: 100%;
-  color: white;
-  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
-            animation: fadein 7s;
-  p{
-    margin-top: 10px;
-  }
-  }
-.slogan-text {
+// .button-univers-container{
+//   text-align: center;
+//   border-radius: 4px;
+//   font-size: 110%;
+//   background-color: #32abdf;
+//   padding-right: 10px;
+//   padding-left: 10px;
+// }
 
-  text-align: center;
-  margin-top: -25px;
-  color: #32abdf;
-  width: 100%;
-  letter-spacing: 2.5px;
-  border: none;
 
-  p{
-  font-family: 'Sue Ellen Francisco', cursive;
-  padding-top: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 120%;
-  }
-}
-.renard-home-avatar{
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  img{
-    height: 100px;
-  }
-}
-}
+// .button-univers{
+//   text-align: center;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   font-family: 'Sue Ellen Francisco', cursive;
+// }
+
+// .text-discover-home{
+//   font-family: 'Handlee', cursive;
+//   font-size: 82%;
+//   text-align: justify;
+//   margin-left: 1.5em;
+//   margin-right: 1.5em;
+//   margin-top: 1em;
+//   text-shadow: 0px 0px 10px white;
+//   height: 100%;
+//   color: white;
+//   -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+//        -moz-animation: fadein 7s; /* Firefox < 16 */
+//         -ms-animation: fadein 7s; /* Internet Explorer */
+//          -o-animation: fadein 7s; /* Opera < 12.1 */
+//             animation: fadein 7s;
+//   p{
+//     margin-top: 10px;
+//   }
+//   }
+// .slogan-text {
+
+//   text-align: center;
+//   margin-top: -25px;
+//   color: #32abdf;
+//   width: 100%;
+//   letter-spacing: 2.5px;
+//   border: none;
+
+//   p{
+//   font-family: 'Sue Ellen Francisco', cursive;
+//   padding-top: 25px;
+//   margin-right: 20px;
+//   margin-left: 20px;
+//   font-size: 120%;
+//   }
+// }
+// .renard-home-avatar{
+//   height: 100px;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   text-align: center;
+//   img{
+//     height: 100px;
+//   }
+// }
+// }
 
 
 

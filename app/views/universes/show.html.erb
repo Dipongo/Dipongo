@@ -1,7 +1,7 @@
 <div class="wide-container-story-<%= @universe.name.downcase %>">
   <% 3.times do |i| %>
     <div class="story<%= i + 1 %>">
-      <%= link_to story_path(id: i) do %>
+      <%= link_to story_path(id: i + 1) do %>
         <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}.png", :width=>300, :crop=>"scale") %>
       <% end %>
     </div>

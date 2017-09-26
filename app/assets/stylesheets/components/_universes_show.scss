@@ -1,10 +1,7 @@
 
 
 /* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 2048px)
-and (orientation : landscape){
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
   .title-stories-index {
     padding-top: 0.2em;
@@ -46,7 +43,7 @@ and (orientation : landscape){
     }
 
   .wide-container-story-jungle{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_1024/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506328861/Universes/jungle/fond-road-map-jungle.png');
   height: 1024px;
   margin: 0;
   background: cover;
@@ -120,32 +117,29 @@ and (orientation : landscape){
 
 
 /* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 360px)
-and (max-device-width : 768px)
-and (orientation : portrait) {
+@media only screen and (device-width: 768px) {
   .wide-container-story-jungle{
   background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328861/Universes/jungle/fond-road-map-jungle.png');
   height: 1024px;
   width: 768px;
-  // background: cover;
+  background-size: cover;
   position: relative;
   }
-.first-story{
-  position: relative;
-  top: 24px;
-  left: 6px;
-}
-.second-story{
-  position: relative;
-  top: 45px;
-  left: 456px;
-}
-.third-story{
-  position: relative;
-  bottom: -55px;
-  left: 8px;
-}
+  .first-story{
+    position: relative;
+    top: 24px;
+    left: 6px;
+  }
+  .second-story{
+    position: relative;
+    top: 45px;
+    left: 456px;
+  }
+  .third-story{
+    position: relative;
+    bottom: -55px;
+    left: 8px;
+  }
 
 
   .btn-back {
@@ -164,16 +158,3 @@ and (orientation : portrait) {
 
 }
 /* iPads (portrait) FIN FIN */
-
-
-
-/* Desktops and laptops ----------- */
-@media screen
-  and (min-device-width: 1368px) {}
-
-
-
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {}

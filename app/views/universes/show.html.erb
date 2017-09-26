@@ -1,25 +1,19 @@
-<div class="wide-container-story-jungle">
-  <!-- <div class="story-holder">
-          <% @stories.each_with_index do |story, i| %>
-          <div class="top">
-                <%= link_to story_path(story), id:   "page_view#{i}" do%>
-                <%= cl_image_tag story.pages.first.photo.path, :width => 150, :height => 150, :crop => :thumb, :gravity => :face, :radius => :max%>
-                <%= story.name %>
-                <% end %>
-            </div>
 
+  <div class="wide-container-story-jungle">
+    <div class="first-story">
+        <%= link_to story_path(id:1) do%>
+          <%= cl_image_tag("Universes/jungle/histoire1-jungle.png", :width=>300, :crop=>"scale") %>
         <% end %>
-  </div> -->
-  <div class="first-story">
-      <%= cl_image_tag("Universes/jungle/histoire1-jungle.png", :width=>300, :crop=>"scale") %>
+    </div>
+    <div class="second-story">
+      <%= link_to story_path(id:2) do%>
+        <%= cl_image_tag("Universes/jungle/histoire2-jungle.png", :width=>300, :crop=>"scale") %>
+      <% end %>
+    </div>
+    <div class="third-story">
+      <%= cl_image_tag("Universes/jungle/histoire3-jungle.png", :width=>300, :crop=>"scale") %>
+    </div>
+    <div class="btn-back">
+      <%= link_to 'Retour aux univers', universes_path, class: "btn btn-universe" %>
+    </div>
   </div>
-  <div class="second-story">
-    <%= cl_image_tag("Universes/jungle/histoire2-jungle.png", :width=>300, :crop=>"scale") %>
-  </div>
-  <div class="third-story">
-    <%= cl_image_tag("Universes/jungle/histoire3-jungle.png", :width=>300, :crop=>"scale") %>
-  </div>
-  <div class="btn-back">
-    <%= link_to 'Retour aux univers', universes_path, class: "btn btn-universe" %>
-  </div>
-</div>

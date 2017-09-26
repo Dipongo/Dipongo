@@ -48,8 +48,13 @@
   margin: 0;
   background: cover;
   position: relative;
-
-
+  }
+  .wide-container-story-ocean{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
+  height: 1024px;
+  margin: 0;
+  background-size: cover;
+  position: relative;
   }
 
 
@@ -125,17 +130,24 @@
   background-size: cover;
   position: relative;
   }
-  .first-story{
+  .wide-container-story-ocean{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
+  height: 1024px;
+  width: 768px;
+  background-size: cover;
+  position: relative;
+  }
+  .story1{
     position: relative;
     top: 24px;
     left: 6px;
   }
-  .second-story{
+  .story2{
     position: relative;
     top: 45px;
     left: 456px;
   }
-  .third-story{
+  .story3{
     position: relative;
     bottom: -55px;
     left: 8px;

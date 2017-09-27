@@ -1,18 +1,11 @@
-<div class="wide-container-story">
-  <div class="title-stories-index">
-    <h1>Liste des Histoires</h1>
-  </div>
-  <div class="story-holder">
-          <% @stories.each_with_index do |story, i| %>
-          <div class="top">
-                <%= link_to story_path(story), id:   "page_view#{i}" do%>
-                <%= cl_image_tag story.pages.first.photo.path, :width => 150, :height => 150, :crop => :thumb, :gravity => :face, :radius => :max%>
-                <%= story.name %>
-                <% end %>
-            </div>
-
-        <% end %>
-  </div>
+<div class="wide-container-story-<%= @universe.name.downcase %>">
+  <% @stories.each_with_index do |story, i| %>
+    <div class="story<%= i + 1 %>">
+      <%= link_to story_path(story) do %>
+        <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}.png", :width=>300, :crop=>"scale") %>
+      <% end %>
+    </div>
+  <% end %>
   <div class="btn-back">
     <%= link_to 'Retour aux univers', universes_path, class: "btn btn-universe" %>
   </div>

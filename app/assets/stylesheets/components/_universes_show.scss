@@ -1,67 +1,7 @@
 
-.story-picture{
-justify-content: space-around;
-display: flex;
-margin: 0 auto;
-text-align: center;
-width: 50%;
-float: left;
-}
-
-.top{
-  height: 50%;
-  width: 50%;
-}
-
-.bottom {
-  margin-top: 0.1em;
-  height: 25%;
-}
-
-.btn-back {
-  margin-top: 0.4em;
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-.btn-stories {
-  margin-top:30px;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 6px;
-  font-weight: medium;
-  background: white;
-  transition: background 0.3s ease;
-  min-width: 200px;
-}
-
-.btn-stories:hover {
-  opacity: 1;
-  background: #FF0080;
-  text-decoration: none;
-  color: white;
-}
-
-
-#page_view {
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 150%;
-  letter-spacing: 2.5px;
-  width: 50%;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
-  }
-}
-
-
 
 /* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 2048px)
-and (orientation : landscape){
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
   .title-stories-index {
     padding-top: 0.2em;
@@ -102,11 +42,26 @@ and (orientation : landscape){
     width: 70%;
     }
 
-  .wide-container-story{
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1505921468/Composants/road-map.jpg);
-  margin: 0 auto;
-  height: 100%;
-  width: 70%;
+  .wide-container-story-jungle{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+  height: 1024px;
+  margin: 0;
+  background: cover;
+  position: relative;
+  }
+  .wide-container-story-ocean{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
+  height: 1024px;
+  margin: 0;
+  background-size: cover;
+  position: relative;
+  }
+  .wide-container-story-gourmandise{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
+  height: 1024px;
+  width: 768px;
+  background-size: cover;
+  position: relative;
   }
 
 
@@ -114,14 +69,17 @@ and (orientation : landscape){
   background-color: #e96b00;
   font-size: 200%;
   font-family: 'Sue Ellen Francisco', cursive;
-  border-radius: 8px;
+  border-radius: 10px;
   color: white;
   letter-spacing: 2.5px;
   }
 
   .btn-back {
-  text-align: center;
-  margin-top: -5em;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
   }
 
   .text-univers{
@@ -171,319 +129,58 @@ and (orientation : landscape){
 
 
 /* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 2048px)
-and (orientation : portrait) {
-
-.title-stories-index {
-    padding-top: 0.2em;
+@media only screen and (device-width: 768px) {
+  .wide-container-story-jungle{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+  height: 1024px;
+  width: 768px;
+  background-size: cover;
+  position: relative;
+  }
+  .wide-container-story-ocean{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
+  height: 1024px;
+  width: 768px;
+  background-size: cover;
+  position: relative;
+  }
+  .wide-container-story-gourmandise{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
+  height: 1024px;
+  width: 768px;
+  background-size: cover;
+  position: relative;
+  }
+  .story1{
     position: relative;
-    text-align: center;
-    color: #32abdf;
-    width: 100%;
-    border: none;
-    margin-bottom: 3em;
-    h1{
-      font-family: 'Sue Ellen Francisco', cursive;
-      letter-spacing: 0.3em;
-      font-size: 250%;
-    }
+    top: 24px;
+    left: 6px;
+  }
+  .story2{
+    position: relative;
+    top: 45px;
+    left: 456px;
+  }
+  .story3{
+    position: relative;
+    bottom: -55px;
+    left: 8px;
   }
 
-  .story-container{
 
-  margin: 0 auto;
-  width: 90%;
-  height: 90%;
-  text-align: center;
-    img{
-  height: 150px;
-  width: 150px;
-  margin-top: 30px;
-    }
+  .btn-back {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   }
-
-  .story-picture{
-  margin: 0 auto;
-  width: 50%;
-  }
-
-  .story-holder{
-    margin: 0 auto;
-    text-align: center;
-    height: 75%;
-    width: 90%;
-    }
-
   .btn-universe{
   background-color: #e96b00;
-  font-size: 200%;
+  font-size: 150%;
   font-family: 'Sue Ellen Francisco', cursive;
-  border-radius: 8px;
+  border-radius: 10px;
   color: white;
   letter-spacing: 2.5px;
   }
 
-  .btn-back {
-  text-align: center;
-  }
-
-  .text-univers{
-    width: 50%;
-    height: 20%
-  }
-
-  .wide-container-story{
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1505921468/Composants/road-map.jpg);
-  height: 100%;
-  width: 100%;
-  }
-
-  #page_view1{
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 220%;
-  letter-spacing: 2.5px;
-  width: 50%;
-  margin-left: 8em;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
-  }
-}
-
-   #page_view0{
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 220%;
-  letter-spacing: 2.5px;
-  width: 50%;
-  padding-left: 5.3em;
-  margin-right: 6em;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
-    }
-  }
-
-  .top{
-    height: 40%;
-    width: 60%;
-  }
 }
 /* iPads (portrait) FIN FIN */
-
-
-
-
-
-
-/* iPhone 5 (landscape)----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 736px)
-and (orientation : landscape) {
-
-.title-stories-index {
-    padding-top: 0.2em;
-    position: relative;
-    text-align: center;
-    color: #32abdf;
-    width: 100%;
-    border: none;
-    h1{
-      font-family: 'Sue Ellen Francisco', cursive;
-      letter-spacing: 0.3em;
-      font-size: 150%;
-    }
-  }
-
-  .story-container{
-
-  margin: 0 auto;
-  width: 90%;
-  height: 60%;
-  text-align: center;
-    img{
-  height: 90px;
-  width: 90px;
-  margin-top: 30px;
-    }
-  }
-
-  .story-picture{
-  margin: 0 auto;
-  width: 50%;
-  }
-
-  .story-holder{
-    margin: 0 auto;
-    float: center;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    height: 85%;
-    width: 70%;
-    img{
-    height: 90px;
-    width: 90px;
-    margin-top: 30px;
-    }
-    p{
-      font-size: 80%;
-      letter-spacing: 0.1em;
-    }
-  }
-
-  .btn-universe{
-  background-color: #e96b00;
-  font-size: 120%;
-  font-family: 'Sue Ellen Francisco', cursive;
-  border-radius: 8px;
-  color: white;
-  letter-spacing: 2.5px;
-  }
-
-  .btn-back {
-  text-align: center;
-  }
-
-  .text-univers{
-    width: 50%;
-    height: 20%
-  }
-
-}
-
-
-
-
-/* iPhone 5 (portrait)----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 736px)
-and (orientation : portrait) {
-
-  .title-stories-index {
-    padding-top: 0.2em;
-    position: relative;
-    text-align: center;
-    color: #32abdf;
-    width: 100%;
-    border: none;
-    h1{
-      font-family: 'Sue Ellen Francisco', cursive;
-      letter-spacing: 0.3em;
-      font-size: 150%;
-    }
-  }
-
-  .story-container{
-
-  margin: 0 auto;
-  width: 90%;
-  height: 50%;
-  text-align: center;
-  }
-
-  .story-picture{
-  margin: 0 auto;
-  width: 50%;
-  }
-
-  .story-holder{
-    margin: 0 auto;
-    float: center;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    height: 65%;
-    width: 90%;
-    img{
-     width: 90px;
-    height: 90px;
-    margin-top: 30px;
-    }
-    p{
-      font-size: 80%;
-      letter-spacing: 0.1em;
-    }
-  }
-
-  .btn-universe{
-  background-color: #e96b00;
-  font-size: 130%;
-  font-family: 'Sue Ellen Francisco', cursive;
-  border-radius: 8px;
-  color: white;
-  letter-spacing: 2.5px;
-  }
-
-  .btn-back {
-  text-align: center;
-  }
-
-  .text-univers{
-    width: 50%;
-    height: 20%
-  }
-
-  .wide-container-story{
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1505921468/Composants/road-map.jpg);
-  height: 100%;
-  }
-
-  #page_view1{
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 120%;
-  letter-spacing: 2.5px;
-  width: 50%;
-  margin-left: 8em;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
-  }
-}
-
-   #page_view0{
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 120%;
-  letter-spacing: 2.5px;
-  width: 50%;
-  padding-left: 5.3em;
-  margin-right: 6em;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
-    }
-  }
-
-  .top{
-    height: 40%;
-    width: 60%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Desktops and laptops ----------- */
-@media screen
-  and (min-device-width: 1368px) {}
-
-
-
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {}

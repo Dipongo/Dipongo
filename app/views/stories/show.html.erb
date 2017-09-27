@@ -10,7 +10,7 @@
   <div class="pagination">
     <% if @next_page && @prev_page %>
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
-      <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505395538/home/renard.png", width: 50, height: 50, data: { toggle: "modal", target: "#tip-Modal" } %>
+      <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505997861/Composants/pongo.png", width: 50, height: 89, data: { toggle: "modal", target: "#tip-Modal" } %>
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
 
     <% elsif @next_page %>

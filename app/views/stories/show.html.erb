@@ -1,16 +1,18 @@
 <div class="wide-container">
   <div class="story-div">
-    <div class="text-center">
-      <%= cl_image_tag @page.photo.path, width: 375, height: 375, crop: :fill %>
+    <div class="story-image">
+      <%= cl_image_tag @page.photo.path, width: 512, crop: :fill %>
     </div>
-    <div class="text-card text-center scroll">
+    <div class="story-text text-center scroll">
       <%= @page.content %>
     </div>
   </div>
   <div class="pagination">
     <% if @next_page && @prev_page %>
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
-      <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505997861/Composants/pongo.png", width: 50, height: 89, data: { toggle: "modal", target: "#tip-Modal" } %>
+      <div class="pongo-animation">
+        <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505997861/Composants/pongo.png", width: 100, data: { toggle: "modal", target: "#tip-Modal" } %>
+      </div>
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
 
     <% elsif @next_page %>

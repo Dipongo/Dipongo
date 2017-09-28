@@ -3,7 +3,12 @@
 and (min-device-width : 768px)
 and (max-device-width : 2048px)
 and (orientation : landscape) {
-
+  .wide-container-story{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
+    height: 768px;
+    width: 1024px;
+    background-size: cover;
+  }
 
 .button-univers{
   text-align: center;
@@ -47,12 +52,12 @@ and (orientation : landscape) {
 }
 
 
-body, html {
-    height: 100%;
-    margin: 0;
-    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
-    background-size: cover;
-}
+// body, html {
+//     height: 100%;
+//     margin: 0;
+//     background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+//     background-size: cover;
+// }
 
 #home-sound{
     background-color: transparent;
@@ -95,7 +100,12 @@ body, html {
 and (min-device-width : 768px)
 and (max-device-width : 2048px)
 and (orientation : portrait) {
-
+  .wide-container-story{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1506355281/Composants/fond-etoiles-m.png');
+    height: 1024px;
+    width: 768px;
+    background-size: cover;
+  }
 
 .button-univers{
   text-align: center;
@@ -326,13 +336,3 @@ body, html {
 //   }
 // }
 // }
-
-
-
-
-
-
-
-
-
-

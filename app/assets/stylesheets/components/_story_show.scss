@@ -1,8 +1,7 @@
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-
-
+  
   .story-div {
     position: absolute;
     color: white;
@@ -112,6 +111,13 @@
 }
 /* iPads (portrait) ----------- */
 @media only screen and (device-width: 768px) {
+  .wide-container-story{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1506355281/Composants/fond-etoiles-m.png');
+    height: 1024px;
+    width: 768px;
+    background-size: cover;
+  }
+
   .story-div {
     position: absolute;
     color: white;

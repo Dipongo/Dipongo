@@ -3,133 +3,64 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
-  .title-stories-index {
-    padding-top: 0.2em;
-    position: relative;
-    text-align: center;
-    color: #32abdf;
-    width: 100%;
-    border: none;
-    margin-bottom: 3em;
-    h1{
-      font-family: 'Sue Ellen Francisco', cursive;
-      letter-spacing: 0.3em;
-      font-size: 250%;
-    }
-  }
-
-  .story-container{
-
-  margin: 0 auto;
-  width: 90%;
-  height: 60%;
-  text-align: center;
-    img{
-  height: 150px;
-  width: 150px;
-  margin-top: 30px;
-    }
-  }
-
-  .story-picture{
-  margin: 0 auto;
-  width: 50%;
-  }
-
-  .story-holder{
-    text-align: center;
-    height: 75%;
-    width: 70%;
-    }
-
   .wide-container-story-jungle{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506328861/Universes/jungle/fond-road-map-jungle.png');
-  height: 1024px;
-  margin: 0;
-  background: cover;
-  position: relative;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+    height: 768px;
+    width: 1024px;
+    background-size: cover;
+    position: relative;
   }
   .wide-container-story-ocean{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
-  height: 1024px;
-  margin: 0;
-  background-size: cover;
-  position: relative;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
+    height: 768px;
+    width: 1024px;
+    background-size: cover;
+    position: relative;
   }
   .wide-container-story-gourmandise{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
-  height: 1024px;
-  width: 768px;
-  background-size: cover;
-  position: relative;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
+    height: 768px;
+    width: 1024px;
+    background-size: cover;
+    position: relative;
+  }
+  .story1{
+    position: relative;
+    top: 0px;
+    left: 99px;
+  }
+  .story2{
+    position: relative;
+    top: -90px;
+    left: 627px;
+  }
+  .story3{
+    position: relative;
+    bottom: -55px;
+    left: 8px;
   }
 
 
   .btn-universe{
-  background-color: #e96b00;
-  font-size: 200%;
-  font-family: 'Sue Ellen Francisco', cursive;
-  border-radius: 10px;
-  color: white;
-  letter-spacing: 2.5px;
+    background-color: #e96b00;
+    font-size: 200%;
+    font-family: 'Sue Ellen Francisco', cursive;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2.5px;
   }
 
   .btn-back {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-
-  }
-
-  .text-univers{
-    width: 50%;
-    height: 20%
-  }
-
-   #page_view0{
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 180%;
-  text-align: center;
-  letter-spacing: 2.5px;
-  width: 90%;
-  padding-left: 9.3em;
-  margin-right: 6em;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
-    }
-  }
-
-  .top{
-    height: 40%;
-    width: 80%;
-  }
-
-    #page_view1{
-  color: #32abdf;
-  font-family: 'Sue Ellen Francisco', cursive;
-  text-align: center;
-  font-size: 180%;
-  letter-spacing: 2.5px;
-  width: 140%;
-  margin-left: 12,em;
-  &:hover {
-    text-decoration: none;
-    color: #2f9ece;
   }
 }
-
-
-}
-
-
-
-
 
 /* iPads (portrait) ----------- */
 @media only screen and (device-width: 768px) {
+
   .wide-container-story-jungle{
   background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328861/Universes/jungle/fond-road-map-jungle.png');
   height: 1024px;
@@ -155,31 +86,37 @@
     position: relative;
     top: 24px;
     left: 6px;
+    width: 300px;
+    height: 300px;
   }
   .story2{
     position: relative;
     top: 45px;
     left: 456px;
+    height: 300px;
   }
   .story3{
     position: relative;
     bottom: -55px;
     left: 8px;
+    width: 300px;
+    height: 300px;
   }
-
 
   .btn-back {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    
   }
   .btn-universe{
-  background-color: #e96b00;
-  font-size: 150%;
-  font-family: 'Sue Ellen Francisco', cursive;
-  border-radius: 10px;
-  color: white;
-  letter-spacing: 2.5px;
+    background-color: #e96b00;
+    font-size: 150%;
+    font-family: 'Sue Ellen Francisco', cursive;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2.5px;
   }
 
 }

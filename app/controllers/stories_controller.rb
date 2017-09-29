@@ -3,6 +3,7 @@ class StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id])
+    @universe = @story.universe
 
     if params[:page]
       @page = @story.pages.find_by_position(params[:page])

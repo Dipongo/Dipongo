@@ -3,7 +3,7 @@
 and (min-device-width : 768px)
 and (max-device-width : 2048px)
 and (orientation : landscape) {
-  .wide-container-story{
+  .wide-container{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
     height: 768px;
     width: 1024px;
@@ -12,7 +12,7 @@ and (orientation : landscape) {
 
 .button-univers{
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 15rem;
   margin-bottom: 0rem;
 }
 
@@ -109,7 +109,7 @@ and (orientation : portrait) {
 
 .button-univers{
   text-align: center;
-  margin-top: 5em;
+  margin-top: 15em;
   margin-bottom: 2em;
   height: 60%;
   width: 100%;

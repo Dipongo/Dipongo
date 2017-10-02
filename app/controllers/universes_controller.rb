@@ -9,4 +9,7 @@ class UniversesController < ApplicationController
     @universe = Universe.find(params[:id])
     @stories = @universe.stories
   end
+  def exist?
+    exist = true
+  end
 end

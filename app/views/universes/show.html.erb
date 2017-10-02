@@ -1,8 +1,12 @@
 <div class="wide-container-story-<%= @universe.name.downcase %>">
   <% @stories.each_with_index do |story, i| %>
     <div class="story<%= i + 1 %>">
-      <%= link_to story_path(story) do %>
-        <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}.png", :width=>300, :crop=>"scale") %>
+      <% if current_user.solutions.story.exist? %>
+        <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}-valid.png", :width=>300, :crop=>"scale") %>
+      <% else %>
+        <%= link_to story_path(story) do %>
+          <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}.png", :width=>300, :crop=>"scale") %>
+        <% end %>
       <% end %>
     </div>
   <% end %>

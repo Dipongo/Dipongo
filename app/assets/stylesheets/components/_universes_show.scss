@@ -1,43 +1,51 @@
 
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : landscape) {
 
   .wide-container-story-jungle{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506328861/Universes/jungle/fond-road-map-jungle.png');
-    height: 768px;
-    width: 1024px;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+    width: 100%;
+    height: 100%;
     background-size: cover;
     position: relative;
   }
   .wide-container-story-ocean{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
-    height: 768px;
-    width: 1024px;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506328244/Universes/ocean/road-map-ocean.png');
+   width: 100%;
+    height: 100%;
     background-size: cover;
     position: relative;
   }
   .wide-container-story-gourmandise{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
-    height: 768px;
-    width: 1024px;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
+    width: 100%;
+    height: 100%;
     background-size: cover;
     position: relative;
   }
-  .story1{
+  .story1 {
+    width: 20%;
     position: relative;
     top: 0px;
-    left: 99px;
+    left: 10rem;
+    height: 30rem;
   }
-  .story2{
+  .story2 {
+    width: 36%;
     position: relative;
     top: -90px;
-    left: 627px;
+    left: 59rem;
+    height: 48rem;
   }
   .story3{
     position: relative;
     bottom: -55px;
     left: 8px;
+    height: 30rem;
   }
 
 
@@ -48,67 +56,74 @@
     border-radius: 10px;
     color: white;
     letter-spacing: 2.5px;
+    margin-top: -24rem;
+    margin-right: 4rem;
   }
 
   .btn-back {
+    margin-top: 0rem;
     position: absolute;
     bottom: 10px;
     right: 10px;
-
   }
 }
 
 /* iPads (portrait) ----------- */
-@media only screen and (device-width: 768px) {
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : portrait) {
 
   .wide-container-story-jungle{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328861/Universes/jungle/fond-road-map-jungle.png');
-  height: 1024px;
-  width: 768px;
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+  width: 100%;
+  height: 100%;
   background-size: cover;
   position: relative;
   }
   .wide-container-story-ocean{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506328244/Universes/ocean/road-map-ocean.png');
-  height: 1024px;
-  width: 768px;
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506328244/Universes/ocean/road-map-ocean.png');
+   width: 100%;
+  height: 100%;
   background-size: cover;
   position: relative;
   }
   .wide-container-story-gourmandise{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
-  height: 1024px;
-  width: 768px;
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
+   width: 100%;
+  height: 100%;
   background-size: cover;
   position: relative;
   }
   .story1{
     position: relative;
-    top: 24px;
-    left: 6px;
-    width: 300px;
-    height: 300px;
+    top: 5rem;
+    left: 3rem;
+    width: 20%;
+    height: 36rem;
   }
   .story2{
     position: relative;
     top: 45px;
     left: 456px;
-    height: 300px;
+    height: 70rem;
+    width: 36%;
   }
   .story3{
     position: relative;
     bottom: -55px;
     left: 8px;
     width: 300px;
-    height: 300px;
+    height: 36rem;
   }
 
   .btn-back {
-    position: absolute;
+    position: relative;
     bottom: 10px;
-    right: 10px;
-    width: 300px;
-    
+    right: -47rem;
+    width: 30rem;
+    height: 5.5rem;
+
   }
   .btn-universe{
     background-color: #e96b00;
@@ -117,6 +132,8 @@
     border-radius: 10px;
     color: white;
     letter-spacing: 2.5px;
+    margin-top: -34rem;
+    height: 5rem;
   }
 
 }

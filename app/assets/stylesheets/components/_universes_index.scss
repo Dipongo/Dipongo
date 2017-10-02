@@ -21,6 +21,14 @@
     height: 768px;
     width: 1024px;
     background-size: cover;
+    position: absolute;
+  }
+  .medaille{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -349px;
+    left: 352px;
   }
 }
 
@@ -48,6 +56,14 @@
     height: 1024px;
     width: 768px;
     background-size: cover;
+    position: absolute;
+  }
+  .medaille{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -358px;
+    left: 294px;
   }
 
 }

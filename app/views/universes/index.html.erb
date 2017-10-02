@@ -19,6 +19,12 @@
           <% end %>
         </div>
         <% end %>
+        <div class="medaille">
+          <% if current_user.solutions.exists?(universe_id: universe) %>
+            <%= cl_image_tag("Composants/medaille.png", :width=>200, :crop=>"scale") %>
+          <% end %>
+        </div>
+
       </div>
 
       <!-- Controls -->

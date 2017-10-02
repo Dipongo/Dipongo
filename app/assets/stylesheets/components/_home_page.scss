@@ -53,16 +53,19 @@ and (orientation : landscape) {
 
 
 // body, html {
-//     height: 100%;
-//     margin: 0;
-//     background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
-//     background-size: cover;
+
 // }
 
 #home-sound{
     background-color: transparent;
 }
 
+.wide-container-home{
+  height: 100%;
+    margin: 0;
+    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+    background-size: cover;
+}
 .wide-container{
   height: 100%
 }
@@ -154,7 +157,7 @@ and (orientation : portrait) {
   z-index: 1;
 }
 
-body, html {
+.wide-container-home {
     height: 100%;
     margin: 0;
     background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);

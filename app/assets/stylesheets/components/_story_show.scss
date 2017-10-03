@@ -1,24 +1,25 @@
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : landscape) {
   .wide-container-page-jungle{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506604988/Universes/jungle/fond-histoire-jungle.png');
-    height: 768px;
-    width: 1024px;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506604988/Universes/jungle/fond-histoire-jungle.png');
+    width: 100%;
     background-size: cover;
     position: relative;
   }
+
   .wide-container-page-ocean{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506605002/Universes/ocean/fond-histoire-ocean.png');
-    height: 768px;
-    width: 1024px;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/1506605002/Universes/ocean/fond-histoire-ocean.png');
+    width: 100%;
     background-size: cover;
     position: relative;
   }
   .wide-container-page-gourmandise{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_768,w_1024/v1506604968/Universes/gourmandise/fond-histoire-gourmandise.png');
-    height: 768px;
-    width: 1024px;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506604968/Universes/gourmandise/fond-histoire-gourmandise.png');
+    width: 100%;
     background-size: cover;
     position: relative;
   }
@@ -27,16 +28,29 @@
     color: white;
     width: 100%;
     height: 100%;
+    img{
+    vertical-align: middle;
+    height: 65rem;
+    width: 65rem;
+    margin-top: 1rem;
+    }
   }
+
   .story-text {
+    text-align: justify;
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506604968/Universes/gourmandise/fond-histoire-gourmandise.png');
+    background-size: 328%;
     position: relative;
-    top: -390px;
-    left: 560px;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
-    font-size: 20px;
-    color: $gray-base;
+    padding: 1rem;
+    top: -51rem;
+    left: 68rem;
+    width: 33rem;
+    height: 65rem;
+    margin-top: 2.8rem;
+    font-size: 120%;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3%;
+    text-shadow: 2px 2px 5px rgba(24,24,24,0.7);
   }
   .story-image{
     position: relative;
@@ -47,12 +61,12 @@
 
   .pagination {
     position: relative;
-    bottom: -500px;
+    bottom: -68rem;
     display: flex;
-    width: 100%;
+    width: 30%;
+    left: 70rem;
     justify-content: space-around;
     position: absolute;
-    bottom: 0;
   }
 
   .space-p {
@@ -147,7 +161,10 @@
 
 }
 /* iPads (portrait) ----------- */
-@media only screen and (device-width: 768px) {
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : portrait) {
   .wide-container-page-jungle{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_scale,h_1024,w_768/v1506604988/Universes/jungle/fond-histoire-jungle.png');
     height: 1024px;
@@ -179,11 +196,14 @@
   .story-text {
     position: relative;
     top: 220px;
-    left: 175px;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
-    font-size: 20px;
+    left: 14rem;
+    width: 49rem;
+    height: 30rem;
+    padding: 1rem;
+    font-size: 120%;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5%;
+    text-shadow: 2px 2px 5px rgba(24,24,24,0.7);
   }
   .story-image{
     position: relative;
@@ -202,7 +222,7 @@
     width: 100%;
     justify-content: space-around;
     position: absolute;
-    bottom: 0;
+    bottom: 12rem;
   }
 
   .space-p {
@@ -273,10 +293,11 @@
   }
   // Pongo Animation
   .pongo-animation{
+    right: 1.5rem;
     position: relative;
-    width: 100px;
-    height: 100px;
-    bottom: 70px;
+    width: 5rem;
+    height: 5rem;
+    bottom: 2rem;
     animation-name: stretch;
    animation-duration: 1.5s;
    animation-timing-function: ease-out;
@@ -288,10 +309,10 @@
   }
   @keyframes stretch {
   0% {
-    transform: scale(1);
+    transform: scale(0.8);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
   }
 }

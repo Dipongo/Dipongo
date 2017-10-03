@@ -1,21 +1,27 @@
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : landscape) {
 
+  .wide-container-universes{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
+  height: 100%;
+  width: auto;
+  background-size: cover;
+  }
   .title-univers-index {
-    text-align: center;
-    margin-top: 20px;
-    color: #32abdf;
-    width: 100%;
-    border: none;
-    padding: 0;
-    h1{
-      padding-top: 20px;
-      margin-top: -20px;
-      font-family: 'Sue Ellen Francisco', cursive;
-      letter-spacing: 2.5px;
-      font-size: 360%;
+  height: 100%;
+  h1{
+  font-family: $gunny;
+  font-size: 7rem;
+  margin-top: 0px;
+  padding-top: 5rem;
+  text-align: center;
+  color: white;
     }
   }
+
   .wide-container-universes{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
     height: 768px;
@@ -23,38 +29,21 @@
     background-size: cover;
     position: absolute;
   }
-  .medaille{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: -349px;
-    left: 352px;
-  }
+ 
+
 }
 
 
 /* iPads (portrait) ----------- */
-@media only screen and (device-width: 768px) {
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : portrait) {
 
-  .title-univers-index {
-    text-align: center;
-    margin-top: 20px;
-    color: #32abdf;
-    width: 100%;
-    border: none;
-    padding: 0;
-    h1{
-      padding-top: 60px;
-      margin-top: -20px;
-      font-family: 'Sue Ellen Francisco', cursive;
-      letter-spacing: 2.5px;
-      font-size: 360%;
-    }
-  }
   .wide-container-universes{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1506355281/Composants/fond-etoiles-m.png');
-    height: 1024px;
-    width: 768px;
+  height: 100%;
+    width: auto;
     background-size: cover;
     position: absolute;
   }
@@ -66,4 +55,15 @@
     left: 294px;
   }
 
+  .title-univers-index {
+  height: 100%;
+  h1{
+  font-family: $gunny;
+  font-size: 80px;
+  margin-top: 0px;
+  padding-top: 7rem;
+  text-align: center;
+  color: white;
+    }
+  }
 }

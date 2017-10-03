@@ -4,4 +4,4 @@
 //= require jquery-fileupload/jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-//= require attachments
+//= require ./my_js/init_attachinary

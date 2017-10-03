@@ -20,9 +20,40 @@
       <p class="space-p"> </p>
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
 
-    <% else %>
+    <% else # last page %>
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
-      <%= link_to "", new_story_solution_path(@story), class: "camera btn-camera" %>
+
+      <%= simple_form_for [@story, Solution.new] do |s| %>
+
+        <%= s.input :photo, as: :attachinary, input_html: {capture: true, accept: "image/*" } %>
+
+
+        <div class="modal" id="solution-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-="false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">solution new</h4>
+              </div>
+              <div class="modal-body">
+                <div id="solution-preview"></div>
+                <div class="content-user-form">
+                  <%= s.simple_fields_for :users, current_user do |user| %>
+                    <div class="user-form text-left">
+                      <%= user.input :name, placeholder: 'Emma' %>
+                    </div>
+                    <div class="user-form text-left">
+                      <%= user.input :age, as: :integer, placeholder: '5' %>
+                    </div>
+                  <% end %>
+                </div>
+                <%= s.button :submit, class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
       <p class="space-p"> </p>
     <% end %>
   </div>

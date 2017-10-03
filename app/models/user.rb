@@ -10,4 +10,11 @@ class User < ApplicationRecord
     todos.update_all(user_id: user.id)
   end
 
+  def completed?(universe)
+    story_ids = universe.stories.pluck(:id)
+    finished_ids = self.solutions.pluck(:story_id)
+
+    (story_ids - finished_ids).empty?
+  end
+
 end

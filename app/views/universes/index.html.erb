@@ -20,11 +20,13 @@
                   <%= universe.name %>
                 </p>
               </div>
-              <% if current_user.completed?(universe) %>
-                <%= cl_image_tag("Composants/medaille.png", :width=>200, :crop=>"scale", :opacity=>50) %>
-              <% else %>
-                pas fini
-              <% end %>
+              <div class="medaille">
+                <% if current_user.completed?(universe) %>
+                  <%= cl_image_tag("Composants/medaille.png", :width=>200, :crop=>"scale") %>
+                <% else %>
+                  <%= cl_image_tag("Composants/medaille.png", :width=>200, :crop=>"scale", :opacity=>50) %>
+                <% end %>
+              </div>
             <% end %>
           </div>
         <% end %>

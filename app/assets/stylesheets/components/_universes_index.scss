@@ -41,33 +41,30 @@ and (orientation : portrait) {
 
   .wide-container-universes{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png');
-  height: 100%;
+    height: 100%;
     width: auto;
     background-size: cover;
-    position: absolute;
-  }
-  .medaille{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: -358px;
-    left: 294px;
   }
 
+
+
   .title-univers-index {
-  height: 30%;
-  h1{
-  font-family: $gunny;
-  font-size: 80px;
-  margin-top: 0px;
-  padding-top: 7rem;
-  text-align: center;
-  color: white;
+    height: 30%;
+    h1{
+      font-family: $gunny;
+      font-size: 80px;
+      margin-top: 0px;
+      padding-top: 7rem;
+      text-align: center;
+      color: white;
     }
   }
 
   .medaille{
     width: 200px;
     height: 200px;
+    position: absolute;
+    top: 26rem;
+    left: 31rem;
   }
 }

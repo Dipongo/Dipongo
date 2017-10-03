@@ -21,6 +21,16 @@ and (orientation : landscape) {
   color: white;
     }
   }
+
+  .wide-container-universes{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
+    height: 768px;
+    width: 1024px;
+    background-size: cover;
+    position: absolute;
+  }
+ 
+
 }
 
 
@@ -35,6 +45,14 @@ and (orientation : portrait) {
   height: 100%;
     width: auto;
     background-size: cover;
+    position: absolute;
+  }
+  .medaille{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -358px;
+    left: 294px;
   }
 
   .title-univers-index {

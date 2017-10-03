@@ -12,12 +12,21 @@
 
       <div class="carousel-inner" role="listbox">
         <% @universes.each_with_index do |universe, i| %>
-        <div class="item <%= 'active' if i == 0 %> ">
-          <%= link_to universe_path(universe) do %>
-            <%= cl_image_tag universe.photo.path %>
-            <div class="univers-carousel-name"><p> <%= universe.name %> </p></div>
-          <% end %>
-        </div>
+          <div class="item <%= 'active' if i == 0 %> ">
+            <%= link_to universe_path(universe) do %>
+              <%= cl_image_tag universe.photo.path %>
+              <div class="univers-carousel-name">
+                <p>
+                  <%= universe.name %>
+                </p>
+              </div>
+              <% if current_user.completed?(universe) %>
+                <%= cl_image_tag("Composants/medaille.png", :width=>200, :crop=>"scale", :opacity=>50) %>
+              <% else %>
+                pas fini
+              <% end %>
+            <% end %>
+          </div>
         <% end %>
       </div>
 

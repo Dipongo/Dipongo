@@ -60,19 +60,15 @@
 
 <!-- modal -->
 
-  <div class="modal" id="tip-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-="false">
+  <div class="modal" id="tip-Modal" tabindex="-1" role="dialog" aria-labelledby="tipsModal" data-="false">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="tipsModal">Les Conseils de Pongo</h4>
         </div>
         <div class="modal-body">
-          <div class="ardoise" style="background-image: url("http://res.cloudinary.com/dipongo/image/upload/c_scale,h_500/v1507046165/Composants/ardoire_renard.png");
-       }">
-
-
-          </div>
+          <%= @tips.content %>
         </div>
       </div>
     </div>

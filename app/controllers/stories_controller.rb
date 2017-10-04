@@ -10,6 +10,12 @@ class StoriesController < ApplicationController
     else
       @page = @story.pages.first
     end
+
+    if params[:tip]
+      @tip = @story.pages.find_by_position(params[:tip])
+    else
+      @tip = @story.tips.first
+    end
     raise ActiveRecord::RecordNotFound unless @page
     @prev_page = @page.higher_item
     @next_page = @page.lower_item

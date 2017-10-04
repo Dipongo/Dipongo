@@ -1,16 +1,17 @@
 <div class="wide-container-solution">
   <div class="solution-content">
     <div class="solution-title">
-      <h2 class="text-center solution-font">Votre Photo</h2>
+      <h2 class="text-center solution-font">Votre Solution</h2>
     </div>
     <div class="photo-solution text-center">
       <% if @solution&.photo? %>
-        <%= cl_image_tag @solution.photo.path, width: 200, height: 200, :border => { :width => 4, :color => '#196375' } ,crop: :fill %>
+        <div class="solution-user-picture text-center">
+          <%= cl_image_tag @solution.photo.path, width: 300, height: 300%>
+        </div>
       <% end %>
-
     </div>
     <div class="solution-btn text-center">
-      <%= link_to "Next Story", universe_path(@story.universe), class: "btn btn-info"%>
+      <%= link_to "Histoire Suivante", universe_path(@story.universe), class: "btn btn-info"%>
     </div>
     <h3 class="text-center solution-font">Autres Photos</h3>
   </div>
@@ -18,7 +19,7 @@
       <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>
         <div class="col-xs-4 text-center solution-pics">
           <% if solution.photo %>
-            <%= cl_image_tag solution.photo.path, width: 75, height: 75, data: { toggle: "modal", target: "#modalImage-#{solution.id}" } %>
+            <%= cl_image_tag solution.photo.path, width: 250, height: 250, data: { toggle: "modal", target: "#modalImage-#{solution.id}" } %>
           <% end %>
           <!-- The Modal Image -->
           <div id="modalImage-<%= solution.id %>" class="modal fade">

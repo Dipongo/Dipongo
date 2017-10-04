@@ -1,15 +1,18 @@
 .wide-container-solution{
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/c_scale,w_900/v1505135835/home/background_dipongo_hp4xo9.png);
-  height: 800px;
-  background-size: cover;
+  background-image: url("http://res.cloudinary.com/dipongo/image/upload/c_crop,h_900,w_1024/v1506355281/Composants/fond-etoiles-m.png");
+  background-repeat: repeat-y;
   position:relative;
 }
 
+
 .desc{
   color: white;
+  font-family: $geosans;
+  font-size: 55px;
+  font-style: bold;
 }
 .solution-font{
-  font-family: Sue Ellen Francisco;
+  font-family: $geosans;
 }
 .btn-next-story{
   margin-top: 25px;
@@ -25,10 +28,12 @@
 }
 .solution-btn{
   padding: 10px;
+  margin-top: 10px;
 }
 .solution-content{
   color: $white;
-  margin:auto;
+  margin: 10px;
+  padding: 10px;
 }
 
 .flex-container {
@@ -54,8 +59,8 @@
   margin: 8px 0;
 }
 
+
 // .scroll-box {
 //     height: 250px; /* maximum height of the box, feel free to change this! */
 //     overflow-y: scroll;
 // }
-

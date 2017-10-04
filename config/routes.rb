@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'tips/content'
+
   ActiveAdmin.routes(self)
   devise_for :users
   root to: 'pages#home'

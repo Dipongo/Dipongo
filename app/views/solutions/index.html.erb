@@ -33,17 +33,15 @@
     </div>
 
   <!-- Modal Felic-->
-  <div id="myModal" class="modal fade" role="dialog">
+  <div id="modalFelic" class="modal fade" role="dialog">
+    <button type="button" class="close" data-dismiss="modal">
+      <span aria-hidden="true">&times;</span>
+    </button>
     <div class="modal-dialog">
-      <div class="modal-content" style="background-size: 290px 290px;">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title">Félicitation! <%= @user.name.capitalize %></h4>
-        </div>
+      <div class="modal-content">
         <div class="modal-body">
-          <p>Tu as trouvé la bonne solution!!!</p>
+          <h4 class="text-title text-center">Bravo! <%= @user.name.capitalize %></h4>
+          <p class="text-merci text-center">Merci pour ta jolie solution !</p>
         </div>
       </div>
     </div>

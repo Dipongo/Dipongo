@@ -105,6 +105,12 @@ se baigner. Mais un gouffre le sépare de la cascade.
 Peux-tu aider Edgar à trouver un moyen de franchir le précipice ?
 Dès que tu es prêt, prends en photo ta solution.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image3.png")
 
+jungle_story_1.tips.create(content:"Vivant dans des milieux pauvres et sans beaucoup de ressources,
+les plantes carnivores ont dû s’adapter pour survivre.
+Comme toutes les plantes, elles ne peuvent pas se déplacer.
+Elles ont donc mis en place un ingénieux système qui leur permet de piéger leurs proies.
+Grâce à un liquide sucré apprécié des insectes, les plantes carnivores attirent leurs proies. Elles les capturent ainsi pour les manger et les digérer rapidement. Surprenantes ces plantes ! 
+")
 puts "Jungle Story 1 DONE"
 
 jungle_story_2.pages.create(content: "Edgar a traversé la grande cascade, il peut désormais vadrouiller dans la forêt
@@ -121,6 +127,11 @@ Peux-tu aider Edgar à imaginer des plantes qui viendraient entourer l’arbre 
 compagnie ?
 Quand tu es prêt, prends une photo de ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle01/Fore%CC%82t_tropicale_1.6.png")
 
+jungle_story_2.tips.create(content:"On reconnaît les forêts tropicales à leurs végétations abondantes et leurs grands arbres.
+Il y fait en général très chaud et à cause des fortes pluies il fait humide aussi.
+Ces forêts se trouvent dans les pays près de l’équateur, une zone où le soleil brille fort et chauffe toute l’année. Comme les océans, ce sont des lieux à préserver car ces forêts abritent des espèces variées d’animaux et de végétaux. Malheureusement, certaines personnes mal intentionnées les détruisent et menacent les espèces qui y vivent. On parle alors de déforestation.
+")
+
 puts "Jungle Story 2 DONE"
 
 ocean_story_1.pages.create(content: "Il fait nuit quand Edgar arrive dans l’univers des fonds marins. Heureusement, le ciel
@@ -136,6 +147,14 @@ qu’il sait nager et qu’il peut remonter rapidement à la surface.
 Peux-tu l’aider à trouver une solution qui lui permettra de respirer sous l’eau et
 explorer la beauté de ces fonds marins ?
 Quand tu es prêt, prends une photo de ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image3.png")
+
+ocean_story_1.tips.create(content:"Univers fascinant, les fonds marins recouvrent une grande partie de la surface de la terre.
+Ils abritent de très nombreuses espèces vivantes, c’est ce qu’on appelle la biodiversité.
+Il y en aurait des millions et nous n’en connaissons qu’une toute petite partie.
+Il reste encore plein de choses à explorer.
+Mais c’est aussi et surtout un univers à préserver car des espèces sont menacées de disparaître.
+Il faut donc respecter cet environnement : ne rien jeter dans les océans, interdire la pêche de certaines espèces,…
+")
 
 puts "Ocean story 1 DONE"
 
@@ -154,6 +173,12 @@ s’abriter contrairement à tous les autres habitants des fonds marins. Peux-tu
 Edgar à construire une habitation pour son nouvel ami ?
 Quand tu es prêt, prends une photo de ta création.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image3.png")
 
+ocean_story_2.tips.create(content:"Rigolo avec sa couleur orange et ses rayures blanches, le poisson-clown se cache dans les anémones de mer pour se protéger.
+Anémone de mer et poisson-clown deviennent alors inséparables !
+Le poisson-clown est omnivore ce qui veut dire qu’il se nourrit de tout ce qu’il peut attraper dans sa bouche.
+Si tu regardes le poisson-clown se déplacer, tu auras l’impression de le voir danser.
+Il est drôle en bougeant son corps de gauche à droite pour avancer !
+")
 puts "Ocean story 2 DONE"
 
 gourmandise_story_1.pages.create(content: "Edgar vient d’atterrir dans l’univers de la gourmandise. C’est un endroit rempli de
@@ -173,6 +198,11 @@ Veux-tu aider Edgar à concocter un bon goûter ? Imagine un dessert à faire av
 parents.
 Quand tu es prêt, prends en photo ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image3.png")
 
+gourmandise_story_1.tips.create(content:"Les aliments sucrés c’est bon mais ils peuvent être l’ennemi de tes dents.
+Si tu n’entretiens pas bien tes dents, tu peux avoir des caries et avoir mal.
+Pour éviter cela, tu dois te brosser les dents après chaque repas.
+Il faut aussi rendre visite à son dentiste une fois par an pour qu’il vérifie ton hygiène dentaire.  Dentifrice et brosse à dent sont donc tes alliés !
+")
 puts "Gourmandise Story 1 DONE"
 
 gourmandise_story_2.pages.create(content: "Et voilà, Edgar est de nouveau sur la route de la gourmandise. Grâce à toi, il a bien
@@ -190,5 +220,10 @@ gourmandise_story_2.pages.create(content: "Avec la température qu’il fait, la
 personne ne réagit.
 Peux-tu aider Edgar à trouver une solution ?
 Quand tu es prêt, prends en photo ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image3.png")
+
+gourmandise_story_2.tips.create(content:"C’est super quand il y a du soleil, tu peux aller à la plage et faire plein de jeux dehors.
+Si le soleil peut être notre ami parce qu’il nous donne le moral, parce qu’il nous éclaire et nous réchauffe, parce qu’il nous aide à fixer le calcium sur nos os, il peut aussi être notre ennemi.
+Si on ne se protège pas, le soleil brûle la peau et abîme les yeux.
+Il faut donc faire attention : couvre-toi avec des lunettes de soleil et un chapeau, mets de la crème solaire régulièrement et suis les précieux conseils des adultes. ")
 
 puts "Gourmandise Story 2 DONE"

@@ -68,36 +68,56 @@ and (orientation : landscape) {
     margin-left: 57px;
   }
 
-  .control-label.attachinary.optional{
-    margin-left: 70px;
+  .solution_photo{
+    margin-left: 7rem;
+    width: 200px;
+    height: 250px;
+    margin-top: -11rem;
+    z-index: 100;
   }
 
-  .form-group.attachinary.optional.solution_photo{
-  width: 200px;
+ .control-label.attachinary.optional{
+  height: 150px;
+  width: 150px;
+ }
+
+  .appareil-photo{
+    width: 15rem;
   background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1507205404/Composants/boutons-prise-photos.png);
   background-size: 15rem;
   background-repeat: no-repeat;
   font-size: 200%;
-  color: transparent;
   height: 16rem;
+  margin-left: 5rem;
   margin-top: -5rem;
-  margin-left: 4rem;
-  height: 200px
+  z-index: -300;
   }
 
-  .simple_form.new_solution{
-    height: 53px;
+  .form-group.attachinary.optional.solution_photo{
+  // width: 200px;
+  // background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1507205404/Composants/boutons-prise-photos.png);
+  // background-size: 15rem;
+  // background-repeat: no-repeat;
+  // font-size: 200%;
+  color: transparent;
+  // height: 16rem;
+  // margin-top: -5rem;
+  // margin-left: 4rem;
+  // height: 200px
   }
+
+  // .simple_form.new_solution{
+  //   height: 53px;
+  // }
 
   .pagination {
     position: relative;
     bottom:  11rem;
     display: flex;
-    width: 30%;
     left: 70rem;
     justify-content: space-around;
-    width: 300px;
-
+    width: 150px;
+    height: 100px;
   }
 
   .space-p {
@@ -120,12 +140,93 @@ and (orientation : landscape) {
     content: '\f061';
     font-family: 'FontAwesome';
     font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-right a{
+    content: '\f061';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-right:active {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-left a{
+    content: '\f060';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
   }
 
   .arrow-left:after {
     content: '\f060';
     font-family: 'FontAwesome';
     font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-left:active {
+    content: '\f060';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+
+  .btn-switch:active {
+    padding: 7px;
+    text-align: center;
+    background-color: $orange;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    &:focus {
+      text-decoration: none;
+      color: white;
+      background-color: $orange;
+    }
+    a{
+      text-decoration: none;
+    }
   }
 
   .btn-switch {
@@ -137,10 +238,14 @@ and (orientation : landscape) {
     width: 50px;
     border: none;
     border-radius: 50%;
+    text-decoration: none;
     &:focus {
       text-decoration: none;
       color: white;
-      background-color: #d3721d;
+      background-color: $orange;
+    }
+    a{
+      text-decoration: none;
     }
   }
 

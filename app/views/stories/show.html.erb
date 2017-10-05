@@ -31,11 +31,8 @@
         <div class="modal" id="solution-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-="false">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">solution new</h4>
-              </div>
               <div class="modal-body">
+                  <h4 class="modal-title" id="myModalLabel">Merci pour ta jolie solution !</h4>
                 <div id="solution-preview"></div>
                 <div class="content-user-form">
                   <%= s.simple_fields_for :users, current_user do |user| %>
@@ -47,12 +44,11 @@
                     </div>
                   <% end %>
                 </div>
-                <%= s.button :submit, class: "btn btn-primary" %>
+                <%= s.button :submit,'Decouvre d\'autres solutions', class: "btn btn-success" %>
               </div>
             </div>
           </div>
         </div>
-
       <% end %>
       <p class="space-p"> </p>
     <% end %>
@@ -61,13 +57,12 @@
 <!-- modal -->
 
   <div class="modal" id="tip-Modal" tabindex="-1" role="dialog" aria-labelledby="tipsModal" data-="false">
+    <button type="button" class="close" data-dismiss="modal">
+    <span aria-hidden="true">&times;</span></button>
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="tipsModal">Les Conseils de Pongo</h4>
-        </div>
         <div class="modal-body">
+          <h4 class="modal-title" id="tipsModal">Les Conseils de Pongo</h4>
           <p><%= @tip.content %></p>
         </div>
       </div>

@@ -1,13 +1,10 @@
 
-.modal-backdrop.in {
-  opacity: 0;
-  filter: alpha(opacity=50);
-}
-.modal-content{
-  color: $orange;
+.text-thinks{
+  font-family: $gunny;
+  font-size: 40px;
 }
 
-.text-merci.text-title{
+.text-title{
   font-family: $gunny;
-  font-size: 20px;
+  font-size: 50px;
 }

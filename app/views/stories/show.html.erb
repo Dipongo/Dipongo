@@ -11,7 +11,7 @@
     <% if @next_page && @prev_page %>
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
       <div class="pongo-animation">
-        <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/v1505997861/Composants/pongo.png", width: 100, data: { toggle: "modal", target: "#tip-Modal" } %>
+        <%= cl_image_tag "http://res.cloudinary.com/dipongo/image/upload/c_scale,w_776/v1507200272/Composants/Pongo2-assis.png", width: 100, data: { toggle: "modal", target: "#tip-Modal" } %>
       </div>
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
 
@@ -63,7 +63,9 @@
       <div class="modal-content">
         <div class="modal-body">
           <h4 class="modal-title" id="tipsModal">Les Conseils de Pongo</h4>
-          <p><%= @tip.content %></p>
+          <div class="modal-text-tips">
+            <p ><%= @tip.content %></p>
+          </div>
         </div>
       </div>
     </div>

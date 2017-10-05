@@ -1,7 +1,7 @@
 <div class="wide-container-solution">
   <div class="solution-content">
     <div class="solution-title">
-      <h2 class="text-center solution-font">Votre Solution</h2>
+      <p class="text-center solution-font">Ta jolie solution!</p>
     </div>
     <div class="photo-solution text-center">
       <% if @solution&.photo? %>
@@ -11,9 +11,9 @@
       <% end %>
     </div>
     <div class="solution-btn text-center">
-      <%= link_to "Histoire Suivante", universe_path(@story.universe), class: "btn btn-info"%>
+      <%= link_to image_tag("http://res.cloudinary.com/dipongo/image/upload/v1507158628/Composants/bouton-nouvelle-histoire.png"), universe_path(@story.universe)%>
     </div>
-    <h3 class="text-center solution-font">Autres Photos</h3>
+    <p class="text-center solution-font">Toutes vos jolies idees...</p>
   </div>
     <div class="row">
       <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>
@@ -26,7 +26,7 @@
             <button type="button" class="close" data-dismiss="modal">
               <span aria-hidden="true">&times;</span>
             </button>
-            <%= cl_image_tag solution.photo&.path, width: 300  %>
+            <%= cl_image_tag solution.photo&.path, width: 500  %>
             <div class="desc"><%= solution.user.name.capitalize %> <%= solution.user.age %> ans</div>
           </div>
         </div>
@@ -41,8 +41,8 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <h4 class="text-title text-center">Bravo! <%= @user.name.capitalize %></h4>
-          <p class="text-merci text-center">Merci pour ta jolie solution !</p>
+          <p class="text-title text-center">Bravo! <%= @user.name.capitalize %></p>
+          <p class="text-thinks text-center">Merci pour ta jolie solution !</p>
         </div>
       </div>
     </div>

@@ -3,5 +3,13 @@
   width: auto;
   background-size: cover;
   color: $light-gray;
-  font-size: 25px;
+}
+.modal-title{
+  color: $gold;
+  font-family: $gunny;
+  font-size: 30px;
+}
+.modal-text-tips{
+  font-family: $geosans;
+  font-size: 20px;
 }

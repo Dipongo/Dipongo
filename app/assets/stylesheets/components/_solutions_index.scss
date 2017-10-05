@@ -1,66 +1,137 @@
-.wide-container-solution{
-  background-image: url("http://res.cloudinary.com/dipongo/image/upload/c_crop,h_900,w_1024/v1506355281/Composants/fond-etoiles-m.png");
-  background-repeat: repeat-y;
-  position:relative;
-}
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : landscape) {
 
 
-.desc{
-  color: white;
-  font-family: $geosans;
-  font-size: 55px;
-  font-style: bold;
-}
-.solution-font{
-  font-family: $geosans;
-}
-.btn-next-story{
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-.card-solution{
-  padding: 0px;
-  margin: 5px;
-}
-.solution-title h2{
-  margin: 0px;
-  padding: 10px;
-}
-.solution-btn{
-  padding: 10px;
-  margin-top: 10px;
-}
-.solution-content{
-  color: $white;
-  margin: 10px;
-  padding: 10px;
+  .wide-container-solution{
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1507200286/Composants/fond-etoiles-2.png");
+    background-repeat: repeat-y;
+    width: 100%;
+    position:relative;
+  }
+  .desc{
+    color: white;
+    font-family: $gunny;
+    font-size: 55px;
+    font-style: bold;
+  }
+  .solution-font{
+    font-family: $gunny;
+    font-size: 60px;
+  }
+  .solution-btn{
+    height: 200px;
+  }
+  .btn-next-story{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .card-solution{
+    padding: 0px;
+    margin: 5px;
+  }
+  .solution-title h2{
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .solution-content{
+    color: $white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .flex-container {
+    position:absolute;
+    top: 400px;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+  }
+
+  .solution-pics {
+    margin: 8px 0;
+  }
 }
 
-.flex-container {
-  position:absolute;
-  top: 400px;
-  padding: 10px;
-  margin: 0;
-  list-style: none;
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 2048px)
+and (orientation : portrait) {
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  .wide-container-solution{
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1507200286/Composants/fond-etoiles-2.png");
+    background-repeat: repeat-y;
+    width: 100%;
+    position:relative;
+  }
+  .desc{
+    color: white;
+    font-family: $gunny;
+    font-size: 55px;
+    font-style: bold;
+  }
+  .solution-font{
+    font-family: $gunny;
+    font-size: 60px;
+  }
+  .solution-btn{
+    height: 200px;
+  }
+  .btn-next-story{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .card-solution{
+    padding: 0px;
+    margin: 5px;
+  }
+  .solution-title h2{
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .solution-content{
+    color: $white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .flex-container {
+    position:absolute;
+    top: 400px;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+  }
+
+  .solution-pics {
+    margin: 8px 0;
+  }
+
 }
-
-.flex-item {
-  width: 75px;
-  height: 75px;
-  margin: 5px;
-}
-
-.solution-pics {
-  margin: 8px 0;
-}
-
-
-// .scroll-box {
-//     height: 250px; /* maximum height of the box, feel free to change this! */
-//     overflow-y: scroll;
-// }

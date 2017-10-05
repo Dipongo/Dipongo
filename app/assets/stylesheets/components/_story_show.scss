@@ -41,6 +41,7 @@ and (orientation : landscape) {
 
   .story-text {
     text-align: justify;
+    font-family: $geosans;
     background-size: 328%;
     position: relative;
     padding: 1rem;
@@ -196,6 +197,7 @@ and (orientation : portrait) {
   }
   .story-text {
     position: relative;
+    font-family: $geosans;
     top: 220px;
     left: 14rem;
     width: 49rem;

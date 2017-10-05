@@ -16,9 +16,9 @@ Universe.destroy_all
 User.destroy_all
 Solution.destroy_all
 
-jungle = Universe.create!(name: "Jungle", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
-ocean = Universe.create!(name: "Ocean", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
-gourmandise = Universe.create!(name: "Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
+jungle = Universe.create!(name: "La Jungle Mysterieuse", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
+ocean = Universe.create!(name: "Le Monde Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
+gourmandise = Universe.create!(name: "L'ile de la Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
 
 puts "Universes DONE"
 
@@ -109,7 +109,7 @@ jungle_story_1.tips.create(content:"Vivant dans des milieux pauvres et sans beau
 les plantes carnivores ont dû s’adapter pour survivre.
 Comme toutes les plantes, elles ne peuvent pas se déplacer.
 Elles ont donc mis en place un ingénieux système qui leur permet de piéger leurs proies.
-Grâce à un liquide sucré apprécié des insectes, les plantes carnivores attirent leurs proies. Elles les capturent ainsi pour les manger et les digérer rapidement. Surprenantes ces plantes ! 
+Grâce à un liquide sucré apprécié des insectes, les plantes carnivores attirent leurs proies. Elles les capturent ainsi pour les manger et les digérer rapidement. Surprenantes ces plantes !
 ")
 puts "Jungle Story 1 DONE"
 

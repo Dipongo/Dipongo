@@ -65,6 +65,14 @@ and (orientation : landscape) {
     bottom: 10px;
     right: 10px;
   }
+
+  .star-valid{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(51deg);
+    left: 53px;
+  }
 }
 
 /* iPads (portrait) ----------- */
@@ -74,21 +82,21 @@ and (max-device-width : 2048px)
 and (orientation : portrait) {
 
   .wide-container-story-jungle{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506328861/Universes/jungle/fond-road-map-jungle.png');
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1506604353/Universes/jungle/fond-road-map-jungle-m.png');
   width: 100%;
   height: 100%;
   background-size: cover;
   position: relative;
   }
   .wide-container-story-ocean{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506328244/Universes/ocean/road-map-ocean.png');
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1507191600/Universes/ocean/road-map-ocean-m.png');
    width: 100%;
   height: 100%;
   background-size: cover;
   position: relative;
   }
   .wide-container-story-gourmandise{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1506444650/Universes/gourmandise/fond-road-map-gourmandise.png');
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1507191869/Universes/gourmandise/fond-road-map-gourmandise-m.png');
    width: 100%;
   height: 100%;
   background-size: cover;
@@ -96,16 +104,16 @@ and (orientation : portrait) {
   }
   .story1{
     position: relative;
-    top: 5rem;
-    left: 3rem;
+    top: 6rem;
+    left: 0rem;
     width: 20%;
-    height: 36rem;
+
   }
   .story2{
     position: relative;
-    top: 45px;
-    left: 456px;
-    height: 70rem;
+    top: 34px;
+    left: 463px;
+    height: 67rem;
     width: 36%;
   }
   .story3{
@@ -131,8 +139,15 @@ and (orientation : portrait) {
     border-radius: 10px;
     color: white;
     letter-spacing: 2.5px;
-    margin-top: -34rem;
+
     height: 5rem;
+  }
+  .star-valid{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(51deg);
+    left: 53px;
   }
 
 }

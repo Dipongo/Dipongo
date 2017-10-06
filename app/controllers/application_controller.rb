@@ -20,6 +20,14 @@ class ApplicationController < ActionController::Base
     user = User.new { |user| user.guest = true }
     user.email = "guest_#{Time.now.to_i}#{rand(99)}@example.com"
     user.save(:validate => false)
+    sign_in(:user, user)
     user
+  end
+
+
+  # Overwriting the sign_out redirect path method
+  def after_sign_out_path_for(resource_or_scope)
+    reset_session
+    root_path
   end
 end

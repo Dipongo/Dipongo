@@ -1,28 +1,28 @@
 
 /* iPads (landscape) ----------- */
 @media only screen
-and (min-device-width : 768px)
+and (min-device-width : 568px)
 and (max-device-width : 2048px)
 and (orientation : landscape) {
   .wide-container-page-jungle{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152562/Universes/jungle/fond-histoire-jungle-paysage-ipad.png');
-    height: 100%;
-    width: 100%;
+    height: 83rem;
+    width: 103rem;
     background-size: cover;
     position: relative;
   }
 
   .wide-container-page-ocean{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152570/Universes/ocean/fond-histoire-ocean-paysage-ipad.png');
-    height: 100%;
-    width: 100%;
+    height: 83rem;
+    width: 103rem;
     background-size: cover;
     position: relative;
   }
   .wide-container-page-gourmandise{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152551/Universes/gourmandise/fond-histoire-gourmandise-paysage-ipad.png');
-    height: 100%;
-    width: 100%;
+    height: 83rem;
+    width: 103rem;
     background-size: cover;
     position: relative;
   }
@@ -41,18 +41,19 @@ and (orientation : landscape) {
   }
 
   .story-text {
+    color: rgb(91, 97, 102);
     text-align: justify;
     font-family: $geosans;
     position: relative;
     padding: 1rem;
     top: -9.9rem;
     left: 68rem;
-    width: 33rem;
+    width: 27rem;
     height: 65rem;
     margin-top: 2.8rem;
-    font-size: 160%;
+    font-size: 120%;
     border-radius: 3%;
-    background-color: rgba(244,244,244,0.2);
+    background-color: rgba(244,244,244,0.4);
     text-shadow: 2px 2px 5px rgba(24,24,24,0.7);
   }
   .story-image{
@@ -80,6 +81,23 @@ and (orientation : landscape) {
   height: 150px;
   width: 150px;
  }
+
+ #new_solution{
+  width: 50px;
+  height: 50px;
+ }
+
+#solution-modal{
+  width: 100%;
+}
+
+.modal-dialog{
+  margin-left: 22rem;
+}
+
+.modal-lg{
+  margin-left: 7rem;
+}
 
   .appareil-photo{
     width: 15rem;
@@ -112,12 +130,12 @@ and (orientation : landscape) {
 
   .pagination {
     position: relative;
-    bottom:  11rem;
+    bottom:  15rem;
     display: flex;
-    left: 70rem;
+    left: 72rem;
     justify-content: space-around;
-    width: 150px;
-    height: 100px;
+    width: 10rem;
+    height: 5rem;
   }
 
   .space-p {

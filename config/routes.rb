@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :universes, only: [:index, :show]
 
+  get 'sign_up' => "pages#guest_sign_up"
+  post 'sign_up' => "pages#create_sign_up"
+
   resources :stories, only: [:show] do
     resources :solutions, only: [:index, :new, :create]
   end
@@ -14,4 +17,3 @@ Rails.application.routes.draw do
   mount Attachinary::Engine => "/attachinary"
 
 end
-

@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :solutions
+  has_many :solutions 
 
   def move_to(user)
     todos.update_all(user_id: user.id)

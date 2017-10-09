@@ -16,9 +16,9 @@ Universe.destroy_all
 User.destroy_all
 Solution.destroy_all
 
-jungle = Universe.create!(name: "Jungle", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
-ocean = Universe.create!(name: "Ocean", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
-gourmandise = Universe.create!(name: "Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
+jungle = Universe.create!(name: "Jungle", nickname:"La Forêt Tropicale", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
+ocean = Universe.create!(name: "Ocean", nickname:"Le Fond Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
+gourmandise = Universe.create!(name: "Gourmandise", nickname: "L'ile de la Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
 
 puts "Universes DONE"
 
@@ -97,13 +97,9 @@ jungle_story_1.pages.create(content: "Edgar commence à peine à trouver le somm
 réveille. Il sursaute et se lève immédiatement sur son hamac. Qu’est-ce qui peut faire
 un bruit pareil ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image2.png")
 
-jungle_story_1.pages.create(content: "Edgar décide de partir voir ce qui a pu le réveiller. Le voilà rassuré ! Derrière les
-plantes carnivores, il voit une grande cascade. Le bruit, c’est en fait juste de l’eau qui
-coule !
-Il fait très chaud et humide dans cette forêt. La vue de l’eau donne envie à Edgar de
-se baigner. Mais un gouffre le sépare de la cascade.
-Peux-tu aider Edgar à trouver un moyen de franchir le précipice ?
-Dès que tu es prêt, prends en photo ta solution.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image3.png")
+jungle_story_1.pages.create(content: "AH C’était l’eau qui coule qui a réveillé Edgard. Il fait très chaud et Edgard a très envie de se baigner. Mais mince, un gouffre le sépare de la cascade. Peux tu aider Edgar à trouver une solution pour qu’il puisse aller dans la cascade ?
+Dès que tu es prêt, prends en photo ta solution.
+", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image3.png")
 
 jungle_story_1.tips.create(content:"Vivant dans des milieux pauvres et sans beaucoup de ressources,
 les plantes carnivores ont dû s’adapter pour survivre.
@@ -125,7 +121,7 @@ tracteurs.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138
 jungle_story_2.pages.create(content: "Emu, Edgar ne peut pas laisser cet arbre solitaire.
 Peux-tu aider Edgar à imaginer des plantes qui viendraient entourer l’arbre et lui tenir
 compagnie ?
-Quand tu es prêt, prends une photo de ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle01/Fore%CC%82t_tropicale_1.6.png")
+Peux tu créer un ami pour Django L’arbre et lui écrire une parole réconfortante ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle01/Fore%CC%82t_tropicale_1.6.png")
 
 jungle_story_2.tips.create(content:"On reconnaît les forêts tropicales à leurs végétations abondantes et leurs grands arbres.
 Il y fait en général très chaud et à cause des fortes pluies il fait humide aussi.

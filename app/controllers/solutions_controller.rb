@@ -1,6 +1,6 @@
 class SolutionsController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: [:index, :new, :create]
+  skip_before_action :authenticate_user!, only: [:new, :create, :index]
 
   before_action :set_story, only: [:index, :new, :create]
 
@@ -21,7 +21,13 @@ class SolutionsController < ApplicationController
     @solution = current_user.solutions.new(solution_params)
     @solution.story = @story
     @solution.save
-    redirect_to story_solutions_path(@story)
+    # redirect_to story_solutions_path(@story)
+    if current_user.guest
+      redirect_to sign_up_path
+      session[:story_id] = @story.id
+    else
+      redirect_to story_solutions_path(@story)
+    end
 
   end
 
@@ -32,7 +38,7 @@ private
   end
 
   def solution_params
-    params.require(:solution).permit(:photo, :users)
+    params.require(:solution).permit(:photo, user_attributes: [:name, :age])
   end
 
 end

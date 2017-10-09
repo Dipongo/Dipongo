@@ -16,9 +16,7 @@
             <%= link_to universe_path(universe) do %>
               <%= cl_image_tag universe.photo.path %>
               <div class="univers-carousel-name">
-                <p>
-                  <%= universe.name %>
-                </p>
+                <p><%= universe.name %></p>
               </div>
               <div class="medaille">
                 <% if current_user.completed?(universe) %>
@@ -46,4 +44,10 @@
       </a>
     </div>
   </section>
+  <div class="dropdown">
+      <%= cl_image_tag("Universes/jungle/etoile-orange.png", :width=>50, :crop=>"scale", :effect=>"grayscale", class:"avatar dropdown-toggle", data: {toggle: "dropdown"})%>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+    </ul>
+  </div>
 </div>

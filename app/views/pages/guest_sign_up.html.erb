@@ -1,0 +1,14 @@
+<div class="container-log">
+  <div class="content-log-sign">
+    <div class="form-log-sign">
+      <h3>Enregistre toi pour continuer l'aventure</h3>
+      <%= simple_form_for :user, url: sign_up_path do |f| %>
+        <%= f.input :first_name, label: 'Prénom', required: true  %>
+        <%= f.input :last_name, label: 'Nom', required: true  %>
+        <%= f.input :email,required: true, autofocus: true  %>
+        <%= f.input :password, label: 'Mot de passe',  required: true  %>
+        <%= f.button :submit, "Enregistrer", class: "btn btn-success text-center" %>
+      <% end %>
+    </div>
+  </div>
+</div>

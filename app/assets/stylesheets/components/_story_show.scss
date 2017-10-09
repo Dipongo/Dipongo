@@ -50,7 +50,7 @@ and (orientation : landscape) {
     left: 68rem;
     width: 27rem;
     height: 65rem;
-    margin-top: 2.8rem;
+    // margin-top: 2.8rem;
     font-size: 120%;
     border-radius: 3%;
     background-color: rgba(244,244,244,0.4);
@@ -130,12 +130,28 @@ and (orientation : landscape) {
 
   .pagination {
     position: relative;
-    bottom:  15rem;
+    bottom:  9rem;
     display: flex;
-    left: 72rem;
-    justify-content: space-around;
-    width: 10rem;
-    height: 5rem;
+    padding: 0px;
+    margin: 0px;
+    // justify-content: space-around;
+    width: 200px;
+    left: 712px;
+    // height: 5rem;
+  }
+  .appareil-photo{
+    height: 16rem;
+    animation-name: stretch;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-out;
+   animation-delay: 0;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-fill-mode: none;
+   animation-play-state: running;
+  }
+  .btn-switch arrow-right{
+
   }
 
   .space-p {
@@ -271,7 +287,7 @@ and (orientation : landscape) {
   .pongo-animation{
     position: relative;
     width: 100px;
-    height: 100px;
+    height: 120px;
     bottom: 70px;
     animation-name: stretch;
    animation-duration: 0.5s;

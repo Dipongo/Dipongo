@@ -17,17 +17,17 @@
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
 
     <% elsif @next_page %>
-      <p class="space-p"></p>
-      <p class="space-p"></p>
+      <!-- <p class="space-p"></p>
+      <p class="space-p"></p> -->
       <%= link_to "", story_path(@story, { page: @next_page.position }), class: "btn-switch arrow-right" %>
 
     <% else # last page %>
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
 
       <%= simple_form_for [@story, Solution.new] do |s| %>
-      <div class="appareil-photo"></div>
+      <div class="appareil-photo">
         <%= s.input :photo, as: :attachinary, input_html: {capture: true, accept: "image/*" } %>
-
+      </div>
 
         <div class="modal" id="solution-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-="false">
           <div class="modal-dialog" role="document">

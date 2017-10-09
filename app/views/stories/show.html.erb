@@ -25,10 +25,7 @@
       <%= link_to "", story_path(@story, { page: @prev_page.position }),class: "btn-switch arrow-left"%>
 
       <%= simple_form_for [@story, Solution.new] do |s| %>
-      <div class="appareil-photo">
-        <%= s.input :photo, as: :attachinary, input_html: {capture: true, accept: "image/*" } %>
-      </div>
-
+        <%= s.input :photo, as: :attachinary, input_html: {capture: true, accept: "image/*" }%>
         <div class="modal" id="solution-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-="false">
           <div class="modal-dialog" role="document">
             <div class="modal-content">

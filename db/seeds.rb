@@ -16,7 +16,7 @@ Universe.destroy_all
 User.destroy_all
 Solution.destroy_all
 
-jungle = Universe.create!(name: "Jungle", nickname:"La Forêt Tropicale", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
+jungle = Universe.create!(name: "Jungle", nickname:"La Foret Tropicale", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
 ocean = Universe.create!(name: "Ocean", nickname:"Le Fond Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
 gourmandise = Universe.create!(name: "Gourmandise", nickname: "L'ile de la Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
 

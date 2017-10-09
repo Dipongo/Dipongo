@@ -1,4 +1,4 @@
-<div class="wide-container-story-<%= @universe.name.downcase %>">
+<div class="wide-container-story-<%= @universe.nickname.downcase %>">
   <% @stories.each_with_index do |story, i| %>
     <div class="story<%= i + 1 %>">
       <% if current_user.solutions.exists?(story_id: story) %>
@@ -6,11 +6,11 @@
           <%= cl_image_tag("Universes/jungle/etoile-orange.png", :width=>120, :crop=>"scale") %>
         </div>
         <div class="picture-valid">
-          <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}-valid.png", :width=>300, :crop=>"scale") %>
+          <%= cl_image_tag("Universes/#{@universe.nickname.downcase}/histoire#{i + 1}-valid.png", :width=>300, :crop=>"scale") %>
         </div>
       <% else %>
         <%= link_to story_path(story) do %>
-          <%= cl_image_tag("Universes/#{@universe.name.downcase}/histoire#{i + 1}.png", :width=>300, :crop=>"scale") %>
+          <%= cl_image_tag("Universes/#{@universe.nickname.downcase}/histoire#{i + 1}.png", :width=>300, :crop=>"scale") %>
         <% end %>
       <% end %>
     </div>

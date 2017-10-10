@@ -138,7 +138,7 @@ jungle_story_3.pages.create(content: "Edgar...p2", photo_url: "http://res.cloudi
 
 jungle_story_3.pages.create(content: "Edgar...p3", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png")
 
-jungle_story_3.tips.create(content:"Tips....")
+jungle_story_3.tips.create(content:"...")
 
 puts "Jungle Story 3 DONE"
 
@@ -192,11 +192,11 @@ puts "Ocean story 2 DONE"
 
 ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ebloui par les faisseaux lumineux qui... l'eau.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png")
 
-ocean_story_3.pages.create(content: "Edgard recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "")
+ocean_story_3.pages.create(content: "Edgard recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png")
 
-ocean_story_3.pages.create(content: "Que peut-il bien se cacher deriere ce rocher?. On apercoit des bulles", photo_url: "")
+ocean_story_3.pages.create(content: "Que peut-il bien se cacher deriere ce rocher?. On apercoit des bulles", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633195/Universes/ocean/ocean03/ocean-histoire3-image3.png")
 
-ocean_story_3.tips.create(content:"Tips....")
+ocean_story_3.tips.create(content:"...")
 
 puts "Ocean story 3 DONE"
 

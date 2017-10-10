@@ -17,16 +17,18 @@ User.destroy_all
 Solution.destroy_all
 
 jungle = Universe.create!(name: "Jungle", nickname:"La Foret Tropicale", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135829/Universes/jungle/monde-jungle_pnyccb.png")
-ocean = Universe.create!(name: "Ocean", nickname:"Fond Marin", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
+ocean = Universe.create!(name: "Ocean", nickname:"Les Fonds Marins", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135827/Universes/ocean/monde-ocean_mtprh5.png")
 gourmandise = Universe.create!(name: "Gourmandise", nickname: "L'ile de la Gourmandise", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505135832/Universes/gourmandise/monde-gourmandise_rtizgv.png")
 
 puts "Universes DONE"
 
 jungle_story_1 = jungle.stories.create!(name: "Forêt Tropical 1")
 jungle_story_2 = jungle.stories.create!(name: "Forêt Tropical 2")
+jungle_story_3 = jungle.stories.create!(name: "Forêt Tropical 3")
 
 ocean_story_1 = ocean.stories.create!(name: "Fonds marins 1")
 ocean_story_2 = ocean.stories.create!(name: "Fonds marins 2")
+ocean_story_3 = ocean.stories.create!(name: "Fonds marins 3")
 
 gourmandise_story_1 = gourmandise.stories.create!(name: "Gourmandise 1")
 gourmandise_story_2 = gourmandise.stories.create!(name: "Gourmandise 2")
@@ -130,6 +132,17 @@ Ces forêts se trouvent dans les pays près de l’équateur, une zone où le so
 
 puts "Jungle Story 2 DONE"
 
+jungle_story_3.pages.create(content: "Edgar...p1", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png")
+
+jungle_story_3.pages.create(content: "Edgar...p2", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png")
+
+jungle_story_3.pages.create(content: "Edgar...p3", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png")
+
+jungle_story_3.tips.create(content:"...")
+
+puts "Jungle Story 3 DONE"
+
+
 ocean_story_1.pages.create(content: "Il fait nuit quand Edgar arrive dans l’univers des fonds marins. Heureusement, le ciel
 est dégagé et les étoiles l’éclairent. Apercevant l’eau, Edgar se demande ce qu’il
 peut se cacher dessous.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image1.png")
@@ -176,6 +189,16 @@ Si tu regardes le poisson-clown se déplacer, tu auras l’impression de le voir
 Il est drôle en bougeant son corps de gauche à droite pour avancer !
 ")
 puts "Ocean story 2 DONE"
+
+ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ebloui par les faisseaux lumineux qui... l'eau.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png")
+
+ocean_story_3.pages.create(content: "Edgard recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png")
+
+ocean_story_3.pages.create(content: "Que peut-il bien se cacher deriere ce rocher?. On apercoit des bulles", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633195/Universes/ocean/ocean03/ocean-histoire3-image3.png")
+
+ocean_story_3.tips.create(content:"...")
+
+puts "Ocean story 3 DONE"
 
 gourmandise_story_1.pages.create(content: "Edgar vient d’atterrir dans l’univers de la gourmandise. C’est un endroit rempli de
 friandises, de sucreries et d’aliments appétissants.

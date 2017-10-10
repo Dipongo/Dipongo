@@ -15,10 +15,10 @@
         <div class="content-user-form">
           <%= s.simple_fields_for :user, @user do |user| %>
             <div class="user-form text-left">
-              <%= user.input :name, placeholder: 'Emma' %>
+              <%= user.input :name, placeholder: 'Ton prénom' %>
             </div>
             <div class="user-form text-left">
-              <%= user.input :age, as: :integer, placeholder: '5' %>
+              <%= user.input :age, as: :integer, placeholder: 'Ton age' %>
             </div>
           <% end %>
         </div>

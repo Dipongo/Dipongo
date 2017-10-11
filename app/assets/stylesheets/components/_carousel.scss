@@ -14,7 +14,6 @@ and (orientation : landscape){
 
     height: 60rem;
     margin:30px auto;
-    padding:0px;
     position:relative;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -23,6 +22,7 @@ and (orientation : landscape){
     -ms-user-select: none;
     user-select: none;
   }
+
 
   section.awSlider:hover > img{
     margin: 0px auto;
@@ -62,9 +62,12 @@ and (orientation : landscape){
     }
    }
   .carousel-control{
+    position: absolute;
     opacity: 1;
     width: 0;
   }
+
+
   .glyphicon{
     color: $dipongo-orange;
   }

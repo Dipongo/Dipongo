@@ -20,17 +20,15 @@
               </div>
               <div class="medaille">
                 <% if current_user.completed?(universe) %>
-                  <%= cl_image_tag("Composants/medaille.png",
-                     :width=>200, :crop=>"scale") %>
+                  <%= cl_image_tag("Composants/medailles.png", :width=>200, :crop=>"scale") %>
                 <% else %>
-                  <%= cl_image_tag("Composants/medaille.png",
-                     :width=>200, :crop=>"scale", :effect=>"grayscale") %>
+                  <%= cl_image_tag("Composants/medailles.png", :width=>200, :crop=>"scale", :effect=>"grayscale")%>
                 <% end %>
               </div>
             <% end %>
           </div>
         <% end %>
-    
+
 
       <!-- Controls -->
       <!-- <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">

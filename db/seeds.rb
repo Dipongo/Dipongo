@@ -93,15 +93,15 @@ puts "User_5 Solutions DONE"
 jungle_story_1.pages.create(content: "Edgar arrive dans la forêt tropicale. Etouffé par la chaleur, il est déjà bien fatigué. Ce
 n’est pas si facile la vie d’explorateur. Edgar a bien mérité un peu de repos. Installé
 dans son hamac, il contemple la belle nature qui s’offre à lui. Il y a plein de feuilles de
-formes et de couleurs différentes.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image1.png")
+formes et de couleurs différentes.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle01/jungle-histoire1-image1.png")
 
 jungle_story_1.pages.create(content: "Edgar commence à peine à trouver le sommeil quand un bruit assourdissant le
 réveille. Il sursaute et se lève immédiatement sur son hamac. Qu’est-ce qui peut faire
-un bruit pareil ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image2.png")
+un bruit pareil ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138162/Universes/jungle/jungle01/jungle-histoire1-image2.png")
 
 jungle_story_1.pages.create(content: "AH C’était l’eau qui coule qui a réveillé Edgard. Il fait très chaud et Edgard a très envie de se baigner. Mais mince, un gouffre le sépare de la cascade. Peux tu aider Edgar à trouver une solution pour qu’il puisse aller dans la cascade ?
 Dès que tu es prêt, prends en photo ta solution.
-", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle02/jungle-histoire2-image3.png")
+", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138166/Universes/jungle/jungle01/jungle-histoire1-image3.png")
 
 jungle_story_1.tips.create(content:"Vivant dans des milieux pauvres et sans beaucoup de ressources,
 les plantes carnivores ont dû s’adapter pour survivre.
@@ -114,16 +114,16 @@ puts "Jungle Story 1 DONE"
 jungle_story_2.pages.create(content: "Edgar a traversé la grande cascade, il peut désormais vadrouiller dans la forêt
 tropicale. Notre explorateur est surpris de voir devant lui un arbre tout seul entouré
 de couleurs sombres. Edgar décide de s’en approcher pour voir ce qu’il a pu se
-passer.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle01/Fore%CC%82t_tropicale_1.4.png")
+passer.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle02/jungle-histoire2-image1.png")
 
 jungle_story_2.pages.create(content: "Edgar découvre un arbre bien malheureux qui pleure toutes les larmes de son tronc.
 L’arbre a perdu tous ses amis, arrachés par des humains malveillants à bord de leurs
-tracteurs.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle01/Fore%CC%82t_tropicale_1.5.png")
+tracteurs.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138299/Universes/jungle/Jungle02/jungle-histoire2-image2.png")
 
 jungle_story_2.pages.create(content: "Emu, Edgar ne peut pas laisser cet arbre solitaire.
 Peux-tu aider Edgar à imaginer des plantes qui viendraient entourer l’arbre et lui tenir
 compagnie ?
-Peux tu créer un ami pour Django L’arbre et lui écrire une parole réconfortante ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle01/Fore%CC%82t_tropicale_1.6.png")
+Peux tu créer un ami pour Django L’arbre et lui écrire une parole réconfortante ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138302/Universes/jungle/Jungle02/jungle-histoire2-image3.png")
 
 jungle_story_2.tips.create(content:"On reconnaît les forêts tropicales à leurs végétations abondantes et leurs grands arbres.
 Il y fait en général très chaud et à cause des fortes pluies il fait humide aussi.

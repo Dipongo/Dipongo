@@ -63,8 +63,8 @@ and (orientation : landscape) {
 
     margin-top: 0rem;
     position: absolute;
-    bottom: 5rem;
-    right: 1rem;
+    top: 6rem;
+    right: 6rem;
   }
 
   .star-valid{
@@ -123,10 +123,8 @@ and (orientation : portrait) {
 
   .btn-back {
     position: relative;
-    bottom: 38rem;
-    right: -29rem;
-    width: 30rem;
-    height: 5.5rem;
+    top: -130rem;
+    right: -59rem;
 
   }
   .btn-universe{

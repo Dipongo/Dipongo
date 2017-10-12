@@ -63,8 +63,8 @@ and (orientation : landscape) {
 
     margin-top: 0rem;
     position: absolute;
-    bottom: 5rem;
-    right: 1rem;
+    top: 6rem;
+    right: 6rem;
   }
 
   .star-valid{
@@ -88,13 +88,13 @@ and (orientation : portrait) {
   position: relative;
   }
   .wide-container-story-ocean{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1507191600/Universes/ocean/road-map-ocean-m.png');
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1507805147/Universes/ocean/road-map-ocean-m.png');
   height: 102rem;
   background-size: cover;
   position: relative;
   }
   .wide-container-story-gourmandise{
-  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1507191869/Universes/gourmandise/fond-road-map-gourmandise-m.png');
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1507805072/Universes/gourmandise/fond-road-map-gourmandise-m.png');
   height: 102rem;
   background-size: cover;
   position: relative;
@@ -123,10 +123,8 @@ and (orientation : portrait) {
 
   .btn-back {
     position: relative;
-    bottom: 38rem;
-    right: -29rem;
-    width: 30rem;
-    height: 5.5rem;
+    top: -130rem;
+    right: -59rem;
 
   }
   .btn-universe{

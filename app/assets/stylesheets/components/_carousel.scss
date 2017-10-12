@@ -40,7 +40,12 @@ and (orientation : landscape){
     margin: 0px auto;
   }
 
-
+  .carousel-inner{
+    overflow: visible;
+    position:absolute;
+    top: -2rem;
+    left: -2rem;
+  }
 
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
       height: 50rem;
@@ -121,6 +126,9 @@ section.awSlider .carousel{
   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
       height: 550px;
       margin: 40px auto;
+  }
+  .carousel-inner{
+    overflow: visible;
   }
 
   .univers-carousel-name {

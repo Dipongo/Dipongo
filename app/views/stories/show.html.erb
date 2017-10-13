@@ -5,7 +5,16 @@
     </div>
     <div class="story-text text-center scroll">
       <%= @page.content %>
-
+      <% if @page.voice %>
+        <div class="text-center">
+          <div class="page-sound">
+            <a class="page-sound-play" href="#"></a>
+            <audio>
+              <source src="<%= cl_video_path @page.voice.path %>" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
   <div class="pagination">

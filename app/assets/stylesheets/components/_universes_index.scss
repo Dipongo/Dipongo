@@ -103,3 +103,71 @@ and (orientation : portrait) {
     left: 31rem;
   }
 }
+
+/* Google Nexus 10 (landscape) */
+@media only screen and (max-width: 1280px) and (orientation : landscape) {
+  .wide-container-universes{
+  background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507732021/Composants/fond-etoiles-2.jpg');
+
+  width:1280px;
+  background-size: cover;
+  }
+  .title-univers-index {
+  height: 17%;
+  h1{
+  font-family: $gunny;
+  font-size: 7rem;
+  margin-top: 0px;
+  padding-top: 5rem;
+  text-align: center;
+  color: white;
+    }
+  }
+
+
+  .medaille{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 23rem;
+    left: 50rem;
+  }
+
+
+  /* Dropdown menu */
+  .navbar-wagon-dropdown-menu {
+    margin-top: 15px;
+    box-shadow: 1px 1px 4px #E6E6E6;
+    border-color: #E6E6E6;
+  }
+  .navbar-wagon-dropdown-menu li > a {
+    transition: color 0.3s ease;
+    font-weight: lighter !important;
+    color: #999999 !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    padding: 10px 20px;
+  }
+  .navbar-wagon-dropdown-menu li > a:hover {
+    background: transparent !important;
+    color: black !important;
+  }
+  .navbar-wagon-dropdown-menu:before {
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    top: -6px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+  }
+  .dropdown{
+    bottom: 170px;
+    left: 30px;
+  }
+
+
+}

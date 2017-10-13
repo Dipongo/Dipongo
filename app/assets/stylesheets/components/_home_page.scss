@@ -200,7 +200,7 @@ and (orientation : portrait) {
 @media only screen and (max-width: 1280px) and (orientation : landscape) {
   .wide-container{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
-    width: 1280px;
+    width: 100%;
     background-size: cover;
   }
 

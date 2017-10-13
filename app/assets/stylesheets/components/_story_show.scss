@@ -90,6 +90,10 @@ and (orientation : landscape) {
 #solution-modal{
   width: 100%;
 }
+.modal-body{
+  height: 53rem;
+}
+
 
 .modal-dialog{
   margin-left: 22rem;
@@ -104,9 +108,7 @@ and (orientation : landscape) {
     width: 95px;
     height: 95px;
     margin-top: -3rem;
-
     background-image: url("http://res.cloudinary.com/dipongo/image/upload/c_scale,w_100/v1507205404/Composants/boutons-prise-photos.png");
-
     color: transparent;
     animation-name: stretch;
     animation-duration: 0.5s;

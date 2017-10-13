@@ -132,7 +132,7 @@ Ces forêts se trouvent dans les pays près de l’équateur, une zone où le so
 
 puts "Jungle Story 2 DONE"
 
-jungle_story_3.pages.create(content: "Edgar est un vrai escaladeur et s'amuse à monter sur une arche avec de la mousse, ça mouille!!!. Le petit renard contemple le paysage, qu'est ce qu'il est reveur notre Edgar!. "photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png")
+jungle_story_3.pages.create(content: "Edgar est un vrai escaladeur et s'amuse à monter sur une arche avec de la mousse, ça mouille!!!. Le petit renard contemple le paysage, qu'est ce qu'il est reveur notre Edgar!.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png")
 
 jungle_story_3.pages.create(content: "Edgar voudrait ramener un beau souvenir à son ami Gaston le raton laveur. Il découvre de superbes plantes mais qu'est ce qu'il pourrait rapporter a son ami Gaston.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png")
 

@@ -13,7 +13,7 @@
     <div class="solution-btn text-center">
       <%= link_to image_tag("http://res.cloudinary.com/dipongo/image/upload/v1507158628/Composants/bouton-nouvelle-histoire.png"), universe_path(@story.universe)%>
     </div>
-    <p class="text-center solution-font">Toutes vos jolies idees...</p>
+    <p class="text-center solution-font">Toutes vos jolies idées...</p>
   </div>
     <div class="row">
       <% @story.solutions.reject { |solution| solution == @solution }.each do |solution| %>

@@ -132,11 +132,11 @@ Ces forêts se trouvent dans les pays près de l’équateur, une zone où le so
 
 puts "Jungle Story 2 DONE"
 
-jungle_story_3.pages.create(content: "Edgar...p1", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png")
+jungle_story_3.pages.create(content: "Edgar est un vrai escaladeur et s'amuse à monter sur une arche avec de la mousse, ça mouille!!!. Le petit renard contemple le paysage, qu'est ce qu'il est reveur notre Edgar!.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png")
 
-jungle_story_3.pages.create(content: "Edgar...p2", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png")
+jungle_story_3.pages.create(content: "Edgar voudrait ramener un beau souvenir à son ami Gaston le raton laveur. Il découvre de superbes plantes mais qu'est ce qu'il pourrait rapporter a son ami Gaston.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png")
 
-jungle_story_3.pages.create(content: "Edgar...p3", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png")
+jungle_story_3.pages.create(content: "Peux-tu aider Edgar a imaginer un souvenir de la forêt  tropicale pour l'offrir à Gaston le raton ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png")
 
 jungle_story_3.tips.create(content:"...")
 
@@ -190,7 +190,7 @@ Il est drôle en bougeant son corps de gauche à droite pour avancer !
 ")
 puts "Ocean story 2 DONE"
 
-ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ebloui par les faisseaux lumineux qui... l'eau.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png")
+ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ébloui par les faisceaux lumineux qui pénètrent  dans l'eau et émoustillent les poissons et d'ailleurs camélia est ce que tu l'as vois ? On te donne un indice elle est en orange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png")
 
 ocean_story_3.pages.create(content: "Edgar recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png")
 

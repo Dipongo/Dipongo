@@ -2,7 +2,7 @@
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 368px)
-and (max-device-width : 2056px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
   .wide-container-page-jungle{
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152562/Universes/jungle/fond-histoire-jungle-paysage-ipad.png');
@@ -90,6 +90,10 @@ and (orientation : landscape) {
 #solution-modal{
   width: 100%;
 }
+// .modal-body{
+//   height: 53rem;
+// }
+
 
 .modal-dialog{
   margin-left: 22rem;
@@ -104,9 +108,7 @@ and (orientation : landscape) {
     width: 95px;
     height: 95px;
     margin-top: -3rem;
-
     background-image: url("http://res.cloudinary.com/dipongo/image/upload/c_scale,w_100/v1507205404/Composants/boutons-prise-photos.png");
-
     color: transparent;
     animation-name: stretch;
     animation-duration: 0.5s;
@@ -446,4 +448,296 @@ and (orientation : portrait) {
     transform: scale(1);
   }
   }
+}
+
+
+/* Google Nexus 10 (landscape) */
+@media only screen and (max-width: 1280px) and (orientation : landscape) {
+
+  .wide-container-page-jungle{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152562/Universes/jungle/fond-histoire-jungle-paysage-ipad.png');
+    // height: 83rem;
+    width: 1280px;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .wide-container-page-ocean{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152570/Universes/ocean/fond-histoire-ocean-paysage-ipad.png');
+    // height: 83rem;
+    width: 1280px;
+    background-size: cover;
+    position: absolute;
+  }
+  .wide-container-page-gourmandise{
+    background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152551/Universes/gourmandise/fond-histoire-gourmandise-paysage-ipad.png');
+    // height: 83rem;
+    width: 1280px;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .story-div {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 66rem;
+    img{
+    vertical-align: middle;
+    height: 65rem;
+    width: 65rem;
+    margin-top: 1rem;
+    }
+  }
+
+  .story-text {
+    color: #5b6166;
+    text-align: justify;
+    font-family: "Geosans_Light";
+    position: relative;
+    padding: 1rem;
+    top: -7.9rem;
+    left: 88rem;
+    width: 34rem;
+    height: 52rem;
+    margin-top: 2.8rem;
+    font-size: 120%;
+    border-radius: 20px;
+    background-color: rgba(244, 244, 244, 0.4);
+    text-shadow: 2px 2px 5px rgba(24, 24, 24, 0.5)
+  }
+  .story-image{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    padding: 20px;
+    img{
+      width: 750px;
+      height: 750px;
+      margin-top: 0rem;
+    }
+  }
+  .attachinary_container ul li img{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin-left: 57px;
+  }
+
+  .solution_photo{
+    margin-left: 7rem;
+    width: 200px;
+    height: 250px;
+    margin-top: -11rem;
+    z-index: 100;
+  }
+
+  .control-label.attachinary.optional{
+  height: 150px;
+  width: 150px;
+  }
+
+  #new_solution{
+  width: 50px;
+  height: 50px;
+  }
+
+  #solution-modal{
+    width: 100%;
+  }
+
+  // .modal-body{
+  //   height: 53rem;
+  // }
+
+  .modal-dialog{
+    margin-left: 22rem;
+  }
+
+  .modal-lg{
+    margin-left: 7rem;
+  }
+
+  .form-group.attachinary.optional.solution_photo{
+    position: absolute;
+    margin-left: 6rem;
+    width: 95px;
+    height: 95px;
+    margin-top: -3rem;
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/c_scale,w_100/v1507205404/Composants/boutons-prise-photos.png");
+    color: transparent;
+    animation-name: stretch;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+  .pagination {
+    position: relative;
+    bottom:  9rem;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+    left: 91rem;
+    top: 3rem;
+  }
+
+  .space-p {
+    height: 40px;
+    width: 40px;
+  }
+
+  .btn-camera {
+    padding: 6px 0;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+    height: 40px;
+    width: 70px;
+    border: none;
+    border-radius: 10%;
+  }
+
+  .arrow-right:after {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-right a{
+    content: '\f061';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-right:active {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-left a{
+    content: '\f060';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-left:after {
+    content: '\f060';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .arrow-left:active {
+    content: '\f060';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: $orange;
+    a{
+      text-decoration: none;
+    }
+  }
+
+
+  .btn-switch:active {
+    padding: 7px;
+    text-align: center;
+    background-color: $orange;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    &:focus {
+      text-decoration: none;
+      color: white;
+      background-color: $orange;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .btn-switch {
+    padding: 7px;
+    text-align: center;
+    background-color: $orange;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    &:focus {
+      text-decoration: none;
+      color: white;
+      background-color: $orange;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+
+  // Pongo Animation
+  .pongo-animation{
+    position: relative;
+    width: 100px;
+    height: 120px;
+    bottom: 70px;
+    animation-name: stretch;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-out;
+   animation-delay: 0;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-fill-mode: none;
+   animation-play-state: running;
+  }
+  @keyframes stretch {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+  }
+
 }

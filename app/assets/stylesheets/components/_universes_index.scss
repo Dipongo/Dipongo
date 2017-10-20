@@ -1,4 +1,4 @@
-/* iPads (landscape) ----------- */
+// /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 368px)
 and (max-device-width : 2056px)
@@ -105,11 +105,16 @@ and (orientation : portrait) {
 }
 
 /* Google Nexus 10 (landscape) */
-@media only screen and (max-width: 1280px) and (orientation : landscape) {
+@media screen
+  and (device-width: 1536px)
+  and (device-height: 2048px)
+  and (-webkit-min-device-pixel-ratio: 1.6)
+  and (-webkit-max-device-pixel-ratio: 1.6) {
+
   .wide-container-universes{
   background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507732021/Composants/fond-etoiles-2.jpg');
-
-  width:1280px;
+  height: 100%;
+  width: auto;
   background-size: cover;
   }
   .title-univers-index {

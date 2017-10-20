@@ -458,6 +458,7 @@ and (orientation : portrait) {
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152562/Universes/jungle/fond-histoire-jungle-paysage-ipad.png');
     // height: 83rem;
     width: 1280px;
+    height: 100%;
     background-size: cover;
     position: absolute;
   }
@@ -466,6 +467,7 @@ and (orientation : portrait) {
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152570/Universes/ocean/fond-histoire-ocean-paysage-ipad.png');
     // height: 83rem;
     width: 1280px;
+    height: 100%;
     background-size: cover;
     position: absolute;
   }
@@ -473,6 +475,7 @@ and (orientation : portrait) {
     background-image: url('http://res.cloudinary.com/dipongo/image/upload/v1507152551/Universes/gourmandise/fond-histoire-gourmandise-paysage-ipad.png');
     // height: 83rem;
     width: 1280px;
+    height: 100%;
     background-size: cover;
     position: absolute;
   }
@@ -512,8 +515,8 @@ and (orientation : portrait) {
     height: 10rem;
     padding: 20px;
     img{
-      width: 750px;
-      height: 750px;
+      width: 70rem;
+      height: 70rem;
       margin-top: 0rem;
     }
   }
@@ -578,13 +581,12 @@ and (orientation : portrait) {
 
   .pagination {
     position: relative;
-    bottom:  9rem;
+    bottom:  16rem;
     display: flex;
     padding: 0px;
     margin: 0px;
     width: 200px;
     left: 91rem;
-    top: 3rem;
   }
 
   .space-p {

@@ -102,7 +102,7 @@ ActiveRecord::Schema.define(version: 20171009091346) do
     t.boolean "guest"
     t.string "name"
     t.integer "age"
-    t.boolean "admin"
+    t.boolean "admin", default: false, null: false
     t.string "first_name"
     t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true

@@ -117,16 +117,19 @@ puts "Jungle Story 1 DONE"
 jungle_story_2.pages.create(content: "Edgar a traversé la grande cascade, il peut désormais vadrouiller dans la forêt
 tropicale. Notre explorateur est surpris de voir devant lui un arbre tout seul entouré
 de couleurs sombres. Edgar décide de s’en approcher pour voir ce qu’il a pu se
-passer.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle02/jungle-histoire2-image1.png")
+passer.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138297/Universes/jungle/Jungle02/jungle-histoire2-image1.png",
+voice_url:"")
 
 jungle_story_2.pages.create(content: "Edgar découvre un arbre bien malheureux qui pleure toutes les larmes de son tronc.
 L’arbre a perdu tous ses amis, arrachés par des humains malveillants à bord de leurs
-tracteurs.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138299/Universes/jungle/Jungle02/jungle-histoire2-image2.png")
+tracteurs.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138299/Universes/jungle/Jungle02/jungle-histoire2-image2.png",
+voice_url:"")
 
 jungle_story_2.pages.create(content: "Emu, Edgar ne peut pas laisser cet arbre solitaire.
 Peux-tu aider Edgar à imaginer des plantes qui viendraient entourer l’arbre et lui tenir
 compagnie ?
-Peux tu créer un ami pour Django L’arbre et lui écrire une parole réconfortante ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138302/Universes/jungle/Jungle02/jungle-histoire2-image3.png")
+Peux tu créer un ami pour Django L’arbre et lui écrire une parole réconfortante ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138302/Universes/jungle/Jungle02/jungle-histoire2-image3.png",
+voice_url:"")
 
 jungle_story_2.tips.create(content:"On reconnaît les forêts tropicales à leurs végétations abondantes et leurs grands arbres.
 Il y fait en général très chaud et à cause des fortes pluies il fait humide aussi.
@@ -135,11 +138,14 @@ Ces forêts se trouvent dans les pays près de l’équateur, une zone où le so
 
 puts "Jungle Story 2 DONE"
 
-jungle_story_3.pages.create(content: "Edgar est un vrai escaladeur et s'amuse à monter sur une arche avec de la mousse, ça mouille!!!. Le petit renard contemple le paysage, qu'est ce qu'il est reveur notre Edgar!.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png")
+jungle_story_3.pages.create(content: "Edgar est un vrai escaladeur et s'amuse à monter sur une arche avec de la mousse, ça mouille!!!. Le petit renard contemple le paysage, qu'est ce qu'il est reveur notre Edgar!.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png",
+  voice_url:"")
 
-jungle_story_3.pages.create(content: "Edgar voudrait ramener un beau souvenir à son ami Gaston le raton laveur. Il découvre de superbes plantes mais qu'est ce qu'il pourrait rapporter a son ami Gaston.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png")
+jungle_story_3.pages.create(content: "Edgar voudrait ramener un beau souvenir à son ami Gaston le raton laveur. Il découvre de superbes plantes mais qu'est ce qu'il pourrait rapporter a son ami Gaston.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png",
+  voice_url:"")
 
-jungle_story_3.pages.create(content: "Peux-tu aider Edgar a imaginer un souvenir de la forêt  tropicale pour l'offrir à Gaston le raton ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png")
+jungle_story_3.pages.create(content: "Peux-tu aider Edgar a imaginer un souvenir de la forêt  tropicale pour l'offrir à Gaston le raton ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png",
+  voice_url:"")
 
 jungle_story_3.tips.create(content:"...")
 
@@ -148,17 +154,21 @@ puts "Jungle Story 3 DONE"
 
 ocean_story_1.pages.create(content: "Il fait nuit quand Edgar arrive dans l’univers des fonds marins. Heureusement, le ciel
 est dégagé et les étoiles l’éclairent. Apercevant l’eau, Edgar se demande ce qu’il
-peut se cacher dessous.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image1.png")
+peut se cacher dessous.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image1.png",
+voice_url:"")
 
 ocean_story_1.pages.create(content: "Notre jeune explorateur ne résiste pas longtemps à l’envie de sauter dans l’eau. Ni
 une, ni deux, Edgar plonge ! Il part à la découverte de ces fonds marins remplis de
-magnifiques coquillages et d’algues aux couleurs lumineuses", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image2.png")
+magnifiques coquillages et d’algues aux couleurs lumineuses", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image2.png",
+voice_url:"")
 
 ocean_story_1.pages.create(content: "Edgar n’a pas pensé qu’il ne peut pas tenir longtemps sous l’eau. Heureusement
 qu’il sait nager et qu’il peut remonter rapidement à la surface.
 Peux-tu l’aider à trouver une solution qui lui permettra de respirer sous l’eau et
 explorer la beauté de ces fonds marins ?
-Quand tu es prêt, prends une photo de ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image3.png")
+Quand tu es prêt, prends une photo de ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138361/Universes/ocean/ocean01/ocean-histoire1-image3.png",
+voice_url:""
+)
 
 ocean_story_1.tips.create(content:"Univers fascinant, les fonds marins recouvrent une grande partie de la surface de la terre.
 Ils abritent de très nombreuses espèces vivantes, c’est ce qu’on appelle la biodiversité.
@@ -173,17 +183,20 @@ puts "Ocean story 1 DONE"
 ocean_story_2.pages.create(content: "Grâce à toi, Edgar peut désormais respirer sous l’eau et y rester un long moment.
 Oh c’est super ! Edgar n’est pas seul dans ces fonds marins. Il aperçoit plein de
 camarades de jeu : Lulu la tortue, Irène la murène et même les frères Baboune des
-poissons-clowns.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image1.png")
+poissons-clowns.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image1.png",
+voice_url:"")
 
 ocean_story_2.pages.create(content: "En s’avançant légèrement, Edgar tombe nez à nez avec un superbe poisson jaune
 recouvert d’écailles multicolores.
 Le pauvre animal a l’air triste. Que peut-il se passer de si inquiétant pour qu’un
-poisson aux couleurs si éclatantes soit apeuré de la sorte ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image2.png")
+poisson aux couleurs si éclatantes soit apeuré de la sorte ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image2.png",
+voice_url:"")
 
 ocean_story_2.pages.create(content: "En discutant avec lui, Edgar comprend que le poisson jaune n’a pas de maison où
 s’abriter contrairement à tous les autres habitants des fonds marins. Peux-tu aider
 Edgar à construire une habitation pour son nouvel ami ?
-Quand tu es prêt, prends une photo de ta création.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image3.png")
+Quand tu es prêt, prends une photo de ta création.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138427/Universes/ocean/ocean02/ocean-histoire2-image3.png",
+voice_url:"")
 
 ocean_story_2.tips.create(content:"Rigolo avec sa couleur orange et ses rayures blanches, le poisson-clown se cache dans les anémones de mer pour se protéger.
 Anémone de mer et poisson-clown deviennent alors inséparables !
@@ -193,11 +206,14 @@ Il est drôle en bougeant son corps de gauche à droite pour avancer !
 ")
 puts "Ocean story 2 DONE"
 
-ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ébloui par les faisceaux lumineux qui pénètrent  dans l'eau et émoustillent les poissons et d'ailleurs camélia est ce que tu l'as vois ? On te donne un indice elle est en orange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png")
+ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ébloui par les faisceaux lumineux qui pénètrent  dans l'eau et émoustillent les poissons et d'ailleurs camélia est ce que tu l'as vois ? On te donne un indice elle est en orange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png",
+  voice_url:"")
 
-ocean_story_3.pages.create(content: "Edgar recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png")
+ocean_story_3.pages.create(content: "Edgar recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png",
+  voice_url:"")
 
-ocean_story_3.pages.create(content: "Que peut-il bien se cacher deriere ce rocher?. On apercoit des bulles", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633195/Universes/ocean/ocean03/ocean-histoire3-image3.png")
+ocean_story_3.pages.create(content: "Que peut-il bien se cacher deriere ce rocher?. On apercoit des bulles", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633195/Universes/ocean/ocean03/ocean-histoire3-image3.png",
+  voice_url:"")
 
 ocean_story_3.tips.create(content:"La grande barrière de corail est un gigantesque récif, situé au large de l'Australie.
 Elle est constituée de coraux qui sont de tailles, de couleurs et de formes différentes.
@@ -211,18 +227,21 @@ gourmandise_story_1.pages.create(content: "Edgar vient d’atterrir dans l’uni
 friandises, de sucreries et d’aliments appétissants.
 Il y en a partout, même dans les arbres, tu as vu ?
 Notre explorateur pose sa valise pour mieux observer l’arbre à pâtisserie et les
-immenses sucettes qui servent de parasol.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image1.png")
+immenses sucettes qui servent de parasol.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image1.png",
+voice_url:"")
 
 gourmandise_story_1.pages.create(content: "Très gourmand, Edgar ne résiste pas longtemps à la tentation. Il décide de récolter
 les ingrédients qui ont poussé dans l’arbre à pâtisserie : des fraises, des œufs, de la
-farine, il y en a des choses !", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image2.png")
+farine, il y en a des choses !", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image2.png",
+voice_url:"")
 
 gourmandise_story_1.pages.create(content: "Mais ces ingrédients tout seuls ce n’est très rigolo. Et puis Edgar a faim, les
 aventures, ça creuse. Il veut faire un goûter mais il ne sait pas ce qu’il pourrait
 fabriquer.
 Veux-tu aider Edgar à concocter un bon goûter ? Imagine un dessert à faire avec tes
 parents.
-Quand tu es prêt, prends en photo ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image3.png")
+Quand tu es prêt, prends en photo ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image3.png",
+voice_url:"")
 
 gourmandise_story_1.tips.create(content:"Les aliments sucrés c’est bon mais ils peuvent être l’ennemi de tes dents.
 Si tu n’entretiens pas bien tes dents, tu peux avoir des caries et avoir mal.
@@ -234,18 +253,21 @@ puts "Gourmandise Story 1 DONE"
 gourmandise_story_2.pages.create(content: "Et voilà, Edgar est de nouveau sur la route de la gourmandise. Grâce à toi, il a bien
 goûté !
 Derrière le champ de sucettes, Edgar suit un chemin bordé de cailloux colorés qui
-ressemblent beaucoup à des bonbons…", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image1.png")
+ressemblent beaucoup à des bonbons…", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image1.png",
+voice_url:"")
 
 gourmandise_story_2.pages.create(content: "Ahlala quelle chaleur ! Heureusement qu’Edgar a son ombrelle avec lui. Il peut se
 mettre à l’abri de ce soleil brûlant.
 Il aperçoit une maison et a très envie de s’y installer pour se mettre au frais. C’est
 étonnant, on dirait que la maison est construite avec des sucres d’orge et des
-meringues. Et surtout ! Elle est en chocolat cette maison !", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image2.png")
+meringues. Et surtout ! Elle est en chocolat cette maison !", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image2.png",
+voice_url:"")
 
 gourmandise_story_2.pages.create(content: "Avec la température qu’il fait, la maison commence à fondre. Le toit va s’écrouler si
 personne ne réagit.
 Peux-tu aider Edgar à trouver une solution ?
-Quand tu es prêt, prends en photo ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image3.png")
+Quand tu es prêt, prends en photo ta création et partage-la.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138686/Universes/gourmandise/gourmandise02/gourmandise-histoire2-image3.png",
+voice_url:"")
 
 gourmandise_story_2.tips.create(content:"C’est super quand il y a du soleil, tu peux aller à la plage et faire plein de jeux dehors.
 Si le soleil peut être notre ami parce qu’il nous donne le moral, parce qu’il nous éclaire et nous réchauffe, parce qu’il nous aide à fixer le calcium sur nos os, il peut aussi être notre ennemi.

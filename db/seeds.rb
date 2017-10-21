@@ -71,7 +71,7 @@ puts "User_3 Solutions DONE"
 user_4.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597040/Universes/ocean/ocean01/solution/fm_solution1-1_Alex.jpg", story_id: ocean_story_1.id)
 user_4.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597037/Universes/ocean/ocean01/solution/fm_solution1-2_Simon.jpg", story_id: ocean_story_1.id)
 user_4.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597439/Universes/gourmandise/gourmandise01/solution/ig_solution1-2_Adrien.jpg", story_id: gourmandise_story_1.id)
-user_4.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597441/Universes/gourmandise/gourmandise01/solution/ig_solution2-2_Kenza.jpg", story_id: gourmandise_story_2.id)
+user_4.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597441/Universes/gourmandise/gourmandise02/solution/ig_solution2-2_Kenza.jpg", story_id: gourmandise_story_2.id)
 
 puts "User_4 Solutions DONE"
 

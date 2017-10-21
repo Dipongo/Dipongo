@@ -46,24 +46,24 @@ puts "Users DONE"
 # pour chaque user, creer une solution sur chaque story
 
 user_1.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595967/Universes/jungle/Jungle01/Solution/ft_solution1_1_Isa.png", story_id: jungle_story_1.id)
-user_1.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595968/Universes/jungle/Jungle01/Solution/ft_solution2_1_Stella.jpg", story_id: jungle_story_2.id)
-user_1.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595967/Universes/jungle/Jungle01/Solution/ft_solution3_1_Emilie.png", story_id: jungle_story_3.id)
+user_1.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595968/Universes/jungle/Jungle02/Solution/ft_solution2_1_Stella.jpg", story_id: jungle_story_2.id)
+user_1.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595967/Universes/jungle/jungle03/Solution/ft_solution3_1_Emilie.png", story_id: jungle_story_3.id)
 
 
 puts "User_1 Solutions DONE"
 
 user_2.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595967/Universes/jungle/Jungle01/Solution/ft_solution1_2_Anne.png", story_id: jungle_story_1.id)
-user_2.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_hflip/v1508595969/Universes/jungle/Jungle01/Solution/ft_solution2_2_Ulysse.jpg", story_id: jungle_story_2.id)
-user_2.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595967/Universes/jungle/Jungle01/Solution/ft_solution3_2_Pierre.png", story_id: jungle_story_3.id)
+user_2.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_hflip/v1508595969/Universes/Jungle/Jungle02/Solution/ft_solution2_2_Ulysse.jpg", story_id: jungle_story_2.id)
+user_2.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508595967/Universes/jungle/jungle03/Solution/ft_solution3_2_Pierre.png", story_id: jungle_story_3.id)
 
 
 puts "User_2 Solutions DONE"
 
 
-user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_auto_left/v1508597035/Universes/ocean/ocean01/solution/fm_solution2-1_Keziah.jpg", story_id: ocean_story_2.id)
-user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_auto_left/v1508597038/Universes/ocean/ocean01/solution/fm_solution2-2_Charly.jpg", story_id: ocean_story_2.id)
+user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_auto_left/v1508597035/Universes/ocean/ocean02/solution/fm_solution2-1_Keziah.jpg", story_id: ocean_story_2.id)
+user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_auto_left/v1508597038/Universes/ocean/ocean02/solution/fm_solution2-2_Charly.jpg", story_id: ocean_story_2.id)
 user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597445/Universes/gourmandise/gourmandise01/solution/ig_solution1-1_Alex.jpg", story_id: gourmandise_story_1.id)
-user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_auto_left/v1508597444/Universes/gourmandise/gourmandise01/solution/ig_solution2-1_Cyril.jpg", story_id: gourmandise_story_2.id)
+user_3.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/a_auto_left/v1508597444/Universes/gourmandise/gourmandise02/solution/ig_solution2-1_Cyril.jpg", story_id: gourmandise_story_2.id)
 
 puts "User_3 Solutions DONE"
 
@@ -76,8 +76,8 @@ user_4.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upl
 puts "User_4 Solutions DONE"
 
 
-user_5.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597030/Universes/ocean/ocean01/solution/fm_solution3-1_Etienne.png", story_id: ocean_story_3.id)
-user_5.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597031/Universes/ocean/ocean01/solution/fm_solution3-2_James.jpg", story_id: ocean_story_3.id)
+user_5.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597030/Universes/ocean/ocean03/solution/fm_solution3-1_Etienne.png", story_id: ocean_story_3.id)
+user_5.solutions.create!(photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1508597031/Universes/ocean/ocean03/solution/fm_solution3-2_James.jpg", story_id: ocean_story_3.id)
 
 
 puts "User_5 Solutions DONE"

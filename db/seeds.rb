@@ -93,15 +93,18 @@ puts "User_5 Solutions DONE"
 jungle_story_1.pages.create(content: "Edgar arrive dans la forêt tropicale. Etouffé par la chaleur, il est déjà bien fatigué. Ce
 n’est pas si facile la vie d’explorateur. Edgar a bien mérité un peu de repos. Installé
 dans son hamac, il contemple la belle nature qui s’offre à lui. Il y a plein de feuilles de
-formes et de couleurs différentes.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle01/jungle-histoire1-image1.png")
+formes et de couleurs différentes.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138157/Universes/jungle/jungle01/jungle-histoire1-image1.png",
+voice_url: "http://res.cloudinary.com/dipongo/video/upload/v1508574456/Universes/jungle/Jungle01/ft_h1_page01.mp3")
 
 jungle_story_1.pages.create(content: "Edgar commence à peine à trouver le sommeil quand un bruit assourdissant le
-réveille. Il sursaute et se lève immédiatement sur son hamac. Qu’est-ce qui peut faire
-un bruit pareil ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138162/Universes/jungle/jungle01/jungle-histoire1-image2.png")
+réveille. Il sursaute et se lève immédiatement sur son hamac. Qu’est-ce qui peut bien faire
+un bruit pareil ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138162/Universes/jungle/jungle01/jungle-histoire1-image2.png",
+voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574456/Universes/jungle/Jungle01/ft_h1_page02.mp3")
 
-jungle_story_1.pages.create(content: "AH C’était l’eau qui coule qui a réveillé Edgard. Il fait très chaud et Edgard a très envie de se baigner. Mais mince, un gouffre le sépare de la cascade. Peux tu aider Edgar à trouver une solution pour qu’il puisse aller dans la cascade ?
+jungle_story_1.pages.create(content: " Edgard décide d'aller voir ce qui a bien pus le réveille. Le voilà rassuré derrière une plante carnivore, il voit une grande cascade. Le bruit était juste de l'eau qui coule. Il fait très chaud et humide dans cette forêt. La vue de l'eau donne envie à Edgard de se baigner. Mais un gouffre le sépare de la cascade. Peux-tu aider Edgar à trouver une solution pour qu’il puisse franchir le précipice?.
 Dès que tu es prêt, prends en photo ta solution.
-", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138166/Universes/jungle/jungle01/jungle-histoire1-image3.png")
+", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138166/Universes/jungle/jungle01/jungle-histoire1-image3.png",
+voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574456/Universes/jungle/Jungle01/ft_h1_page03_textechange.mp3")
 
 jungle_story_1.tips.create(content:"Vivant dans des milieux pauvres et sans beaucoup de ressources,
 les plantes carnivores ont dû s’adapter pour survivre.

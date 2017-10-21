@@ -3,12 +3,12 @@
 and (min-device-width : 368px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
-  .wide-container{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
-    height: 768px;
-    width: 1024px;
-    background-size: cover;
-  }
+  // .wide-container{
+  //   background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
+  //   height: 768px;
+  //   width: 1024px;
+  //   background-size: cover;
+  // }
 
 .button-univers{
   text-align: center;
@@ -63,7 +63,7 @@ and (orientation : landscape) {
 .wide-container-home{
   height: 100%;
     margin: 0;
-    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1507732021/Composants/fond-etoiles-2.jpg");
     background-size: cover;
 }
 .wide-container{
@@ -71,7 +71,7 @@ and (orientation : landscape) {
 }
 
 .speaker {
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png);
+  background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
@@ -99,7 +99,7 @@ and (orientation : landscape) {
   width: 50px;
   height: 50px;
   background-size: cover;
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png);
+  background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png");
 }
 
 
@@ -109,12 +109,12 @@ and (orientation : landscape) {
 and (min-device-width : 368px)
 and (max-device-width : 2056px)
 and (orientation : portrait) {
-  .wide-container-story{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1506355281/Composants/fond-etoiles-m.png');
-    height: 1024px;
-    width: 768px;
-    background-size: cover;
-  }
+  // .wide-container-story{
+  //   background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_1024,w_768/v1506355281/Composants/fond-etoiles-m.png');
+  //   height: 1024px;
+  //   width: 768px;
+  //   background-size: cover;
+  // }
 
 .button-univers{
   text-align: center;
@@ -166,7 +166,7 @@ and (orientation : portrait) {
 .wide-container-home {
     height: 100%;
     margin: 0;
-    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1507732021/Composants/fond-etoiles-2.jpg");
     background-size: cover;
 }
 
@@ -175,7 +175,7 @@ and (orientation : portrait) {
 }
 
 .speaker {
-  background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png);
+  background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 0%;
@@ -204,11 +204,11 @@ and (orientation : portrait) {
 
 /* Google Nexus 10 (landscape) */
 @media only screen and (max-width: 2056px) and (min-width: 1025px) and (orientation : landscape) {
-  .wide-container{
-    background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
-    width: 100%;
-    background-size: cover;
-  }
+  // .wide-container{
+  //   background-image: url('http://res.cloudinary.com/dipongo/image/upload/c_crop,h_768,w_1024/v1506355281/Composants/fond-etoiles-m.png');
+  //   width: 100%;
+  //   background-size: cover;
+  // }
 
 .button-univers{
   text-align: center;
@@ -258,7 +258,7 @@ and (orientation : portrait) {
   .wide-container-home{
     height: 100%;
       margin: 0;
-      background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506355281/Composants/fond-etoiles-m.png);
+      background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1507732021/Composants/fond-etoiles-2.jpg");
       background-size: cover;
   }
   .wide-container{
@@ -266,7 +266,7 @@ and (orientation : portrait) {
   }
 
   .speaker {
-    background-image: url(http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png);
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1506350064/Composants/bouton-son-orange.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0% 0%;

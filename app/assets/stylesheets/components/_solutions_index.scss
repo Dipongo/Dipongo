@@ -1,3 +1,15 @@
+
+@media screen and (device-aspect-ratio: 16/9) and (orientation: landscape){
+   .wide-container-solution{
+    background-image: url("http://res.cloudinary.com/dipongo/image/upload/v1507200286/Composants/fond-etoiles-2.png");
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 90rem;
+    position:relative;
+  }
+}
+
+
 /* iPads (landscape) ----------- */
 @media only screen
 and (min-device-width : 368px)
@@ -10,6 +22,7 @@ and (orientation : landscape) {
     background-repeat: repeat-y;
     width: 100%;
     position:relative;
+    height: 105rem;
   }
   .desc{
     color: white;

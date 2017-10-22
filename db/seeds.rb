@@ -93,7 +93,7 @@ réveille. Il sursaute et se lève immédiatement sur son hamac. Qu’est-ce qui
 un bruit pareil ?", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138162/Universes/jungle/jungle01/jungle-histoire1-image2.png",
 voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574456/Universes/jungle/Jungle01/ft_h1_page02.mp3")
 
-jungle_story_1.pages.create(content: " Edgard décide d'aller voir ce qui a bien pus le réveille. Le voilà rassuré derrière une plante carnivore, il voit une grande cascade. Le bruit était juste de l'eau qui coule. Il fait très chaud et humide dans cette forêt. La vue de l'eau donne envie à Edgard de se baigner. Mais un gouffre le sépare de la cascade. Peux-tu aider Edgar à trouver une solution pour qu’il puisse franchir le précipice?.
+jungle_story_1.pages.create(content: " Edgard décide d'aller voir ce qui a bien pu le réveiller. Le voilà rassuré derrière une plante carnivore, il voit une grande cascade. Le bruit était juste de l'eau qui coule. Il fait très chaud et humide dans cette forêt. La vue de l'eau donne envie à Edgard de se baigner. Mais un gouffre le sépare de la cascade. Peux-tu aider Edgar à trouver une solution pour qu’il puisse franchir le précipice?.
 Dès que tu es prêt, prends en photo ta solution.
 ", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138166/Universes/jungle/jungle01/jungle-histoire1-image3.png",
 voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574456/Universes/jungle/Jungle01/ft_h1_page03_textechange.mp3")
@@ -133,10 +133,10 @@ puts "Jungle Story 2 DONE"
 jungle_story_3.pages.create(content: "Edgar est un vrai escaladeur et s'amuse à monter sur une arche avec de la mousse, ça mouille!!!. Le petit renard contemple le paysage, qu'est ce qu'il est reveur notre Edgar!.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image1.png",
   voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574498/Universes/jungle/jungle03/ft_h3_page01.mp3")
 
-jungle_story_3.pages.create(content: "Edgar voudrait ramener un beau souvenir à son ami Gaston le raton laveur. Il découvre de superbes plantes mais qu'est ce qu'il pourrait rapporter a son ami Gaston.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png",
+jungle_story_3.pages.create(content: "Edgar voudrait ramener un beau souvenir à son ami Gaston le raton laveur. Il découvre de superbes plantes mais qu'est ce qu'il pourrait rapporter à son ami Gaston.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image2.png",
   voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574498/Universes/jungle/jungle03/ft_h3_page02.mp3")
 
-jungle_story_3.pages.create(content: "Peux-tu aider Edgar a imaginer un souvenir de la forêt  tropicale pour l'offrir à Gaston le raton ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png",
+jungle_story_3.pages.create(content: "Peux-tu aider Edgar à imaginer un souvenir de la forêt  tropicale pour l'offrir à Gaston le raton ?.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507627080/Universes/jungle/jungle03/jungle-histoire3-image3.png",
   voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508574498/Universes/jungle/jungle03/ft_h3_page03.m4a")
 
 jungle_story_3.tips.create(content:"...")
@@ -201,15 +201,15 @@ puts "Ocean story 2 DONE"
 ocean_story_3.pages.create(content: "Et voila Edgar est reparti a l'aventure. Il est ébloui par les faisceaux lumineux qui pénètrent  dans l'eau et émoustillent les poissons et d'ailleurs camélia est ce que tu l'as vois ? On te donne un indice elle est en orange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507629641/Universes/ocean/ocean03/ocean-histoire3-image1.png",
   voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508580750/Universes/ocean/ocean03/fm_h3-page01.mp3")
 
-ocean_story_3.pages.create(content: "Edgar recherche des amis quand, tout d'un coup il entend un bruit tres etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png",
+ocean_story_3.pages.create(content: "Edgar recherche des amis quand, tout d'un coup il entend un bruit très etrange.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633162/Universes/ocean/ocean03/ocean-histoire3-image2.png",
   voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508580750/Universes/ocean/ocean03/fm_h3-page02.mp3")
 
-ocean_story_3.pages.create(content: "Que peut-il bien se cacher deriere ce rocher?. On apercoit des bulles", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633195/Universes/ocean/ocean03/ocean-histoire3-image3.png",
+ocean_story_3.pages.create(content: "Que peut-il bien se cacher derrière ce rocher?. On aperçoit des bulles", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1507633195/Universes/ocean/ocean03/ocean-histoire3-image3.png",
   voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508580750/Universes/ocean/ocean03/fm_h3-page03.mp3")
 
 ocean_story_3.tips.create(content:"La grande barrière de corail est un gigantesque récif, situé au large de l'Australie.
 Elle est constituée de coraux qui sont de tailles, de couleurs et de formes différentes.
- La grande barrière de corail est aussi habitée :par des éponges de mer, des mollusques, et des poissons.
+ La grande barrière de corail est aussi habitée : par des éponges de mer, des mollusques, et des poissons.
 C'est la plus grande bioconstruction au monde : elle est même visible depuis l'espace !
 La grande barrière de corail est en danger à cause du réchauffement climatique, de la pollution et des dégâts des touristes.")
 
@@ -217,7 +217,7 @@ puts "Ocean story 3 DONE"
 
 gourmandise_story_1.pages.create(content: "Edgar vient d’atterrir dans l’univers de la gourmandise. C’est un endroit rempli de
 friandises, de sucreries et d’aliments appétissants.
-Il y en a partout, même dans les arbres, tu as vu ?
+Il y en a partout, même dans les arbres, as-tu vu ?
 Notre explorateur pose sa valise pour mieux observer l’arbre à pâtisserie et les
 immenses sucettes qui servent de parasol.", photo_url: "http://res.cloudinary.com/dipongo/image/upload/v1505138611/Universes/gourmandise/gourmandise01/gourmandise-histoire1-image1.png",
 voice_url:"http://res.cloudinary.com/dipongo/video/upload/v1508581124/Universes/gourmandise/gourmandise01/ig_h1_page01.mp3")
